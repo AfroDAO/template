@@ -1,0 +1,116 @@
+          <div class="wpsc">
+
+            <input type="hidden" id="wpsc-network" name="wpsc-network">
+            <input type="hidden" id="wpsc-txid" name="wpsc-txid">
+            <input type="hidden" id="wpsc-owner" name="wpsc-owner">
+            <input type="hidden" id="wpsc-blockie" name="wpsc-blockie">
+            <input type="hidden" id="wpsc-blockie-owner" name="wpsc-blockie-owner">
+            <input type="hidden" id="wpsc-qr-code" name="wpsc-qr-code">
+            <input type="hidden" id="wpsc-contract-address" name="wpsc-contract-address">
+            <input type="hidden" id="wpsc-factory" name="wpsc-factory">
+
+            <div class="ui inverted segment">
+              <div class="ui inverted segment">
+                <h1 class="ui header">
+                  <i class="ethereum icon"></i>
+                  {{{smart-contract}}}
+                </h1>
+                <a class="ui grey button right floated" href="https://wpsmartcontracts.com/#tutorials" target="_blank">
+                  {{{learn-more}}}
+                </a>
+                <p>{{{smart-contract-desc}}}</p>
+              </div>
+            </div>
+            <!-- Smart Contracts Begin -->
+            <!-- This section is going to be shown when no contract has been deployed -->
+            <h3 class="ui dividing header">
+              <div class="content">{{{new-smart-contract}}}</div>
+            </h3>
+
+            <div class="ui basic segment deployer-connect-with-metamask-div" style="display: none;">
+
+              <p>
+                <img src="{{fox}}" class="ui small left floated image">
+                {{{text}}}
+              </p>
+              <a class="ui big blue button" id="connect-metamask-in-admin">
+                {{{connect-to-metamask}}}
+              </a>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+
+            </div>
+
+            <div id="deployer-with-wpst">
+              {{{deploy-with-wpst}}}
+            </div>
+            
+            <!-- load existing contract modal -->
+            <div id="wpsc-load-contract" class="ui basic modal">
+
+              <h2 class="ui icon inverted header centered">
+                <i class="ethereum icon"></i>
+                {{{ethereum-address}}}
+                <div class="sub header">{{{ethereum-address-desc}}}</div>
+                <div class="sub header">{{{active-net-account}}}</div>
+                <div class="ui divider"></div>
+                <div id="wpsc-loader-ethereum-network" class="ui huge label fluid"></div>                
+              </h2>
+
+              <div id="wpsc-token-information-loader" class="ui inverted header centered"></div>
+
+              <div id="wpsc-loader-warning"></div>              
+
+              <div class="ui info message transition">
+                <div class="header">{{{ethereum-address-important}}}</div>
+                <p>{{{ethereum-address-important-message}}}</p>
+              </div>
+
+              <div class="ui fluid big left icon input" id="wpsc-load-contract-address-div">
+                <input id="wpsc-load-contract-address" type="text" placeholder="{{{smart-contract-address}}}">
+                <i class="file alternate outline icon"></i>
+              </div>
+              <div id="wpsc-load-contract-address-div"></div>
+              <div class="actions">
+                <div id="wpsc-load-cancel-button" class="ui red basic cancel inverted button">
+                  <i class="remove icon"></i>
+                  {{{cancel}}}
+                </div>
+                <div id="wpsc-load-ok-button" class="ui green inverted button">
+                  <i class="checkmark icon"></i>
+                  {{{load}}}
+                </div>
+              </div>
+            </div>
+
+            <!-- deploy a new contract modal -->
+            <div id="wpsc-deploy-contract" class="ui basic modal">
+
+              <span id="wpsc-deploy-contract-image"></span>
+              <h4 class="ui header">
+                <i class="ethereum icon"></i>
+                <div class="content">
+                  {{{ethereum-deploy}}}
+                  <span id="wpsc-deployer-ethereum-network" class="ui label"></span>
+                </div>
+                <span id="wpsc-token-information" class="ui inverted header centered"></span>
+              </h4>
+
+              <div id="wpsc-token-information" class="ui inverted header centered"></div>
+              
+              <div id="wpsc-deployer-warning"></div>              
+
+              <div class="actions">
+                <div id="wpsc-deploy-cancel-button" class="ui red basic cancel inverted button">
+                  <i class="remove icon"></i>
+                  {{{cancel}}}
+                </div>
+                <div id="wpsc-deploy-ok-button" class="ui green inverted button">
+                  <i class="checkmark icon"></i>
+                  {{{yes-proceed}}}
+                </div>
+              </div>
+            </div>
+
+          </div>
+

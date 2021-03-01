@@ -1,0 +1,88 @@
+	<div class="ui floating message">
+
+	{{#filter}}
+		<a class="ui left corner mini label">
+			<i class="filter icon"></i>
+		</a>
+	{{/filter}}
+	{{#closable}}
+		<i class="close icon" id="wpscRemoveFilter" ></i>
+	{{/closable}}
+	<div class="header">
+		<span class="desktop-only" id="wpscBalanceDivDesktop">
+			<img src="{{blockie}}" class="ui avatar image">
+			<a href="javascript:void(0);" onclick="copyToClipboard('{{account}}', 'wpscBalanceDivDesktop')">
+				<i class="icon copy"></i>
+			</a>
+
+			<a href="https://{{#subdomain}}{{subdomain}}{{/subdomain}}etherscan.io/address/{{account}}" target="_blank">
+				{{account}}
+				<i class="icon external alternate"></i>
+			</a>
+			
+			<div class="ui mini icon button showfluid{{showfluid_id}}"><i class="qrcode icon"></i></div>
+			<div class="ui flowing popup top left transition hidden">
+			  <img src="{{qrCode}}" class="ui centered small image">
+			  <div class="ui divider"></div>
+			  <div class="ui label">
+			    {{account}}
+			  </div>
+			</div>
+		</span>
+		<span class="no-desktop" id="wpscBalanceDivMobile">
+			<img src="{{blockie}}" class="ui avatar image">
+			<a href="javascript:void(0);" onclick="copyToClipboard('{{account}}', 'wpscBalanceDivMobile')">
+				<i class="icon copy"></i>
+			</a>
+
+			<a href="https://{{#subdomain}}{{subdomain}}.{{/subdomain}}etherscan.io/address/{{account}}" target="_blank">
+				{{shortAccount}}
+				<i class="icon external alternate"></i>
+			</a>
+
+			<div class="ui mini icon button showfluid{{showfluid_id}}"><i class="qrcode icon"></i></div>
+			<div class="ui flowing popup top left transition hidden">
+			  <img src="{{qrCode}}" class="ui centered small image">
+			  <div class="ui divider"></div>
+			  <div class="ui label">
+			    {{account}}
+			  </div>
+			</div>
+		</span>
+	</div>
+
+	{{#filter}}
+		<div id="wpscAccountRolesFilter"></div>
+	{{/filter}}
+	{{^filter}}
+		<div id="wpscAccountRoles"></div>
+	{{/filter}}
+
+	<div class="ui basic segment">
+		<div class="ui right labeled left icon mini input">
+			<i class="circle icon"></i>
+			<input type="text" value="{{balance}}" readonly="">
+			<a class="ui tag label">
+				{{{balancetext}}}
+			</a>
+		</div>
+	</div>
+
+
+	{{#filter}}
+	<div id="wpscAllowanceText"></div>
+	<div id="wpscAllowance" class="ui tiny header"></div>
+	{{/filter}}
+	{{#is_chocolate}}
+		<div class="ui hidden divider"></div>
+		<button id="wpsc-add-pauser-role" class="ui mini blue button" style="display: none" data-account="{{account}}">
+		  <i class="pause circle outline icon"></i>
+		  {{add_pauser}}
+		</button>
+		<button id="wpsc-add-minter-role" class="ui mini blue button" style="display: none" data-account="{{account}}">
+		  <i class="tint icon"></i>
+		  {{add_minter}}
+		</button>
+	{{/is_chocolate}}
+
+</div>

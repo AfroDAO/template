@@ -1,0 +1,18 @@
+{{#blockie}}
+	<img src="{{blockie}}" class="wpscMiniBlockies">
+{{/blockie}}
+<span class="wpscQR">
+	<i class="copy icon" onclick="copyToClipboard('{{contract}}', 'wpsc-qr-{{id}}')"></i>
+	<a href="{{etherscan}}address/{{contract}}" target="_blank">
+		{{short-contract}}
+	</a>
+</span>
+<div class="ui icon button showfluid" id="showfluid{{id}}">
+	<i class="qrcode icon"></i>
+</div>
+<div class="ui fluid popup top left transition hidden">
+	<img src="{{qr-code}}" class="ui centered small image">
+	<p>&nbsp;</p>
+	<div class="ui bottom attached tiny label wpsc-centered">{{contract}}</div>
+</div>
+<span id="wpsc-qr-{{id}}"></span>

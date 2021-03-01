@@ -1,0 +1,1762 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: White Label Branding\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-04-23 10:56-0500\n"
+"PO-Revision-Date: 2017-07-10 17:17-0600\n"
+"Last-Translator: AL <alberto@righthere.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-SearchPath-0: ../includes\n"
+
+#: ../includes/class.admin_menu_sort.php:41
+#: ../includes/class.admin_menu_sort.php:42
+msgid "Sort Admin Menu"
+msgstr "Ordenar Menú Administrativo"
+
+#: ../includes/class.admin_menu_sort.php:43
+msgid "Sort Admin Main Menu"
+msgstr "Ordenar Menú Administrativo Principal"
+
+#: ../includes/class.admin_menu_sort.php:47
+msgid "Sort wp-admin main menu"
+msgstr "Ordenar el menú principal de wp-admin"
+
+#: ../includes/class.admin_menu_sort.php:51
+msgid "Enable custom admin menu order."
+msgstr "Habilitar ordenar menú administrativo personalizado"
+
+#: ../includes/class.admin_menu_sort.php:53
+msgid "Choose yes if you want to customize the order of the WordPress admin main menu."
+msgstr "Seleccione Sí si desea personalizar el orden del menú principal de WordPress."
+
+#: ../includes/class.admin_menu_sort.php:61
+msgid "Customize the WordPress admin menu.  Drag and drop the main menu item to their new custom position."
+msgstr "Personalizar el menú administrativo de WordPress. Arrastre el elemento de menú a su nueva posición."
+
+#: ../includes/class.admin_menu_sort.php:70
+#: ../includes/class.admin_menu_sort.php:81
+#: ../includes/class.prewp33_wlb_dashboard.php:187
+#: ../includes/class.prewp35_wlb_color_scheme.php:1337
+#: ../includes/class.prewp35_wlb_color_scheme.php:1393
+#: ../includes/class.prewp35_wlb_color_scheme.php:1429
+#: ../includes/class.wlb_admin_bar.php:143
+#: ../includes/class.wlb_admin_bar.prewp33.php:106
+#: ../includes/class.wlb_color_scheme.php:1348
+#: ../includes/class.wlb_color_scheme.php:1404
+#: ../includes/class.wlb_color_scheme.php:1440
+#: ../includes/class.wlb_dashboard.php:214 ../includes/class.wlb_login.php:779
+#: ../includes/class.wlb_menu.php:120
+msgid "Save Changes"
+msgstr "Guardar Cambios"
+
+#: ../includes/class.admin_menu_sort.php:74
+msgid "Drag and drop a menu item to its new custom positions.  After reorganizing the menu items click \"Save Changes\""
+msgstr "Arrastre un elemento del menú a su nueva posición.  Después de reorganizar el menú presione \"Guardar Cambios\""
+
+#: ../includes/class.plugin_white_label_branding.php:119
+#: ../includes/class.prewp33_wlb_dashboard.php:21
+#: ../includes/class.wlb_dashboard.php:21
+msgid "Dashboard Tool"
+msgstr "Herramienta de Escritorio"
+
+#: ../includes/class.plugin_white_label_branding.php:156
+msgid "Downloads"
+msgstr "Descargas"
+
+#: ../includes/class.plugin_white_label_branding.php:157
+msgid "Downloadable content - White Label Branding for WordPress"
+msgstr "Contenido descargable - White Label Branding for WordPress"
+
+#: ../includes/class.plugin_white_label_branding.php:160
+#: ../includes/class.plugin_white_label_branding.php:172
+msgid "White Label Branding"
+msgstr "White Label Branding"
+
+#: ../includes/class.plugin_white_label_branding.php:171
+msgid "White Label Branding Options"
+msgstr "Opciones de White Label Branding"
+
+#: ../includes/class.plugin_white_label_branding.php:177
+#, php-format
+msgid "White Label Branding update %s is available!"
+msgstr "¡La actualización %s de White Label Branding está disponible!"
+
+#: ../includes/class.plugin_white_label_branding.php:177
+msgid "Please update now"
+msgstr "Por favor actualice ahora"
+
+#: ../includes/class.plugin_white_label_branding.php:198
+#: ../includes/class.prewp33_wlb_branding.php:59
+#: ../includes/class.prewp33_wlb_branding.php:61
+#: ../includes/class.wlb_branding.php:93 ../includes/class.wlb_branding.php:95
+#: ../includes/class.wlb_login.php:26 ../includes/class.wlb_options.php:31
+msgid "Branding"
+msgstr "Branding"
+
+#: ../includes/class.plugin_white_label_branding.php:206
+msgid "Navigation"
+msgstr "Navegación"
+
+#: ../includes/class.plugin_white_label_branding.php:214
+msgid "Login"
+msgstr "Login"
+
+#: ../includes/class.plugin_white_label_branding.php:222
+#: ../includes/class.prewp35_wlb_color_scheme.php:1484
+#: ../includes/class.wlb_color_scheme.php:1495
+msgid "Color Scheme"
+msgstr "Esquema de colores"
+
+#: ../includes/class.plugin_white_label_branding.php:230
+msgid "Options"
+msgstr "Opciones"
+
+#: ../includes/class.plugin_white_label_branding.php:241
+msgid "Role Manager"
+msgstr "Administrador de Roles"
+
+#: ../includes/class.plugin_white_label_branding.php:251
+msgid "License"
+msgstr "Licencia"
+
+#: ../includes/class.plugin_white_label_branding.php:279
+msgid "WLB Settings"
+msgstr "Configuración de WLB"
+
+#: ../includes/class.prewp33_wlb_branding.php:60
+#: ../includes/class.wlb_branding.php:94
+msgid "Customize Favicon, Header, Footer Logo and WordPress Nag Messages"
+msgstr "Personalizar Favicon, Header, Footer Logo y WordPress Nag Messages"
+
+#: ../includes/class.prewp33_wlb_branding.php:66
+#: ../includes/class.wlb_branding.php:100
+msgid "Enable admin branding options"
+msgstr "Habilitar opciones de branding"
+
+#: ../includes/class.prewp33_wlb_branding.php:68
+#: ../includes/class.wlb_branding.php:102
+#, php-format
+msgid "Choose %s to customize the admin"
+msgstr "Escoja %s para personalizar el admin"
+
+#: ../includes/class.prewp33_wlb_branding.php:68
+#: ../includes/class.prewp33_wlb_branding.php:166
+#: ../includes/class.wlb_branding.php:102
+#: ../includes/class.wlb_branding.php:244 ../includes/class.wlb_login.php:37
+#: ../includes/class.wlb_login.php:195 ../includes/class.wlb_login.php:708
+msgid "Yes"
+msgstr "Sí"
+
+#: ../includes/class.prewp33_wlb_branding.php:87
+#: ../includes/class.wlb_branding.php:121
+msgid "Favicon URL"
+msgstr "URL del Favicon"
+
+#: ../includes/class.prewp33_wlb_branding.php:88
+#: ../includes/class.wlb_branding.php:122
+msgid "URL to an image to use as Favicon "
+msgstr "URL de una imagen que quieras usar como Favicon "
+
+#: ../includes/class.prewp33_wlb_branding.php:102
+#: ../includes/class.wlb_branding.php:136
+msgid "Header Logo URL"
+msgstr "URL del logo para el encabezado"
+
+#: ../includes/class.prewp33_wlb_branding.php:103
+#: ../includes/class.wlb_branding.php:137
+msgid "URL to an image that will replace the header logo"
+msgstr "URL de una imagen para reemplazar el logo del header"
+
+#: ../includes/class.prewp33_wlb_branding.php:115
+msgid "Header Bar Height"
+msgstr "Altura de la barra del encabezado"
+
+#: ../includes/class.prewp33_wlb_branding.php:116
+msgid "Specify a height in px if the header logo is taller than 32px, this will adjust the header height."
+msgstr "Especifique una altura en px si el logo del encabezado es mayor de 32px, esto ajustará la altura del encabezado."
+
+#: ../includes/class.prewp33_wlb_branding.php:126
+#: ../includes/class.wlb_branding.php:186
+msgid "Footer"
+msgstr "Footer"
+
+#: ../includes/class.prewp33_wlb_branding.php:131
+#: ../includes/class.wlb_branding.php:191
+msgid "Developer Logo URL"
+msgstr "URL al logo del desarrollador"
+
+#: ../includes/class.prewp33_wlb_branding.php:132
+#: ../includes/class.wlb_branding.php:192
+msgid "URL to an image that will be displayed in the footer."
+msgstr "URL a una imagen que se despliega en el footer"
+
+#: ../includes/class.prewp33_wlb_branding.php:140
+#: ../includes/class.wlb_branding.php:200
+msgid "Developer Name"
+msgstr "Nombre del Desarrollador"
+
+#: ../includes/class.prewp33_wlb_branding.php:141
+#: ../includes/class.wlb_branding.php:201
+msgid "Developer name, displayed on links to the developer website in the footer."
+msgstr "Nombre del desarrollador, se muestra en los enlaces al sitio web del desarrollador en el footer."
+
+#: ../includes/class.prewp33_wlb_branding.php:149
+#: ../includes/class.wlb_branding.php:209
+msgid "Developer URL"
+msgstr "URL del desarrollador"
+
+#: ../includes/class.prewp33_wlb_branding.php:150
+#: ../includes/class.wlb_branding.php:210
+msgid "URL to the developer website."
+msgstr "URL a la página del desarrollador"
+
+#: ../includes/class.prewp33_wlb_branding.php:160
+#: ../includes/class.wlb_branding.php:229
+msgid "WordPress Messages"
+msgstr "Mensajes de Wordpress"
+
+#: ../includes/class.prewp33_wlb_branding.php:164
+#: ../includes/class.wlb_branding.php:242
+msgid "Remove \"&#8212; WordPress\" from title"
+msgstr "Quitar \"&#8212; WordPress\" del título"
+
+#: ../includes/class.prewp33_wlb_branding.php:166
+#: ../includes/class.wlb_branding.php:244
+#, php-format
+msgid "Choose %s to remove the word \"&#8212; WordPress\" from the header title on the admin area.<br />Note:Prior to WP3.1 there was no filter for the title, so it is removed with javascript on wordpress versions prior to 3.1."
+msgstr "Escoja %s para remover la palabra \"&#8212; WordPress\" del título de encabezado del área administrativa.<br />Nota: Antes de WP3.1 no había filtro para el título, de modo que es removido con javascript en las versiones de WordPress anteriores a la 3.1."
+
+#: ../includes/class.prewp33_wlb_branding.php:174
+#: ../includes/class.wlb_branding.php:252
+msgid "Hide WordPress Update Messages."
+msgstr "Ocultar mensajes de actualización de Wordpress"
+
+#: ../includes/class.prewp33_wlb_branding.php:179
+#: ../includes/class.wlb_branding.php:257
+#, fuzzy
+msgid "Hide Update Nag"
+msgstr "Ocultar el update nag"
+
+#: ../includes/class.prewp33_wlb_branding.php:181
+#: ../includes/class.wlb_branding.php:259
+#, fuzzy
+msgid "Hide WordPress Update Message at the top."
+msgstr "Ocultar mensajes de actualización de Wordpress en la parte superior"
+
+#: ../includes/class.prewp33_wlb_branding.php:188
+#: ../includes/class.wlb_branding.php:266
+#, fuzzy
+msgid "Hide Update Download Link"
+msgstr "Ocultar el enlance de actualización"
+
+#: ../includes/class.prewp33_wlb_branding.php:190
+#: ../includes/class.wlb_branding.php:268
+#, fuzzy
+msgid "Hide WordPress download link message at the bottom."
+msgstr "Ocultar el enlace de descarga en la parte inferior"
+
+#: ../includes/class.prewp33_wlb_branding.php:197
+#: ../includes/class.wlb_branding.php:275
+#, fuzzy
+msgid "Hide Contextual Help"
+msgstr "Ocultar la ayuda contextual"
+
+#: ../includes/class.prewp33_wlb_branding.php:199
+#: ../includes/class.wlb_branding.php:277
+#, fuzzy
+msgid "Hide WordPress Contextual Help."
+msgstr "Ocultar la ayuda contextual de Wordpress"
+
+#: ../includes/class.prewp33_wlb_branding.php:206
+#: ../includes/class.wlb_branding.php:284
+msgid "Hide Screen Options"
+msgstr "Ocultar Opciones de Pantalla"
+
+#: ../includes/class.prewp33_wlb_branding.php:208
+#: ../includes/class.wlb_branding.php:286
+msgid "Hide Screen Options."
+msgstr "Ocultar Opciones de Pantalla"
+
+#: ../includes/class.prewp33_wlb_branding.php:215
+#: ../includes/class.wlb_branding.php:293
+msgid "Hide Favorite Actions"
+msgstr "Ocultar Acciones Favoritas"
+
+#: ../includes/class.prewp33_wlb_branding.php:217
+#: ../includes/class.wlb_branding.php:295
+msgid "Hide WordPress Favorite Actions (Dropdown located on the top right corner of wp-admin)."
+msgstr "Ocultar las acciones favoritas de Wordpress (Menú desplegable en la parte superior derecha del administrador de Wordpress)"
+
+#: ../includes/class.prewp33_wlb_branding.php:224
+#: ../includes/class.prewp33_wlb_branding.php:254
+#: ../includes/class.wlb_branding.php:311
+#: ../includes/class.wlb_branding.php:343
+#: ../includes/class.wlb_capabilities.php:157
+#: ../includes/class.wlb_login.php:180 ../includes/class.wlb_login.php:690
+#: ../includes/class.wlb_menu.php:173 ../includes/class.wlb_settings.php:122
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: ../includes/class.prewp33_wlb_branding.php:228
+#: ../includes/class.prewp33_wlb_branding.php:230
+#: ../includes/class.wlb_branding.php:317
+#: ../includes/class.wlb_branding.php:319
+msgid "Email Branding"
+msgstr "Branding del Email"
+
+#: ../includes/class.prewp33_wlb_branding.php:229
+#: ../includes/class.wlb_branding.php:318
+msgid "Customize the Standard WordPress from email and from name"
+msgstr "Personalizar el \"from email\" y \"from name\" estándar de WordPress"
+
+#: ../includes/class.prewp33_wlb_branding.php:238
+#: ../includes/class.wlb_branding.php:327
+msgid "Email from"
+msgstr "Email de"
+
+#: ../includes/class.prewp33_wlb_branding.php:240
+#: ../includes/class.wlb_branding.php:329
+msgid "By default WordPress uses the from name \"WordPress\" and address \"wordpress@yourdomain.com\" when it sends notifications to users."
+msgstr "De manera predeterminada, WordPress utiliza el nombre “WordPress\", y la dirección \"wordpress@yourdomain.com\" cuando envía notificaciones a los usuarios."
+
+#: ../includes/class.prewp33_wlb_branding.php:240
+#: ../includes/class.wlb_branding.php:329
+msgid "We let you change the from email and the from name."
+msgstr "Le permitimos cambiar el Email de y Nombre de remitente."
+
+#: ../includes/class.prewp33_wlb_branding.php:247
+#: ../includes/class.wlb_branding.php:336
+msgid "Email from name"
+msgstr "Nombre del remitente del email"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:46
+#: ../includes/class.prewp33_wlb_dashboard.php:48
+#: ../includes/class.prewp33_wlb_dashboard.php:361
+#: ../includes/class.wlb_dashboard.php:47
+#: ../includes/class.wlb_dashboard.php:49
+#: ../includes/class.wlb_dashboard.php:403
+msgid "Dashboard"
+msgstr "Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:47
+#: ../includes/class.wlb_dashboard.php:48
+msgid "Customize Dashboard Panels"
+msgstr "Personalizar Paneles de Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:53
+#: ../includes/class.wlb_dashboard.php:53
+msgid "Enable Public Dashboard Panel"
+msgstr "Habilitar Panel de Escritorio Público"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:55
+#: ../includes/class.wlb_dashboard.php:55
+msgid "This will appear on the dashboard to any user roll."
+msgstr "Esto aparecerá en el escritorio de cualquier rol de usuario."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:71
+#: ../includes/class.prewp33_wlb_dashboard.php:112
+#: ../includes/class.prewp33_wlb_dashboard.php:150
+#: ../includes/class.wlb_dashboard.php:71
+#: ../includes/class.wlb_dashboard.php:112
+#: ../includes/class.wlb_dashboard.php:150
+msgid "Title"
+msgstr "Título"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:73
+#: ../includes/class.prewp33_wlb_dashboard.php:114
+#: ../includes/class.prewp33_wlb_dashboard.php:152
+#: ../includes/class.wlb_dashboard.php:73
+#: ../includes/class.wlb_dashboard.php:114
+#: ../includes/class.wlb_dashboard.php:152
+msgid "Add a title for your Custom Panel."
+msgstr "Agrega un título para su panel personalizado."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:81
+#: ../includes/class.prewp33_wlb_dashboard.php:160
+#: ../includes/class.wlb_dashboard.php:81
+#: ../includes/class.wlb_dashboard.php:160
+#, fuzzy
+msgid "Panel Content"
+msgstr "Contenido del panel"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:83
+#: ../includes/class.wlb_dashboard.php:83
+msgid "This is shown to any logged user."
+msgstr "Esto se muestra a cualquier usuario autenticado."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:94
+#: ../includes/class.wlb_dashboard.php:94
+msgid "Enable Editor Dashboard Panel"
+msgstr "Habilitar el Editor del Panel de Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:96
+#: ../includes/class.wlb_dashboard.php:96
+msgid "This will appear on the dashboard to the Editor user roll."
+msgstr "Esto aparecerá en el escritorio para el rol de usuario “Editor”."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:121
+#: ../includes/class.wlb_dashboard.php:121
+msgid "Panel content"
+msgstr "Contenido del panel"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:123
+#: ../includes/class.wlb_dashboard.php:123
+msgid "This is shown to the Editor. Add your own unique message to your client. We recommend that you add contact details or a link to how your client can get help. You can use HTML tags in this field."
+msgstr "Esto es mostrado al Editor. Agregue su propio mensaje al cliente. Recomendamos que agregues información de contacto o un enlace para que tu cliente sepa como obtener ayuda. Puedes usar HTML en éste campo."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:132
+#: ../includes/class.wlb_dashboard.php:132
+msgid "Enable Admin Dashboard Panel"
+msgstr "Habilitar el Panel de escritorio personalizado"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:134
+#: ../includes/class.wlb_dashboard.php:134
+msgid "Enable the Administrators Dashboard Panel"
+msgstr "Habilitar el Panel de Escritorio de los Administradores"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:162
+#: ../includes/class.wlb_dashboard.php:162
+msgid "This is shown to blog Administrators. Add your own unique message to your client. We recommend that you add contact details or a link to how your client can get help. You can use HTML tags in this field."
+msgstr "Esto es mostrado a los Administradores. Agrega tu propio mensaje al cliente. Recomendamos que agregues información de contacto o un enlace para que tu cliente sepa como obtener ayuda. Puedes usar HTML en éste campo."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:172
+#: ../includes/class.wlb_dashboard.php:190
+msgid "Remove Dashboard Widgets"
+msgstr "Eliminar Widgets del Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:176
+#: ../includes/class.wlb_dashboard.php:194
+msgid "Check the dashboard widgets that you will like to be removed. This applies to all users included the administrator."
+msgstr "Seleccione los 'dashboard widgets' que desea quitar. Esto aplica a todos los usuarios incluido el administrador."
+
+#: ../includes/class.prewp33_wlb_dashboard.php:182
+#: ../includes/class.wlb_dashboard.php:200
+msgid "Remove recent drafts"
+msgstr "Eliminar borradores recientes"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:295
+#: ../includes/class.wlb_dashboard.php:323
+msgid "Reset Layout"
+msgstr "Reajustar diseño"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:297
+#: ../includes/class.wlb_dashboard.php:325
+msgid "Layout settings (Admin only)"
+msgstr "Configuración de diseño (Solo administrador)"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:298
+#: ../includes/class.wlb_dashboard.php:326
+msgid "Save Layout as default layout"
+msgstr "Guardar Diseño"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:299
+#: ../includes/class.wlb_dashboard.php:327
+msgid "Username:"
+msgstr "Usuario:"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:300
+#: ../includes/class.wlb_dashboard.php:328
+msgid "Save Layout to user"
+msgstr "Guardar diseño para usuario"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:362
+#: ../includes/class.wlb_dashboard.php:404
+msgid "Add Metabox"
+msgstr "Agregar Metabox"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:363
+#: ../includes/class.wlb_dashboard.php:405
+msgid "Edit Dashboard Metabox"
+msgstr "Editar Metabox del Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:364
+#: ../includes/class.wlb_dashboard.php:406
+msgid "New Dashboard Metabox"
+msgstr "Nuevo Metabox de Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:365
+#: ../includes/class.wlb_dashboard.php:407
+msgid "View Dashboard Metabox"
+msgstr "Ver Metabox del Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:366
+#: ../includes/class.wlb_dashboard.php:408
+msgid "Search Dashboard Metaboxes"
+msgstr "Buscar Metaboxes del Escritorio"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:367
+#: ../includes/class.wlb_dashboard.php:409
+msgid "No Metaboxes found"
+msgstr "No se encontraron Metaboxes"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:368
+#: ../includes/class.wlb_dashboard.php:410
+msgid "No Metaboxes found in trash"
+msgstr "No se encontraron Metaboxes en la papelera"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:371
+#: ../includes/class.wlb_dashboard.php:413
+msgid "WLB Dash"
+msgstr "WLB Dash"
+
+#: ../includes/class.prewp33_wlb_dashboard.php:510
+#: ../includes/class.wlb_dashboard.php:548
+msgid "You can choose to display and existing Wordpress widget."
+msgstr "Puede escoger mostrar un widget existente de WordPress."
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:35
+#: ../includes/class.wlb_color_scheme.php:35
+msgid "Menu Main Color"
+msgstr "Color de menú principal"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:38
+#: ../includes/class.wlb_color_scheme.php:38
+msgid "Menu color customization"
+msgstr "Personalizar del color del Menú"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:55
+#: ../includes/class.wlb_color_scheme.php:55
+msgid "Menu Main Color Hover"
+msgstr "Color del hover del Menú Principal"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:62
+#: ../includes/class.wlb_color_scheme.php:62
+msgid "Menu Link Color"
+msgstr "Color de enlace del menú"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:70
+#: ../includes/class.wlb_color_scheme.php:70
+msgid "Menu Link Hover Color"
+msgstr "Color Hover del enlace del menú "
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:77
+#: ../includes/class.wlb_color_scheme.php:86
+msgid "Current Menu Font Color"
+msgstr "Color de fuente del menú actual"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:90
+#: ../includes/class.wlb_color_scheme.php:99
+msgid "Current Gradient Top"
+msgstr "Color de gradiente superior del menú actual"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:97
+#: ../includes/class.wlb_color_scheme.php:106
+msgid "Current Gradient Bottom"
+msgstr "Color de gradiente inferior del menú actual"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:121
+#: ../includes/class.wlb_color_scheme.php:130
+msgid "Submenu Background"
+msgstr "Fondo del submenú"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:133
+#: ../includes/class.wlb_color_scheme.php:142
+msgid "Submenu Link Color"
+msgstr "Color de enlace del submenú"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:140
+#: ../includes/class.wlb_color_scheme.php:149
+msgid "Submenu Link Hover Color"
+msgstr "Color de enlace del submenú Hover"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:147
+#: ../includes/class.wlb_color_scheme.php:156
+msgid "Submenu Hover Color"
+msgstr "Color del submenú Hover"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:154
+#: ../includes/class.wlb_color_scheme.php:163
+msgid "Submenu Active Color"
+msgstr "Color del submenú Activo"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:177
+#: ../includes/class.wlb_color_scheme.php:186
+msgid "Content Area "
+msgstr "Area de contenido"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:178
+#: ../includes/class.prewp35_wlb_color_scheme.php:332
+#: ../includes/class.prewp35_wlb_color_scheme.php:406
+#: ../includes/class.prewp35_wlb_color_scheme.php:601
+#: ../includes/class.wlb_color_scheme.php:187
+#: ../includes/class.wlb_color_scheme.php:341
+#: ../includes/class.wlb_color_scheme.php:415
+#: ../includes/class.wlb_color_scheme.php:610
+#: ../includes/class.wlb_login.php:614
+msgid "Background Color"
+msgstr "Color de Fondo"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:185
+#: ../includes/class.wlb_color_scheme.php:194
+#: ../includes/class.wlb_login.php:677
+msgid "Font Color"
+msgstr "Color de fuente"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:192
+#: ../includes/class.wlb_color_scheme.php:201
+msgid "H2 and Subtitle Text Shadow"
+msgstr "Sombra de texto de H2 y subtitulo"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:198
+#: ../includes/class.wlb_color_scheme.php:207
+msgid "Link Color"
+msgstr "Color de enlace"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:205
+#: ../includes/class.wlb_color_scheme.php:214
+msgid "Link Hover Color"
+msgstr "Color de enlace Hover"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:213
+#: ../includes/class.wlb_color_scheme.php:222
+msgid "Metaboxes, Widgets and Tables"
+msgstr "Metaboxes, Widgets y Tablas"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:214
+#: ../includes/class.wlb_color_scheme.php:223
+msgid "Head gradient(bottom)"
+msgstr "Gradiente de encabezado (inferior)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:222
+#: ../includes/class.wlb_color_scheme.php:231
+msgid "Header Gradient (upper)"
+msgstr "Gradiente de encabezado (superior)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:230
+#: ../includes/class.prewp35_wlb_color_scheme.php:285
+#: ../includes/class.wlb_color_scheme.php:239
+#: ../includes/class.wlb_color_scheme.php:294
+msgid "Header Font Color"
+msgstr "Color de fuente de encabezado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:238
+#: ../includes/class.wlb_color_scheme.php:247
+msgid "Header Font Hover Color"
+msgstr "Color de fuente de encabezado Hover"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:246
+#: ../includes/class.prewp35_wlb_color_scheme.php:292
+#: ../includes/class.wlb_color_scheme.php:255
+#: ../includes/class.wlb_color_scheme.php:301
+msgid "Header Font Shadow"
+msgstr "Sombra de fuente de encabezado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:254
+#: ../includes/class.wlb_color_scheme.php:263
+msgid "Content Gradient (upper)"
+msgstr "Gradiente de contenido (superior)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:262
+#: ../includes/class.wlb_color_scheme.php:271
+msgid "Content Gradient (bottom)"
+msgstr "Gradiente de contenido (inferior)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:270
+#: ../includes/class.prewp35_wlb_color_scheme.php:312
+#: ../includes/class.prewp35_wlb_color_scheme.php:338
+#: ../includes/class.prewp35_wlb_color_scheme.php:589
+#: ../includes/class.wlb_color_scheme.php:279
+#: ../includes/class.wlb_color_scheme.php:321
+#: ../includes/class.wlb_color_scheme.php:347
+#: ../includes/class.wlb_color_scheme.php:598
+#: ../includes/class.wlb_login.php:622
+msgid "Border Color"
+msgstr "Color de borde"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:277
+#: ../includes/class.wlb_color_scheme.php:286
+msgid "Tables (widefat)"
+msgstr "Tablas (widefat)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:278
+#: ../includes/class.wlb_color_scheme.php:287
+msgid "Font color"
+msgstr "Color de fuente"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:300
+#: ../includes/class.wlb_color_scheme.php:309
+msgid "Row Color"
+msgstr "Color de fila"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:306
+#: ../includes/class.wlb_color_scheme.php:315
+msgid "Alternate Row Color"
+msgstr "Color de fila alternativo"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:319
+#: ../includes/class.wlb_color_scheme.php:328
+msgid "Admin Header (Screen Options, Contextual Help)"
+msgstr "Encabezado del Admin (Opciones de pantalla, Ayuda contextual)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:320
+#: ../includes/class.wlb_color_scheme.php:329
+msgid "Tab Gradient 1"
+msgstr "Gradiente 1 Tab"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:326
+#: ../includes/class.wlb_color_scheme.php:335
+msgid "Tab Gradient 2"
+msgstr "Gradiente 2 Tab"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:344
+#: ../includes/class.wlb_color_scheme.php:353
+msgid "Header Border Color"
+msgstr "Color de borde del encabezado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:351
+#: ../includes/class.wlb_color_scheme.php:360
+msgid "Messages"
+msgstr "Mensajes"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:352
+#: ../includes/class.wlb_color_scheme.php:361
+msgid "Update Nag Background"
+msgstr "Fondo de \"Update Nag\""
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:358
+#: ../includes/class.wlb_color_scheme.php:367
+msgid "Update Nag Border"
+msgstr "Borde de \"Update Nag\""
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:364
+#: ../includes/class.wlb_color_scheme.php:373
+msgid "Update Nag Font Color"
+msgstr "Color de fuente de \"Update Nag\""
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:370
+#: ../includes/class.wlb_color_scheme.php:379
+msgid "Updated Background"
+msgstr "Fondo Actualizado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:376
+#: ../includes/class.wlb_color_scheme.php:385
+msgid "Updated Border"
+msgstr "Borde Actualizado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:382
+#: ../includes/class.wlb_color_scheme.php:391
+msgid "Updated Font Color"
+msgstr "Color de fuente de Actualizado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:388
+#: ../includes/class.wlb_color_scheme.php:397
+msgid "Error Background"
+msgstr "Fondo de Error"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:392
+#: ../includes/class.wlb_color_scheme.php:401
+msgid "Error Border"
+msgstr "Borde de Error"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:398
+#: ../includes/class.wlb_color_scheme.php:407
+msgid "Error Font Color"
+msgstr "Color de fuente de Error"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:405
+#: ../includes/class.wlb_color_scheme.php:414
+msgid "Forms"
+msgstr "Formularios"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:412
+#: ../includes/class.prewp35_wlb_color_scheme.php:432
+#: ../includes/class.prewp35_wlb_color_scheme.php:487
+#: ../includes/class.wlb_color_scheme.php:421
+#: ../includes/class.wlb_color_scheme.php:441
+#: ../includes/class.wlb_color_scheme.php:496
+#: ../includes/class.wlb_login.php:377
+msgid "Border"
+msgstr "Borde"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:419
+#: ../includes/class.wlb_color_scheme.php:428
+msgid "Primary Button"
+msgstr "Botón primario"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:420
+#: ../includes/class.prewp35_wlb_color_scheme.php:475
+#: ../includes/class.wlb_color_scheme.php:429
+#: ../includes/class.wlb_color_scheme.php:484
+msgid "Gradient 1"
+msgstr "Gradiente 1"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:426
+#: ../includes/class.prewp35_wlb_color_scheme.php:481
+#: ../includes/class.wlb_color_scheme.php:435
+#: ../includes/class.wlb_color_scheme.php:490
+msgid "Gradient 2"
+msgstr "Gradiente 2"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:437
+#: ../includes/class.prewp35_wlb_color_scheme.php:493
+#: ../includes/class.wlb_color_scheme.php:446
+#: ../includes/class.wlb_color_scheme.php:502
+msgid "Font"
+msgstr "Fuente"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:443
+#: ../includes/class.prewp35_wlb_color_scheme.php:504
+#: ../includes/class.wlb_color_scheme.php:452
+#: ../includes/class.wlb_color_scheme.php:513
+msgid "Hover Border"
+msgstr "Borde de Hover"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:449
+#: ../includes/class.prewp35_wlb_color_scheme.php:510
+#: ../includes/class.wlb_color_scheme.php:458
+#: ../includes/class.wlb_color_scheme.php:519
+msgid "Hover Font"
+msgstr "Fuente de Hover"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:455
+#: ../includes/class.prewp35_wlb_color_scheme.php:515
+#: ../includes/class.wlb_color_scheme.php:464
+#: ../includes/class.wlb_color_scheme.php:524
+msgid "Disabled Background"
+msgstr "Fondo de Desactivado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:461
+#: ../includes/class.prewp35_wlb_color_scheme.php:521
+#: ../includes/class.wlb_color_scheme.php:470
+#: ../includes/class.wlb_color_scheme.php:530
+msgid "Disabled Border"
+msgstr "Borde de Desactivado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:467
+#: ../includes/class.wlb_color_scheme.php:476
+msgid "Disabled Font Color"
+msgstr "Color de fuente de Desactivado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:474
+#: ../includes/class.wlb_color_scheme.php:483
+msgid "Secondary Button"
+msgstr "Botón secundario"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:498
+#: ../includes/class.wlb_color_scheme.php:507
+msgid "Font Shadow"
+msgstr "Sombra de fuente"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:527
+#: ../includes/class.wlb_color_scheme.php:536
+msgid "Disabled font color"
+msgstr "Color de fuente de desactivado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:534
+#: ../includes/class.wlb_color_scheme.php:543
+msgid "Post, Page and Custom Post Types Edit Screen"
+msgstr "Pantalla de edición de entrada, página y Custom Post Types"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:535
+#: ../includes/class.wlb_color_scheme.php:544
+msgid "Add new background"
+msgstr "Agregar nuevo fondo"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:541
+#: ../includes/class.wlb_color_scheme.php:550
+msgid "Title Input Background"
+msgstr "Fondo de la entrada del título"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:546
+#: ../includes/class.wlb_color_scheme.php:555
+msgid "Title Input Border"
+msgstr "Borde de la entrada del título"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:552
+#: ../includes/class.wlb_color_scheme.php:561
+msgid "Custom Fields Header"
+msgstr "Encabezado de campos personalizados"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:558
+#: ../includes/class.wlb_color_scheme.php:567
+msgid "Custom Fields Header Border"
+msgstr "Borde del encabezado de campos personalizados"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:564
+#: ../includes/class.wlb_color_scheme.php:573
+msgid "Custom Fields Background"
+msgstr "Fondo de campos personalizados"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:570
+#: ../includes/class.wlb_color_scheme.php:579
+msgid "Custom Fields Content Border"
+msgstr "Borde de contenido de campos personalizados"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:577
+#: ../includes/class.wlb_color_scheme.php:586
+msgid "The Editor (default tinymce)"
+msgstr "El editor (predeterminado: tinymce)"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:578
+#: ../includes/class.prewp35_wlb_color_scheme.php:583
+#: ../includes/class.wlb_color_scheme.php:587
+#: ../includes/class.wlb_color_scheme.php:592
+msgid "Header Gradient 1"
+msgstr "Gradiente 1 de encabezado"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:595
+#: ../includes/class.wlb_color_scheme.php:604
+msgid "Footer Color"
+msgstr "Color del Footer"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1306
+#: ../includes/class.prewp35_wlb_color_scheme.php:1308
+#: ../includes/class.wlb_color_scheme.php:1317
+#: ../includes/class.wlb_color_scheme.php:1319
+msgid "Resources"
+msgstr "Recursos"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1307
+#: ../includes/class.wlb_color_scheme.php:1318
+msgid "Icons and Images"
+msgstr "Iconos e imágenes"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1341
+#: ../includes/class.prewp35_wlb_color_scheme.php:1343
+#: ../includes/class.wlb_color_scheme.php:1352
+#: ../includes/class.wlb_color_scheme.php:1354
+msgid "WordPress Admin Color Scheme"
+msgstr "Esquema de colores del admin de WordPress"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1342
+#: ../includes/class.wlb_color_scheme.php:1353
+#, fuzzy
+msgid "Customize Color Schemes"
+msgstr "Personalizar sub menús"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1349
+#: ../includes/class.prewp35_wlb_color_scheme.php:1500
+#: ../includes/class.wlb_color_scheme.php:1360
+#: ../includes/class.wlb_color_scheme.php:1511
+msgid "Admin Color Scheme"
+msgstr "Esquema de color del Admin"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1354
+#: ../includes/class.wlb_color_scheme.php:1365
+msgid "Customize Color Scheme"
+msgstr "Personalizar esquema de colores"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1356
+#: ../includes/class.wlb_color_scheme.php:1367
+msgid "Choose yes if you want to apply the same Admin Color Scheme to all your users.  You can also customize the colors.  This will also hide the option to choose a Color Scheme on the Profile Screen."
+msgstr "Escoja Sí si desea aplicar el mismo Esquema de colores administrativo a todos los usuarios.  También puede personalizar los colores.  Además esto ocultará la opción para escoger el esquema de colores en la pantalla de perfil."
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1373
+#: ../includes/class.wlb_color_scheme.php:1384
+msgid "Disable automatic color scheme"
+msgstr "Deshabilitar el esquema de colores automático"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1375
+#: ../includes/class.wlb_color_scheme.php:1386
+msgid "By default if you do not fill certain colors, they are automatically generated using variations of colors you have filled in.  Choose yes if you do not want automatic colors to be generated."
+msgstr "De manera predeterminada se generan ciertos colores automáticamente si éstos no son ingresados. Escoja Sí si no desea generar colores automáticamente."
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1383
+#: ../includes/class.wlb_color_scheme.php:1394
+msgid "Choose a Color Scheme to use as base for the Color Customization.  This determines the icons set to be used."
+msgstr "Escoja un esquema de colores para usar como base para la personalización de color.  Esto determina el conjunto de iconos a usar."
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1433
+#: ../includes/class.prewp35_wlb_color_scheme.php:1435
+#: ../includes/class.wlb_color_scheme.php:1444
+#: ../includes/class.wlb_color_scheme.php:1446
+msgid "Saved and downloaded color schemes"
+msgstr "Esquema de colores guardados y descargados"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1434
+#: ../includes/class.wlb_color_scheme.php:1445
+msgid "Restore saved or downloaded settings"
+msgstr "Restaurar configuraciones guardadas y descargadas"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1440
+#: ../includes/class.wlb_color_scheme.php:1451
+msgid "Backup color scheme"
+msgstr "Respaldar esquema de colores"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1445
+#: ../includes/class.wlb_color_scheme.php:1456
+#: ../includes/class.wlb_login.php:797
+msgid "Brief description"
+msgstr "Breve descripción"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1447
+#: ../includes/class.wlb_color_scheme.php:1458
+msgid "This will save a copy of the color scheme settings.<br />Please observe that it only backups saved settings; any changes you made after saving will be lost."
+msgstr "Esto guardará una copia del esquema de colores configurado. <br />Por favor note que solo copia la configuración guardada; cualquier cambio efectuado después de guardar se perderá."
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1448
+#: ../includes/class.wlb_color_scheme.php:1459
+#: ../includes/class.wlb_login.php:800
+msgid "Backup current settings"
+msgstr "Realizar copia de seguridad de la configuración actual"
+
+#: ../includes/class.prewp35_wlb_color_scheme.php:1455
+#: ../includes/class.wlb_color_scheme.php:1466
+msgid "Stored Color Scheme Settings"
+msgstr "Configuración de esquema de colores guardada"
+
+#: ../includes/class.wlb_admin_bar.php:92
+#: ../includes/class.wlb_admin_bar.php:93
+#: ../includes/class.wlb_admin_bar.php:94
+#: ../includes/class.wlb_admin_bar.prewp33.php:65
+#: ../includes/class.wlb_admin_bar.prewp33.php:66
+#: ../includes/class.wlb_admin_bar.prewp33.php:67
+msgid "Admin Bar"
+msgstr "Barra Admininstrativa"
+
+#: ../includes/class.wlb_admin_bar.php:99
+#: ../includes/class.wlb_admin_bar.prewp33.php:72
+msgid "Admin bar settings"
+msgstr "Configuraciones de la barra de admin"
+
+#: ../includes/class.wlb_admin_bar.php:104
+#: ../includes/class.wlb_admin_bar.prewp33.php:77
+msgid "Hide Admin Bar"
+msgstr "Ocultar la barra del admin"
+
+#: ../includes/class.wlb_admin_bar.php:106
+#: ../includes/class.wlb_admin_bar.prewp33.php:79
+msgid "Select yes to completely remove the top Admin Bar (wp 3.1)"
+msgstr "Seleccione Sí para quitar completamente la Barra de Admin superior (wp 3.1)"
+
+#: ../includes/class.wlb_admin_bar.php:114
+#: ../includes/class.wlb_admin_bar.prewp33.php:87
+msgid "Hide Admin Bar settings on profile"
+msgstr "Ocultar la configuración de Barra Administrativa en el perfil de usuario"
+
+#: ../includes/class.wlb_admin_bar.php:116
+#: ../includes/class.wlb_admin_bar.prewp33.php:89
+msgid "Select yes to hide the admin bar settings on user profile."
+msgstr "Seleccione Sí para ocultar la configuración de Barra Administrativa en la pantalla de perfil de usuario"
+
+#: ../includes/class.wlb_admin_bar.php:124
+msgid "Move the logout link to the admin bar."
+msgstr "Mover el enlace de logout a la Barra Administrativa"
+
+#: ../includes/class.wlb_admin_bar.php:126
+msgid "By default, the logout link is inside a submenu in the right of the admin bar.  Check yes if you want to move the logout link outside, if you for example want to hide the profile to the non-admin user."
+msgstr "De manera predeterminada, el enlace de logout está dentro de un sub menú en la derecha en la Barra de Admin; seleccione Sí si desea mover el mismo fuera del sub menú, por ejemplo si desea ocultar el enlace al perfil para usuario no administrativos."
+
+#: ../includes/class.wlb_admin_bar.php:134
+#: ../includes/class.wlb_admin_bar.prewp33.php:97
+msgid "Hide admin bar items"
+msgstr "Ocultar elementos de la Barra Administrativa"
+
+#: ../includes/class.wlb_admin_bar.php:140
+#: ../includes/class.wlb_admin_bar.prewp33.php:103
+msgid "Check individual Admin Bar items that you want to hide. Choosing a parent item will hide all children.  You most have the admin bar enabled to be able to use this option."
+msgstr "Seleccione elementos individuales de la Barra de Admin que desea ocultar. Si escoge un elemento superior, ocultará los elementos contenidos por el mismo. Debe tener la Barra Administrativa activada para poder usar ésta opción."
+
+#: ../includes/class.wlb_admin_bar.php:162
+#: ../includes/class.wlb_admin_bar.prewp33.php:123
+msgid "Admin bar items not available"
+msgstr "Elementos de la Barra Administrativa no disponibles"
+
+#: ../includes/class.wlb_admin_bar.php:174
+msgid "Please update your WordPress installation to a WP3.3+ release version. (wp_admin_bar::get_nodes is not defined, wp3.3 release version)"
+msgstr "Por favor actualice su versión de WordPress a una superior o igual a WP3.3.  (el wp_admin_bar::get_nodes no está definido, wp3.3 release version)"
+
+#: ../includes/class.wlb_admin_bar.php:196
+msgid "WP Logo"
+msgstr "Logo de WordPress"
+
+#: ../includes/class.wlb_admin_bar.php:197
+msgid "Updates"
+msgstr "Actualizaciones"
+
+#: ../includes/class.wlb_admin_bar.php:198
+msgid "Comments"
+msgstr "Comentarios"
+
+#: ../includes/class.wlb_branding.php:144
+#, fuzzy
+msgid "Header Logo Link Url"
+msgstr "URL del logo del encabezado"
+
+#: ../includes/class.wlb_branding.php:145
+msgid "If left blank clicking on the top left logo will redirect to the about page."
+msgstr "Si se deja vació, pulsar el logo superior izquierdo redirecciona a la página de Acerca de."
+
+#: ../includes/class.wlb_branding.php:158
+msgid "Header Logo Width"
+msgstr "Ancho del logo del encabezado"
+
+#: ../includes/class.wlb_branding.php:159
+msgid "Optionally specify a width for the logo if you do not wish to use the default 20px width."
+msgstr "Opcionalmente especifique el ancho del logo si no desea usar el ancho predeterminado de 20px."
+
+#: ../includes/class.wlb_branding.php:218
+msgid "Hide WP version on footer"
+msgstr "Ocultar la versión de WP en el footer"
+
+#: ../includes/class.wlb_branding.php:219
+msgid "Hide the WordPress version from the footer"
+msgstr "Ocultar la versión de WordPress en el footer"
+
+#: ../includes/class.wlb_branding.php:233
+msgid "Replace Howdy, username"
+msgstr "Reemplazar el texto \"Hola, usuario\""
+
+#: ../includes/class.wlb_branding.php:235
+#, php-format
+msgid "Provide an alternate text for the Howdy, username message in the top left.  Write %1$s where you want the username. Example:  Welcome %1$s"
+msgstr "Proporcione un texto alternativo para \"Hola, usuario\" en la parte superior derecha.  Escriba %1$s donde desea que aparezca el usuario.  Ejemplo:  Bienvenido %1$s"
+
+#: ../includes/class.wlb_branding.php:302
+msgid "Disable WordPress Pointers"
+msgstr "Desactivar los \"WordPress Pointers\""
+
+#: ../includes/class.wlb_branding.php:304
+msgid "Choose Yes to disable the WordPress pointers"
+msgstr "Seleccione Sí para desactivar los \"WordPress pointers\""
+
+#: ../includes/class.wlb_branding.php:329
+msgid "You can use the following tags tags in the Email from name: {site_url} and {site_title} to dynamically display the sites url and name defined in the WordPress general settings."
+msgstr "Puede usar los siguientes tags en el Nombre de Remitente de Email: {site_url} y {site_title} para generar dinámicamente el url del sitio y el nombre de sitio, definido en las Opciones generales de WordPress."
+
+#: ../includes/class.wlb_capabilities.php:79
+msgid "Customized User capabilities"
+msgstr "Capacidades del usuario personalizadas"
+
+#: ../includes/class.wlb_capabilities.php:89
+msgid "WLB Role Manager"
+msgstr "Administrador de roles WLB"
+
+#: ../includes/class.wlb_capabilities.php:91
+msgid "Enable Customized User Capabilities."
+msgstr "Habilitar capacidades del usuario personalizadas."
+
+#: ../includes/class.wlb_capabilities.php:92
+msgid "Check this option to modify the Customized User Capabilities.  If you uncheck this option and save, all Customized Capabilities will be removed from the user, and only those on the selected user role will apply."
+msgstr "Marque esta opción para modificar las capacidades del usuario personalizadas.  Si quita la marca y guarda, todas las capacidades personalizados del usuario se quitarán y solo aplicarán los del rol seleccionado."
+
+#: ../includes/class.wlb_capabilities.php:122
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../includes/class.wlb_capabilities.php:123
+#: ../includes/class.wlb_capabilities.php:133
+#, php-format
+msgid "Manage %s Capabilities"
+msgstr "Administre las capacidades de %s"
+
+#: ../includes/class.wlb_capabilities.php:124
+#, php-format
+msgid "%s Capabilities"
+msgstr "Capacidades de %s"
+
+#: ../includes/class.wlb_capabilities.php:142
+#, php-format
+msgid "Disable wp-admin for role %s"
+msgstr "Desactivar wp-admin para el rol %s"
+
+#: ../includes/class.wlb_capabilities.php:149
+msgid "Provide a URL to redirect user if wp-admin is disabled."
+msgstr "Proporcione un URl para redireccionar al usuario si wp-admin está desactivado."
+
+#: ../includes/class.wlb_capabilities.php:150
+msgid "Do not provide a link on the wp-admin or it will loop endlessly."
+msgstr "No usé un enlace dentro de wp-admin o creará un bucle infinito."
+
+#: ../includes/class.wlb_capabilities.php:188
+msgid "Roles and Capabilities"
+msgstr "Roles y capacidades"
+
+#: ../includes/class.wlb_capabilities.php:189
+#: ../includes/class.wlb_capabilities.php:190
+#: ../includes/class.wlb_capabilities.php:194
+msgid "Add new Roles and Capabilities"
+msgstr "Agregar Roles y capacidades nuevas"
+
+#: ../includes/class.wlb_capabilities.php:296
+msgid "New roles and capabilities"
+msgstr "Nuevos roles y capacidades"
+
+#: ../includes/class.wlb_capabilities.php:298
+msgid "Type a name for the new role and press add, you can select Capabilities for it after saving."
+msgstr "Escriba un nombre para el nuevo rol y presione agregar, puede seleccionar capacidades después de guardar."
+
+#: ../includes/class.wlb_capabilities.php:300
+msgid "New role name:"
+msgstr "Nuevo nombre de rol:"
+
+#: ../includes/class.wlb_capabilities.php:301
+#: ../includes/class.wlb_capabilities.php:307
+msgid "Add"
+msgstr "Agregar"
+
+#: ../includes/class.wlb_capabilities.php:304
+msgid "Select the role that you want to add this Capability to (will activate it immediately for that role). Capability names can contain letters and numbers.  The capability will be saved lowercase and spaces replaced with underscore."
+msgstr "Seleccione el rol al que desea agregar esta capacidad (activará la capacidad inmediatamente para este rol).  Los nombres de capacidades pueden contener letras y números.  La capacidad se guardará en minúscula y los espacios serán reemplazados con guión bajo."
+
+#: ../includes/class.wlb_capabilities.php:306
+#, php-format
+msgid "New capability %s<br /> for role %s"
+msgstr "Nueva capacidad %s<br> para el rol %s"
+
+#: ../includes/class.wlb_capabilities.php:311
+msgid "This action cannot be undone and can have severe consequences, proceed only if you know what you are doing."
+msgstr "Esta acción no se puede deshacer y puede tener consecuencias graves, proceda solo si sabe lo que está haciendo."
+
+#: ../includes/class.wlb_capabilities.php:313
+msgid "Delete role"
+msgstr "Eliminar rol"
+
+#: ../includes/class.wlb_capabilities.php:314
+msgid "WARNING! Deleting a role can have severe consequences, proceed only if you know what you are doing."
+msgstr "Advertencia! Borrar un rol puede tener consecuencias graves, proceda solo si sabe lo que hace."
+
+#: ../includes/class.wlb_capabilities.php:314
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../includes/class.wlb_capabilities.php:329
+msgid "--choose--"
+msgstr "--escoja--"
+
+#: ../includes/class.wlb_color_scheme.php:78
+msgid "Menu Link Hover Text Shadow"
+msgstr "Sombra de texto de enlace de menú Hover"
+
+#: ../includes/class.wlb_dashboard.php:172
+msgid "Dashboard branding"
+msgstr "Branding del Escritorio"
+
+#: ../includes/class.wlb_dashboard.php:180
+msgid "Dashboard Icon URL"
+msgstr "URL del ícono del escritorio"
+
+#: ../includes/class.wlb_dashboard.php:181
+msgid "URL to an image that will replace the dashboard icon"
+msgstr "URL de una imagen que reemplazará el ícono del escritorio"
+
+#: ../includes/class.wlb_dashboard.php:207
+#: ../includes/class.wlb_dashboard.php:209
+msgid "Disable dashboard welcome panel"
+msgstr "Deshabilitar el panel de bienvenida del escritorio"
+
+#: ../includes/class.wlb_login.php:24
+#, fuzzy
+msgid "Login Screen Customization"
+msgstr "Personalizar pantalla de login"
+
+#: ../includes/class.wlb_login.php:25
+msgid "Customize Login Logo, Background and html template"
+msgstr "Personalizar el logo de login, fondo y plantilla html"
+
+#: ../includes/class.wlb_login.php:31
+msgid "Default Login Screen Customization"
+msgstr "Personalizar la pantalla original de login"
+
+#: ../includes/class.wlb_login.php:35
+msgid "Enable login screen customization"
+msgstr "Habilitar la personalización de la pantalla de login"
+
+#: ../includes/class.wlb_login.php:37
+#, php-format
+msgid "Choose %s to customize the login screen"
+msgstr "Seleccione %s para personalizar la pantalla de login"
+
+#: ../includes/class.wlb_login.php:52
+msgid "Login Logo URL"
+msgstr "URL al logo del Login"
+
+#: ../includes/class.wlb_login.php:53
+msgid "URL to the login logo. The standard size logo is 300 px wide and 80 px tall, but you can use any size you want. "
+msgstr "URL al logo del login.  El tamaño estándar de un logo es de 300px de ancho por 80px de altura, pero puedes usar cualquier tamaño que desees."
+
+#: ../includes/class.wlb_login.php:61
+msgid "Logo Opacity"
+msgstr "Opacidad del Logo"
+
+#: ../includes/class.wlb_login.php:73
+msgid "Login Background URL"
+msgstr "URL al fondo del Login"
+
+#: ../includes/class.wlb_login.php:74
+msgid "URL to an image you want to use as login background"
+msgstr "URL de una imagen que quieras usar como fondo del login"
+
+#: ../includes/class.wlb_login.php:82 ../includes/class.wlb_login.php:249
+msgid "background-attachments"
+msgstr "background-attachments"
+
+#: ../includes/class.wlb_login.php:92 ../includes/class.wlb_login.php:259
+msgid "background-color"
+msgstr "background-color"
+
+#: ../includes/class.wlb_login.php:102 ../includes/class.wlb_login.php:269
+msgid "background-color code"
+msgstr "background-color code"
+
+#: ../includes/class.wlb_login.php:114 ../includes/class.wlb_login.php:277
+msgid "background-position"
+msgstr "background-position"
+
+#: ../includes/class.wlb_login.php:144 ../includes/class.wlb_login.php:306
+msgid "background-x(xpos)"
+msgstr "background-x(xpos)"
+
+#: ../includes/class.wlb_login.php:155 ../includes/class.wlb_login.php:317
+msgid "background-y(ypos)"
+msgstr "background-y(ypos)"
+
+#: ../includes/class.wlb_login.php:169 ../includes/class.wlb_login.php:329
+msgid "background-repeat"
+msgstr "background-repeat"
+
+#: ../includes/class.wlb_login.php:185 ../includes/class.wlb_login.php:187
+#, fuzzy
+msgid "Login Form Customization"
+msgstr "Personalizar pantalla de login"
+
+#: ../includes/class.wlb_login.php:186
+msgid "Customize the login form css"
+msgstr "Personalizar el CSS del formulario de login "
+
+#: ../includes/class.wlb_login.php:193
+msgid "Customize Login Form"
+msgstr "Personalizar el formulario de login"
+
+#: ../includes/class.wlb_login.php:195
+#, php-format
+msgid "Choose %s to customize the login form"
+msgstr "Seleccione %s para personalizar el formulario de login"
+
+#: ../includes/class.wlb_login.php:208
+msgid "Login Form Positioning"
+msgstr "Posicionamiento del formulario de Login"
+
+#: ../includes/class.wlb_login.php:213
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: ../includes/class.wlb_login.php:224
+msgid "Vertical"
+msgstr "Vertical"
+
+#: ../includes/class.wlb_login.php:234
+msgid "Login Form Background"
+msgstr "Fondo del formulario de login"
+
+#: ../includes/class.wlb_login.php:240
+msgid "Image URL"
+msgstr "URL de imágen"
+
+#: ../includes/class.wlb_login.php:241
+#, fuzzy
+msgid "URL to an image you want to use as login form background"
+msgstr "URL de una imagen que quieras usar como fondo del login"
+
+#: ../includes/class.wlb_login.php:339
+msgid "Opacity"
+msgstr "Opacidad"
+
+#: ../includes/class.wlb_login.php:351
+msgid "Labels"
+msgstr "Etiquetas"
+
+#: ../includes/class.wlb_login.php:356 ../includes/class.wlb_login.php:404
+#: ../includes/class.wlb_login.php:534
+msgid "Color"
+msgstr "Color"
+
+#: ../includes/class.wlb_login.php:365
+msgid "Font size"
+msgstr "Tamaño de fuente"
+
+#: ../includes/class.wlb_login.php:382
+msgid "Width"
+msgstr "Ancho"
+
+#: ../includes/class.wlb_login.php:393
+msgid "Style"
+msgstr "Estilo"
+
+#: ../includes/class.wlb_login.php:414
+msgid "Corner Radius"
+msgstr "Radio de esquina"
+
+#: ../includes/class.wlb_login.php:456
+msgid "Top Left"
+msgstr "Superior izquierdo"
+
+#: ../includes/class.wlb_login.php:467
+msgid "Top Right"
+msgstr "Superior derecha"
+
+#: ../includes/class.wlb_login.php:478
+msgid "Bottom Right"
+msgstr "Inferior derecha"
+
+#: ../includes/class.wlb_login.php:489
+msgid "Bottom Left"
+msgstr "Inferior izquierda"
+
+#: ../includes/class.wlb_login.php:501
+msgid "Form Shadow"
+msgstr "Sombra de formulario"
+
+#: ../includes/class.wlb_login.php:542
+msgid "Horizontal Position"
+msgstr "Posición Horizontal"
+
+#: ../includes/class.wlb_login.php:553
+msgid "Vertical Position"
+msgstr "Posición vertical"
+
+#: ../includes/class.wlb_login.php:564
+msgid "Blur"
+msgstr "Mancha(Blur)"
+
+#: ../includes/class.wlb_login.php:575
+msgid "Size"
+msgstr "Tamaño"
+
+#: ../includes/class.wlb_login.php:587
+msgid "Input text fields"
+msgstr "Campos de formulario"
+
+#: ../includes/class.wlb_login.php:630
+msgid "Shadow Color"
+msgstr "Color de sombra"
+
+#: ../includes/class.wlb_login.php:638
+msgid "Shadow Opacity"
+msgstr "Opacidad de sombra"
+
+#: ../includes/class.wlb_login.php:650
+msgid "Submit Button"
+msgstr "Botón Enviar"
+
+#: ../includes/class.wlb_login.php:669
+msgid "Button Color"
+msgstr "Color de botón"
+
+#: ../includes/class.wlb_login.php:695
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: ../includes/class.wlb_login.php:696
+msgid "Set an Alternative Login Template"
+msgstr "Establecer una plantilla alternativa de login"
+
+#: ../includes/class.wlb_login.php:697
+msgid "Advanced Login Template Settings"
+msgstr "Configuración avanzada de plantilla de Login "
+
+#: ../includes/class.wlb_login.php:702
+#, fuzzy
+msgid "Alternative Login Template"
+msgstr "Plantilla alternativa de login"
+
+#: ../includes/class.wlb_login.php:706
+msgid "Use Login Template"
+msgstr "Utilizar plantilla de login"
+
+#: ../includes/class.wlb_login.php:708
+#, php-format
+msgid "Choose %s to activate the Custom Login HTML Template and CSS"
+msgstr "Escoja %s para activar la plantilla html de la pantalla de login y el css"
+
+#: ../includes/class.wlb_login.php:724
+msgid "Default Login HTML Template"
+msgstr "Plantilla HTML de login predeterminada"
+
+#: ../includes/class.wlb_login.php:725
+msgid "Optionally provide an html template to display instead of the default login html.  It is required that you include the following tags in the template: {loginform}: where you want the login form to occur, and {backlink}: where you want the back link to be displayed. {customlogo}:Shows the custom logo."
+msgstr "Opcionalmente proporciona una plantilla html para mostrar en lugar del diseño original de la pantalla de login.  Es necesario que se incluya los siguientes tags en la plantilla: {loginform}: muestra el formulario de login, {backlink}: muestra el enlace de regreso a la página, {customlogo}: Muestra el logo personalizado."
+
+#: ../includes/class.wlb_login.php:732
+msgid "Smaller Windows, Alternative Login Template"
+msgstr "Ventanas pequeñas, plantilla alternativa de login"
+
+#: ../includes/class.wlb_login.php:737
+msgid "Small template trigger width"
+msgstr "Ancho que desencadena la plantilla pequeña"
+
+#: ../includes/class.wlb_login.php:738
+msgid "If you define a Small Login HTML Template, this width determines when the template is applied."
+msgstr "Si define una Plantilla HTML pequeña de Login, éste ancho determina cuando la misma es aplicada."
+
+#: ../includes/class.wlb_login.php:749
+msgid "Small Login HTML Template"
+msgstr "Plantilla HTML de login pequeño"
+
+#: ../includes/class.wlb_login.php:750
+msgid "Optionally provide an html template for smaller size windows, to display instead of the default login html.  It is required that you include the following tags in the template: {loginform}: where you want the login form to occur, and {backlink}: where you want the back link to be displayed. {customlogo}:Shows the custom logo."
+msgstr "Opcionalmente proporciona una plantilla html, para mostrar en ventanas de tamaño pequeño, en lugar del diseño original de la pantalla de login.  Es necesario que se incluya los siguientes tags en la plantilla: {loginform}: muestra el formulario de login, {backlink}: muestra el enlace de regreso a la página, {customlogo}: Muestra el logo personalizado."
+
+#: ../includes/class.wlb_login.php:757
+msgid "Stylesheet"
+msgstr "Stylesheet"
+
+#: ../includes/class.wlb_login.php:762
+msgid "Login CSS template"
+msgstr "Plantilla CSS de login"
+
+#: ../includes/class.wlb_login.php:764
+msgid "This is an optional free space so you can write css or javascript to be output on the login header, either for your html template or to modify the styles of the default login screen."
+msgstr "Este es un espacio libre opcional que permite agregar css y javascript para ser mostrado en la cabecera del login, ya sea para la plantilla personalizada o para modificar el diseño de la pantalla de login original."
+
+#: ../includes/class.wlb_login.php:765
+msgid "Note on Small Template:"
+msgstr "Nota de Plantilla pequeña"
+
+#: ../includes/class.wlb_login.php:766
+msgid "When the window reaches the \"Small template trigger width\" value, the body is added the CSS class wlb-small-login, so you can define a separate set of styles for the small template."
+msgstr "Cuando la ventana alcanza el valor \"Ancho que desencadena la plantilla pequeña\", al “body” se le agrega la clase CSS wlb-small-login, de modo que pueda definir un conjunto de estilos para la plantilla pequeña."
+
+#: ../includes/class.wlb_login.php:785 ../includes/class.wlb_login.php:787
+msgid "Saved and Downloaded Login Templates"
+msgstr "Plantillas de Login guardadas y descargadas"
+
+#: ../includes/class.wlb_login.php:786
+msgid "Restore Saved or Downloaded Settings"
+msgstr "Restaurar opciones guardadas o descargadas"
+
+#: ../includes/class.wlb_login.php:792
+msgid "Backup Login Template Settings"
+msgstr "Realizar copia de seguridad de configuración de plantilla de Login"
+
+#: ../includes/class.wlb_login.php:798
+msgid "This will save a copy of login settings.<br />Please observe that it only backups saved settings; any changes you made after saving will be lost."
+msgstr "Esto guardará una copia de las opciones de login. <br />Por favor note que solo se hace copia de seguridad de las opciones guardadas; los cambios efectuados después de guardar se perderán."
+
+#: ../includes/class.wlb_login.php:807
+msgid "Stored Login Customization Settings"
+msgstr "Configuraciones de personalización de Login guardadas"
+
+#: ../includes/class.wlb_menu.php:70 ../includes/class.wlb_menu.php:72
+msgid "Menus"
+msgstr "Menús"
+
+#: ../includes/class.wlb_menu.php:71
+msgid "Customize Menus"
+msgstr "Personalizar Menús"
+
+#: ../includes/class.wlb_menu.php:76
+msgid "Main Menu Configuration"
+msgstr "Configuración del menú principal"
+
+#: ../includes/class.wlb_menu.php:80
+msgid "Changes made here will only effect people that does not have the Administrator role.  If you are Administrator you cannot see this changes until you login as a diferent user."
+msgstr "Los cambios efectuados aquí solo afectan a los usuarios con el rol de <b>Editor</b> o inferior.  Usted está autenticado como admin, de modo que no verá los cambios en el menú hasta que se autentique como usuario <b>Editor</b> o inferior."
+
+#: ../includes/class.wlb_menu.php:95 ../includes/class.wlb_menu.php:110
+#: ../includes/class.wlb_menu.php:163
+msgid "Hide"
+msgstr "Ocultar"
+
+#: ../includes/class.wlb_menu.php:110
+msgid "Your Profile"
+msgstr "Tu perfil"
+
+#: ../includes/class.wlb_menu.php:125
+msgid "Sub menus"
+msgstr "Sub menús"
+
+#: ../includes/class.wlb_menu.php:126 ../includes/class.wlb_menu.php:127
+#, fuzzy
+msgid "Customize Sub Menus"
+msgstr "Personalizar sub menús"
+
+#: ../includes/class.wlb_menu.php:131
+msgid "Sub Menu Configuration"
+msgstr "Configuración de sub menu"
+
+#: ../includes/class.wlb_menu.php:135
+msgid "Changes made here will only effect people that does not have the Administrator role.  If you are an Administrator you cannot see this changes until you login as a diferent user."
+msgstr "Los cambios efectuados aquí solo afectan a los usuarios con el rol de <b>Editor</b> o inferior.  Usted está autenticado como admin, de modo que no verá los cambios en el menú hasta que se autentique como usuario <b>Editor</b> o inferior."
+
+#: ../includes/class.wlb_options.php:29
+#, fuzzy
+msgid "Bradning"
+msgstr "Branding"
+
+#: ../includes/class.wlb_options.php:30
+msgid "Customize Header and Footer Logo"
+msgstr "Personalizar el logo del header y footer"
+
+#: ../includes/class.wlb_options.php:37
+msgid "Header"
+msgstr "Header"
+
+#: ../includes/class.wlb_options.php:44
+#: ../includes/class.wlb_screen_options.php:77
+msgid "Save"
+msgstr "Guardar"
+
+#: ../includes/class.wlb_screen_options.php:75
+msgid "Disable screen options (Admin only)"
+msgstr "Desactivar opciones de pantalla (Solo Administrador)"
+
+#: ../includes/class.wlb_settings.php:63 ../includes/class.wlb_settings.php:65
+#, fuzzy
+msgid "Advanced Settings"
+msgstr "Configuraciones adicionales"
+
+#: ../includes/class.wlb_settings.php:70
+msgid "Role and Capability Manager"
+msgstr "Administrador de roles y capacidades"
+
+#: ../includes/class.wlb_settings.php:74
+msgid "Enable Role and Capability Manager"
+msgstr "Habilitar el administrador de roles y capacidades"
+
+#: ../includes/class.wlb_settings.php:76
+msgid "Select yes and save.  A new panel with Role Management options will display in this options screen."
+msgstr "Seleccione sí y guarde.  Un nuevo panel con las opciones del administrador de roles aparecerá en esta pantalla de opciones."
+
+#: ../includes/class.wlb_settings.php:83
+msgid "Email branding"
+msgstr "Branding del Correo Electrónico"
+
+#: ../includes/class.wlb_settings.php:87
+msgid "Enable email branding"
+msgstr "Habilitar branding del correo electrónico"
+
+#: ../includes/class.wlb_settings.php:90
+msgid "Choose no if you are having problems with the emails sent by the system."
+msgstr "Seleccione no si tiene problemas con los correos electrónicos enviados por el sistema."
+
+#: ../includes/class.wlb_settings.php:97
+msgid "Hide the Administrator role from users list."
+msgstr "Ocultar el rol Administrador en la lista de usuarios."
+
+#: ../includes/class.wlb_settings.php:99
+msgid "This option allows you to hide the Administrator role from the user list."
+msgstr "Esta opción le permite ocultar el role Administrador de la lista de usuarios."
+
+#: ../includes/class.wlb_settings.php:107
+msgid "Custom Dashboard"
+msgstr "Escritorio personalizado"
+
+#: ../includes/class.wlb_settings.php:111
+msgid "Enable WLB Custom Dashboard Tool"
+msgstr "Habilitar la herramienta del escritorio WLB personalizado"
+
+#: ../includes/class.wlb_settings.php:113
+msgid "Select yes and save.  On the admin left menu a new menu option will appear."
+msgstr "Seleccione sí y guarde.  En el menú izquierdo del admin aparecerá una nueva opción de menú."
+
+#, fuzzy
+#~ msgid "Blog Branding Type"
+#~ msgstr "Branding"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "Options updated."
+#~ msgstr "Opciones actualizadas"
+
+#~ msgid "Open all"
+#~ msgstr "Abrir todos"
+
+#~ msgid "Save all"
+#~ msgstr "Guardar todos"
+
+#, fuzzy
+#~ msgid "Plugin bundled content"
+#~ msgstr "Contenido del panel"
+
+#, fuzzy
+#~ msgid "Operation completed"
+#~ msgstr "Opciones actualizadas"
+
+#, fuzzy
+#~ msgid "Export settings"
+#~ msgstr "Configuraciones adicionales"
+
+#, fuzzy
+#~ msgid "Import settings:"
+#~ msgstr "Configuraciones adicionales"
+
+#, fuzzy
+#~ msgid "Click on \"Import settings\""
+#~ msgstr "Configuraciones adicionales"
+
+#, fuzzy
+#~ msgid "Import settings"
+#~ msgstr "Configuraciones adicionales"
+
+#, fuzzy
+#~ msgid "Save settings"
+#~ msgstr "Configuraciones adicionales"
+
+#, fuzzy
+#~ msgid "Saved settings"
+#~ msgstr "Configuraciones adicionales"
+
+#, fuzzy
+#~ msgid "Date"
+#~ msgstr "Borrar"
+
+#, fuzzy
+#~ msgid "Login starter"
+#~ msgstr "Plantilla CSS de login"
+
+#, fuzzy
+#~ msgid "YesNo"
+#~ msgstr "Sí"
+
+#, fuzzy
+#~ msgid "No saved settings"
+#~ msgstr "Configuraciones adicionales"
+
+#~ msgid "Roles and capabilities"
+#~ msgstr "Roles y capabilities"
+
+#~ msgid "Manage wordpress roles and capabilities."
+#~ msgstr "Administrar roles y capabilities de Wordpress"
+
+#~ msgid "Add your own Custom Dashboard Panel"
+#~ msgstr "Agregar tu propio panel de escritorio personalizado"
+
+#~ msgid "Public panel"
+#~ msgstr "Panel público"
+
+#~ msgid "Private panel shown to editor"
+#~ msgstr "Panel privado mostrado al editor"
+
+#~ msgid "Additional Dashboard Settings"
+#~ msgstr "Configuraciones adicionales de escritorio"
+
+#~ msgid "Remove Right Now panel"
+#~ msgstr "Remover el panel \"Ahora mismo\""
+
+#~ msgid "Hide <strong>Right Now</strong> panel"
+#~ msgstr "Ocultar el panel <strong>Ahora mismo</strong>"
+
+#~ msgid "Hide default dashboard panels"
+#~ msgstr "Ocultar paneles default del escritorio"
+
+#, fuzzy
+#~ msgid "WLB Dashboard"
+#~ msgstr "Escritorio"
+
+#~ msgid "Appearance Menu Configuration"
+#~ msgstr "Configuración del menu Apariencia"
+
+#~ msgid "The following change will display the Widgets or Menus option in Appearance to users with the role of <b>Editor</b>."
+#~ msgstr "Este cambio muestra al usuario las opciones de Widgets o Menús en el menú de Apariencia a usuarios con el rol de <b>Editor</b>."
+
+#~ msgid "Appearance Menu Options"
+#~ msgstr "Opciones de menu de Apariencia"
+
+#~ msgid "Show the appearance menu for the user level <strong>Editor</strong>."
+#~ msgstr "Mostrar el menu Apariencia a usuarios con nivel <strong>Editor</strong>."
+
+#~ msgid "Changes made here will only effect people with the user role of <b>Editor</b> or lower. You are currently logged is as the admin, so you will not see any changes in the sub menus until you login as <b>Editor</b> or lower."
+#~ msgstr "Los cambios efectuados aquí solo afectan a los usuarios con el rol de <b>Editor</b> o inferior.  Usted está autenticado como admin, de modo que no verá los cambios en el menu hasta que se autentique como usuario <b>Editor</b> o inferior."
+
+#~ msgid "Change logos"
+#~ msgstr "Cambiar logos"

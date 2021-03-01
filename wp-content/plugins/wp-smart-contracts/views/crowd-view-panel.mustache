@@ -1,0 +1,196 @@
+{{#contract-exists}}
+
+	<input type="hidden" id="wpsc-panel-network" value="{{network}}">
+	<input type="hidden" id="wpsc-contract-name" value="{{contract-name}}">
+	<input type="hidden" id="wpsc-contract-flavor" value="{{wpsc-flavor}}">
+	<input type="hidden" id="wpsc-crowd-contract" value="{{wpsc-contract-address}}">
+
+	<div class="ui raised center aligned segment" id="wpsc-crowd-panel" style="display: none">
+
+		<div id="wpsc-balance-dimmer" class="ui active inverted dimmer">
+			<div class="ui loader"></div>
+		</div>
+
+		<h3 class="ui block header left aligned">
+			<i class="heart outline icon"></i>
+			{{{panel}}}
+		</h3>
+
+		<div id="wpsc-user-balance">
+			<div class="ui active inverted">
+				<div class="ui loader"></div>
+			</div>
+		</div>
+
+		<div id="wpsc-main-account-roles"></div>
+
+		<div class="ui basic segment">
+			<div class="ui right labeled left icon mini input">
+				<i class="ethereum icon"></i>
+				<input id="wpsc-crowd-balance" type="text" readonly>
+				<a class="ui tag label">
+					{{{balance}}}
+				</a>
+			</div>
+		</div>
+
+		<a id="wpsc-contribute-link" href="javascript:void(0);" class="ui mini green big button" data-modal="wpsc-contribute-modal" style="display: none">
+			<i class="heart icon"></i>
+            {{{contribute}}}
+        </a>
+
+		<div class="ui basic segment">
+			<span id="wpsc-minimum" class="ui blue basic mini label"></span>
+			<div class="ui left pointing mini label">
+			{{{minimum-contribution}}}
+			</div>
+			<span id="wpsc-number-contributors" class="ui basic mini label"></span>
+			<div class="ui left pointing mini label">
+			{{{contributors}}}
+			</div>
+		</div>
+
+	</div>
+
+	<div class="ui hidden divider"></div>
+
+	<div class="ui raised center aligned segment" id="wpsc-crowd-panel-requests" style="display: none">
+		<h3 class="ui block header left aligned">
+			<i class="file outline icon"></i>
+			{{{requests}}}
+		</h3>
+
+		<div id="wpsc-requests-container" class="ui centered cards">
+		</div>
+		<div class="ui hidden divider"></div>
+		<div id="wpsc-user-balance">
+			<div class="ui active inverted">
+				<div class="ui loader"></div>
+			</div>
+		</div>
+		<div id="wpsc-main-account-roles"></div>
+		<a id="wpsc-create-link" href="javascript:void(0);" class="ui mini basic green big button" data-modal="wpsc-create-modal" style="display: none">
+			<i class="plus circle icon"></i>
+			{{{create-request}}}
+		</a>
+	</div>
+
+	<div class="ui hidden divider"></div>
+
+	<div id="wpsc-contribute-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="heart icon"></i>
+		        {{{contribute}}}
+		    </h3>
+
+		    <p>{{{contribute-tooltip}}}</p>
+
+		    <div id="wpsc-contribute-form">
+				<div class="ui fluid action input">
+					<input name="wpsc-crowd-contribute-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-crowd-contribute">
+						<i class="paper plane icon"></i>{{{send}}}
+					</button>
+			    </div>
+			</div>
+
+		    <div id="wpsc-crowd-contribute-to-account-message"></div>
+
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-crowd-contribute-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-contribute-progress-contribute" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-create-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="plus circle icon"></i>
+		        {{{create-request}}}
+		    </h3>
+
+		    <p>{{{create-request-tooltip}}}</p>
+
+		    <div id="wpsc-create-form">
+
+				<div class="ui fluid input">
+					<input name="wpsc-create-desc" type="text" placeholder="{{{description}}}">
+				</div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-create-to" type="text" placeholder="{{{address-to}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-create-to">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+			    <div id="wpsc-create-to-message"></div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-create-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-create-amount">
+						<i class="paper plane outline icon"></i>{{{request}}}
+					</button>
+			    </div>
+
+			    <div id="wpsc-create-amount-message"></div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-create-amount-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-create-progress" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+	    </div>
+
+	</div>
+
+{{/contract-exists}}

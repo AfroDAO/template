@@ -1,0 +1,583 @@
+/* module tile */
+.tiles-wrap {
+	position: relative;
+}
+.tf-tile {
+	float: left;
+	position: relative;
+}
+.tf-tile .tile-inner,
+.tf-tile .tile-flip-box-wrap {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.tf-tile p {
+	margin: 0;
+	padding: 0 0 1em;
+}
+.tf-tile h1, 
+.tf-tile h2, 
+.tf-tile h3, 
+.tf-tile h4, 
+.tf-tile h5, 
+.tf-tile h6 {
+	color: inherit;
+}
+
+.tf-tile a {
+	text-decoration: none;
+	color: inherit;
+	border: none;
+	background: none;
+	border-radius: 0;
+	padding: 0;
+}
+.tf-tile a:hover {
+	text-decoration: none;
+}
+
+/* tile title */
+.tf-tile .tile-title {
+	font-size: 1.4em;
+	text-transform: none;
+	font-weight: normal;
+	margin: 0 0 .5em;
+	padding: 0;
+	line-height: 1.3em;
+	position: relative;
+	z-index: 10;
+}
+
+/* tile content */			
+.tf-tile .tile-content {
+	line-height: 1.7em;
+}
+
+/* tile icon */
+.tf-tile .tile-icon {
+	font-size: 85px;
+	display: block;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -60px auto 0 -60px;
+	z-index: 10;
+}
+.tf-tile .tile-title + .tile-icon {
+	top: 60%;
+}
+.tf-tile .tile-icon:before {
+	vertical-align: middle;
+}
+
+/* action button */
+.tf-tile .action-button {
+	display: inline-block;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 5%;
+	left: 7%;
+	font-size: .9em;
+	z-index: 100;
+	text-decoration: none !important;
+}
+.tf-tile .action-button span {
+	width: 28px;
+	height: 28px;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+.tf-tile .action-button span:before {
+	content: "\f054";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size: 1em;
+	font-weight: normal;
+	vertical-align: middle;
+	line-height: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+/* flip back button */
+.tf-tile .tile-inner a.tile-flip-back-button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+}
+.tf-tile .tile-flip-back-button:before {
+	content: "\f01e";
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-size: 12px;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #fff;
+	width: 0;
+	height: 0;
+	border-top: 23px solid transparent;
+	border-left: 23px solid transparent;
+	border-bottom: 23px solid #ec0038;
+	border-right: 23px solid #ec0038;
+	line-height: 1.7em;
+	text-indent: .2em;
+}
+.tf-tile .tile-back .tile-flip-back-button,
+.tf-tile.tf-tile-flip .tile-front .tile-flip-back-button {
+	display: none;
+}
+.tf-tile.tf-tile-flip .tile-back .tile-flip-back-button {
+	display: block;
+}
+.tf-tile.no-flip .tile-flip-back-button {
+	display: none !important;
+}
+
+.tile-type-text .tile-inner {
+	padding: 7%;
+}
+
+.tile-type-button,
+.tile-type-gallery,
+.tile-type-text {
+	position: relative;
+	height: 100%;
+}
+.tile-type-button .tile-inner {
+	height: 100%;
+}
+.tile-type-button .tile-inner a {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute; /* make the entire tile clickable */
+	padding: 7%;
+	box-sizing: border-box;
+}
+.tile-type-button .tile-inner .tile-title {
+	padding: 0 0 1.1em;
+}
+.tile-type-button .tile-inner .tile-content {
+	padding: 0 0 .65em 1.9em;
+}
+
+/* text tile */
+.tile-type-text {
+	overflow-y: auto !important; /* make text overflow */
+}
+
+/* gallery slider */
+.tile-type-gallery .twg-wrap {
+	z-index: 10;
+	overflow: hidden;
+}
+.tile-type-gallery .twg-wrap img {
+	object-fit: cover; /* make gallery img fullcover */
+}
+.tile-type-gallery .twg-controls {
+	z-index: 7;
+}
+.tile-type-gallery .twg-wrap,
+.tile-type-gallery .tile-inner,
+.tile-type-gallery .twg-wrap .gallery-image-holder {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* gallery slider timer */
+.tile-type-gallery .twg-wrap .gallery-slider-timer {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top: -2px;
+}
+.tile-type-gallery .twg-wrap .timer-bar {
+	height: 2px;
+}
+.tile-type-gallery .twg-wrap .timer-bar {
+	background: #0b79d6;
+	color: #fff;
+}
+
+.tile-type-gallery .carousel-wrap {
+	visibility: visible;
+	height: auto;
+}
+.tile-type-gallery .twg-wrap .gallery-slider-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.3);
+}
+.tile-type-gallery .gallery-slider-thumbs {
+	margin: 0;
+	padding: 0;
+}
+.tile-type-gallery .gallery-slider-thumbs li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+}
+.tile-type-gallery .gallery-slider-thumbs li a img {
+	max-width: 100px;
+	height: auto;
+}
+.tile-type-gallery .twg-controls .twg-list li {
+	width: 40px !important;
+	list-style: none;
+}
+.tile-type-gallery .gallery-slider-thumbs li a,
+.tile-type-gallery .gallery-slider-thumbs li a img {
+	display: block;
+	border: none;
+	overflow: hidden;
+}
+.tile-type-gallery .gallery-slider-thumbs li a:hover > img,
+.tile-type-gallery .gallery-slider-thumbs li.current > img {
+	border: 1px solid #1e73ba;
+}
+.tile-type-gallery .gallery-slider-thumbs li.current a:hover img {
+	cursor: default;
+	border: none;
+}
+.tile-type-gallery .twg-wrap .twg-deleteable,
+.tile-type-gallery .twg-wrap .twg-behind {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+}
+.tile-type-gallery .twg-wrap.no-timer .twg-controls {
+	visibility: hidden;
+}
+
+.tile-type-gallery .text-caption {
+	background: rgba(0,0,0, .5);
+	color: #fff;
+	padding: 2px 5px;
+	display: inline-block;
+	max-width: 50%;
+	position: relative;
+}
+
+.tf-tile .tile-type-gallery .with-timer + .action-button {
+	margin-bottom: 30px;
+}
+
+.tf-tile .tile-flip-box-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.tf-tile .tile-flip-box {
+	height: 100%;
+	position: relative;
+	display: block;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transition: 750ms;
+	-moz-transition: 750ms;
+	-o-transition: 750ms;
+	-ms-transition: 750ms;
+	transition: 750ms;
+}
+.tf-tile .tile-front,
+.tf-tile .tile-back {
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	z-index: 11;
+
+	background-position: center;
+	background-size: cover;
+}
+.tf-tile .tile-back {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: table;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+	bottom: 0;
+	visibility: hidden;
+	z-index: 100;
+}
+.tf-tile.tf-tile-flipped .tile-back,
+.tf-tile .tile-back.animated {
+	visibility: visible;
+}
+
+/* Horizontal Flip */
+.tf-tile.flip-horizontal .tile-flip-box-wrap {
+	overflow: visible;
+}
+.tf-tile.flip-horizontal .tile-front,
+.tf-tile.flip-horizontal .tile-back {
+	-webkit-transition: 750ms;
+	-moz-transition: 750ms;
+	-o-transition: 750ms;
+	-ms-transition: 750ms;
+	transition: 750ms;
+}
+.tf-tile.flip-horizontal .tile-front {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+.tf-tile.flip-horizontal .tile-back {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.tf-tile.flip-horizontal.tf-tile-flip .tile-front {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.tf-tile.flip-horizontal.tf-tile-flip .tile-back {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+/* Vertical Flip */
+.tf-tile.flip-vertical .tile-flip-box-wrap {
+	overflow: visible;
+}
+.tf-tile.flip-vertical .tile-front,
+.tf-tile.flip-vertical .tile-back {
+	-webkit-transition: 750ms;
+	-moz-transition: 750ms;
+	-o-transition: 750ms;
+	-ms-transition: 750ms;
+	transition: 750ms;
+}
+.tf-tile.flip-vertical .tile-front {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.tf-tile.flip-vertical .tile-back {
+	-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	-ms-transform: rotateX(-180deg);
+	-o-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+}
+.tf-tile.flip-vertical.tf-tile-flip .tile-front {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+.tf-tile.flip-vertical.tf-tile-flip .tile-back {
+	-moz-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+
+/* Image hover effect */
+.tf-tile .tile-type-gallery .backstretch img {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.tf-tile:hover .tile-type-gallery .backstretch img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.tf-tile.no-flip .tile-front,
+.tf-tile.no-flip .tile-back {
+	transition: background-size .2s ease-in-out;
+}
+
+/* map tile images fix */
+.tf-tile .tile-type-map img {
+	max-width: initial;
+}
+/* prevent flip effects from covering the map tiles */
+.tf-tile.tile-type-front-map {
+	position: relative;
+	z-index: 9999;
+}
+
+.tile-loader {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: url( loading-bars.svg ) no-repeat center center;
+}
+
+/* Media Queries */
+@media (max-width: 780px) {
+	.tf-tile .tile-title {
+		font-size: 1.3em;
+	}
+	.tf-tile .tile-title + .tile-icon {
+		top: 75%;
+	}
+	.tf-tile .tile-icon {
+		font-size: 60px;
+	}
+	.tf-tile .tile-inner {
+		font-size: .9em;
+		line-height: 1.5em;
+	}
+	.tile-type-text .tile-inner {
+		padding: 1.3em;
+	}
+
+	/* action button */
+	.tf-tile .action-button {
+		left: 1.3em;
+		font-size: 90%;
+	}
+	.tf-tile .action-button span {
+		width: 22px;
+		height: 22px;
+		display: inline-block;
+		border: 1px solid #fff;
+		border-radius: 100%;
+		position: relative;
+		vertical-align: middle;
+		margin-right: .3em;
+	}
+
+}
+
+/* RTL */
+.rtl .tf-tile {
+	float: right;
+}
+
+
+/* default tiles colors */
+.ui {
+	background-color: #e7e7e7;
+	color: #5c5c5c;
+}
+.ui.black {
+	background-color: #252525;
+	color: #eee;
+}
+.ui.gray {
+	background-color: #989797;
+	color: #eee;
+}
+.ui.blue {
+	background-color: #4d7de1;
+	color: #edf3ff;
+}
+.ui.light-blue {
+	background-color: #bdd9fd;
+	color: #2a3e59;
+}
+.ui.green {
+	background-color: #4aab10;
+	color: #e9ffdb;
+}
+.ui.light-green {
+	background-color: #9bd611;
+	color: #293807;
+}
+.ui.purple {
+	background-color: #7a6bf8;
+	color: #eeedff;
+}
+.ui.light-purple {
+	background-color: #c1bafd;
+	color: #39355b;
+}
+.ui.brown {
+	background-color: #a35004;
+	color: #ffeee0;
+}
+.ui.orange {
+	background-color: #ff9600;
+	color: #fff2ea;
+}
+.ui.yellow {
+	background-color: #fff06c;
+	color: #594718;
+}
+.ui.red {
+	background-color: #e8311f;
+	color: #ffeeed;
+}
+.ui.pink {
+	background-color: #feb4e4;
+	color: #441e32;
+}
+
+.tf-tiles-editing .tf-tile {
+	visibility: visible;
+}

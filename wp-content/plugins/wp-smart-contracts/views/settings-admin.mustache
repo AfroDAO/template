@@ -1,0 +1,144 @@
+        <p></p>
+        <div class="ui container">
+        
+            <div class="ui inverted segment">
+              <div class="ui inverted segment">
+                <h1 class="ui header">
+                  <i class="settings icon"></i>
+                  {{{title}}}
+                </h1>
+                <button class="ui grey button right floated">{{{learn-more}}}</button>
+                <p>{{{subtitle}}}</p>
+              </div>
+            </div>
+
+            <form method="post" action="options.php">
+
+            <input type='hidden' name='option_page' value='{{{option-group}}}' />
+            <input type="hidden" name="action" value="update" />
+            {{{wp-nonce-field}}}
+
+            <div class="ui secondary segment">
+              <h2 class="ui dividing header">
+                {{{coin-settings}}}
+              </h2>
+              <div class="ui stackable two column grid">
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{api-key-token}}}
+                    <div class="sub header">
+                      {{{free-registration}}} <a href="https://etherscan.io/apis" target="_blank">{{{api-key-text}}}</a>
+                      <span class="ui icon" data-tooltip="{{{api-key-tooltip}}}">
+                        <i class="small help icon circular"></i>
+                      </span>
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input">
+                    <input type="text" name="etherscan_api_key_option[api_key]" value="{{api-key-value}}">
+                    <i class="key icon"></i>
+                  </div>
+                </div>
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{separator-format}}}
+                    <div class="sub header">
+                      {{{thousands-decimals-separator}}}
+                      <span class="ui icon" data-tooltip="{{{thousands-decimals-separator-tooltip}}}">
+                        <i class="small help icon circular"></i>
+                      </span>
+                    </div>
+                  </h4>
+                    <select name="etherscan_api_key_option[number_separators]" class="ui dropdown labeled">
+                      <option value="">{{{choose-separators}}}</option>
+                      {{#number-separators}}
+                        <option value="{{value}}" {{selected}}>{{label}}</option>
+                      {{/number-separators}}
+                    </select>
+                </div>
+               <div class="column">
+                  <h4 class="ui header">
+                    {{{decimals-to-show-text}}}
+                    <div class="sub header">
+                      {{{decimals-to-show-sub}}}
+                      <span class="ui icon" data-tooltip="{{{decimals-to-show-tooltip}}}">
+                        <i class="small help icon circular"></i>
+                      </span>
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input">
+                    <input type="text" placeholder="4" name="etherscan_api_key_option[decimals_to_show]" value="{{decimals-to-show}}" >
+                    <i class="calendar outline icon"></i>
+                  </div>
+                </div>
+               <div class="column">
+                  <h4 class="ui header">
+                    {{{date-format-in}}} <a href="http://php.net/manual/en/function.date.php" target="_blank">{{{php-style}}}</a>
+                    <div class="sub header">
+                      {{{date-format-in-sub}}}
+                      <span class="ui icon" data-tooltip="{{{date-format-in-sub-tooltip}}}">
+                        <i class="small help icon circular"></i>
+                      </span>
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input" id="wpsc-coin-decimals">
+                    <input type="text" placeholder="Y-m-d" name="etherscan_api_key_option[date_format]" value="{{date-format-value}}" >
+                    <i class="calendar outline icon"></i>
+                  </div>
+                </div>
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{clear-cache}}}
+                    <div class="sub header">
+                      {{{cache-dur-in-secs}}}
+                      <span class="ui icon" data-tooltip="{{{cache-dur-in-secs-tooltip}}}">
+                        <i class="small help icon circular"></i>
+                      </span>
+                    </div>
+                  </h4>
+                  <select id="etherscan_api_key_option_expiration_time" name="etherscan_api_key_option[expiration_time]" class="ui dropdown labeled icon">
+                    <i class="clock icon"></i>
+                    <option value="">{{{choose-expiration-time}}}</option>
+                    {{#expiration-time-list}}
+                      <option value="{{value}}" {{selected}}>{{label}}</option>
+                    {{/expiration-time-list}}
+                  </select>
+                  <p id="wpsc-clear-transient">
+                    <a href="javascript:void(0);" id="wpscFlushTransients">
+                      {{{flush-now}}}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui secondary segment">
+              <h2 class="ui dividing header">
+                {{{crowd-settings}}}
+              </h2>
+              <div class="ui stackable two column grid">
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{infura-api-key-token}}}
+                    <div class="sub header">
+                      {{{free-registration}}} <a href="https://infura.io" target="_blank">{{{infura-api-key-text}}}</a>
+                      <span class="ui icon" data-tooltip="{{{infura-api-key-tooltip}}}">
+                        <i class="small help icon circular"></i>
+                      </span>
+                      <p>{{{infura-api-key-warning}}}</p>
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input">
+                    <input type="text" name="etherscan_api_key_option[infura_api_key]" value="{{infura-api-key-value}}">
+                    <i class="key icon"></i>
+                  </div>
+                  <input id="infura-mnemonic-value" type="hidden" name="etherscan_api_key_option[infura_mnemonic]" value="{{infura-mnemonic}}">
+                </div>
+              </div>
+            </div>
+
+            <p class="submit">
+                <input type="submit" name="submit" id="submit" class="button button-primary" value="{{{save}}}">
+            </p>
+            </form>
+
+        </div>

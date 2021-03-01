@@ -1,0 +1,34 @@
+<div class="ui center aligned inverted segment">
+
+    <h3 class="ui header">
+        <i class="qrcode icon"></i>
+        {{{align-camera}}}
+    </h3>
+
+    <div>
+        <video muted playsinline id="qr-video"></video>
+    </div>
+
+    <script type="module">
+
+        import QrScanner from "{{qr-scanner}}";
+        QrScanner.WORKER_PATH = "{{qr-scanner-worker}}";
+
+        const video = document.getElementById('qr-video');
+        const camHasCamera = document.getElementById('cam-has-camera');
+        const camQrResult = document.getElementById('cam-qr-result');
+
+        function setResult(label, result) {
+            var address = result.replace('ethereum:','');
+            window.opener.document.getElementsByName("{{input-name}}")[0].value = address;
+			window.opener.jQuery('input[name="{{input-name}}"]').trigger('change');
+            window.close();
+
+        }
+
+        const scanner = new QrScanner(video, result => setResult(camQrResult, result));
+        scanner.start();
+
+    </script>
+
+</div>

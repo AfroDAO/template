@@ -1,0 +1,119 @@
+.themify_builder_module.module-type-countdown:before {
+	content: "\e6c6";
+}
+
+/**
+ * Themify Date Picker
+ ***************************/
+input.themifyDatePicker {
+	margin-right: 5px;
+	color: #333;
+}
+.themify_field-date {
+	position: relative;
+}
+.disableDateField {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 28px;
+}
+.themifyOpacityTransition {
+	visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
+}
+.themifyFadeIn {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	opacity: 1;
+}
+.themifyDateTimePickerPanel.ui-datepicker {
+	border-color: #ddd;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+	font: normal 600 1.1em "Open Sans";
+}
+.themifyDateTimePickerPanel.ui-datepicker .ui-datepicker-header {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #eee;
+	border-radius: 0;
+	padding-bottom: 5px;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev, .ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next {
+	border: 1px solid #eee;
+	-webkit-transition: border-color 0.2s ease-out;
+	transition: border-color 0.2s ease-out;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev .ui-icon, .ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next .ui-icon {
+	background: none;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev, .ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "dashicons";
+	box-sizing: border-box;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev:after {
+	content: "\f141";
+	position: absolute;
+	top: 2px;
+	font-size: 20px;
+	left: 0;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next:after {
+	content: "\f139";
+	position: absolute;
+	top: 2px;
+	font-size: 20px;
+	left: 0;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-next-hover {
+	border: 1px solid #999;
+	background: none;
+	right: 2px;
+	top: 2px;
+	cursor: pointer;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-prev-hover {
+	border: 1px solid #999;
+	background: none;
+	left: 2px;
+	top: 2px;
+	cursor: pointer;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-state-default {
+	background: #f6f6f6;
+	border-radius: 3px;
+	border: 2px solid #eee;
+	-webkit-transition: border-color 0.2s ease-out;
+	transition: border-color 0.2s ease-out;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-state-active, .ui-datepicker.themifyDateTimePickerPanel .ui-state-default:active {
+	border: 2px solid #F90;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-state-highlight {
+	border: 2px solid #98cee3;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-buttonpane {
+	border-top: 1px solid #eee;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui-datepicker-buttonpane button {
+	font: 400 0.85em "Open Sans";
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	background: #fafafa;
+	border: 2px solid #eee;
+	color: #222;
+	outline: none;
+	opacity: 1;
+}
+.ui-datepicker.themifyDateTimePickerPanel .ui_tpicker_hour_label, .ui-datepicker.themifyDateTimePickerPanel .ui_tpicker_minute_label {
+	padding-top: 6px;
+}
+
+#ui-datepicker-div {
+	z-index: 99999999 !important;
+}

@@ -1,0 +1,111 @@
+<div class="ui two stackable cards">
+
+	{{#copy-source-code}}
+
+    <div class="ui raised card">
+
+        <div class="content">
+        	
+	        <div class="ui center aligned">
+		        <a href="javascript:void(0);" class="ui tiny button" id="wpsc-source-code" >
+		            <i class="code icon"></i>
+		            {{{open-source-code}}}
+		        </a>
+	        </div>
+
+            <div id="wpsc-source-code-modal" class="ui basic modal">
+
+				<i class="close icon"></i>
+
+				<div class="ui center aligned inverted segment">
+
+				    <h3 class="ui header">
+				        <i class="code icon"></i>
+				        {{{contrac-source-code}}}
+				    </h3>
+
+				    <span class="ui grey mini label">
+				        {{{contract-name}}}
+				        <div class="detail">{{contractName}}</div>
+				    </span>
+
+				    <span class="ui grey mini label">
+				        {{{solidity-version}}}
+				        <div class="detail">{{compilerVersion}}</div>
+				    </span>
+
+				    <pre class="wpsc-code prettyprint">{{{source}}}</pre>
+				    <div class="wpsc_hidden" id="wpsc_source">{{{source}}}</div>
+
+				    <div id="wpsc_source_code_div">
+				        <a href="javascript:void(0);" class="ui tiny button" onclick="copyToClipboard(document.querySelector('#wpsc_source').innerHTML, 'wpsc_source_code_div')">
+				            <i class="copy icon"></i>
+				            {{{copy-source-code}}}
+				        </a>
+				    </div>
+				    <div class="ui divider"></div>
+			        <div class="wpsc-small">
+			            <i class="check icon"></i>
+			            <a href="{{etherscan}}/address/{{contract-address}}#contracts" target="_blank">{{{source-code-etherscan}}}</a>
+			        </div>
+
+		        </div>
+
+		    </div>
+
+        </div>
+
+    </div>
+
+	{{/copy-source-code}}
+
+    {{#copy-contract-abi}}
+    <div class="ui raised card">
+
+        <div class="content">
+
+	        <div class="ui center aligned">
+		        <a href="javascript:void(0);" class="ui tiny button" id="wpsc-abi" >
+		            <i class="cogs icon"></i>
+		            {{{open-contract-abi}}}
+		        </a>
+	        </div>
+
+            <div id="wpsc-abi-modal" class="ui basic modal">
+
+				<i class="close icon"></i>
+
+				<div class="ui center aligned inverted segment">
+
+				    <h3 class="ui header">
+				        <i class="cogs icon"></i>
+				        {{{contract-abi}}}
+				    </h3>
+
+				    <pre class="wpsc-code prettyprint abi">{{abi}}</pre>
+				    <div class="wpsc_hidden" id="wpsc_abi">{{{abi}}}</div>
+
+				    <div id="wpsc_abi_div">
+				        <a href="javascript:void(0);" class="ui tiny button" onclick="copyToClipboard(document.querySelector('#wpsc_abi').innerHTML, 'wpsc_abi_div')">
+				            <i class="copy icon"></i>
+				            {{{copy-contract-abi}}}
+				        </a>
+				    </div>
+				    <div class="ui divider"></div>
+			        <div class="wpsc-small">
+			            <i class="check icon"></i>
+			            <a href="{{etherscan}}/address/{{contract-address}}#contracts" target="_blank">{{{contract-abi-etherscan}}}</a>
+			        </div>
+
+			    </div>
+
+		    </div>
+
+        </div>
+
+    </div>
+    {{/copy-contract-abi}}
+
+</div>
+
+

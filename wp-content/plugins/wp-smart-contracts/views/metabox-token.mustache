@@ -1,0 +1,494 @@
+          <div class="wpsc">
+            <input type="hidden" id="wpsc-change">
+            <div class="ui inverted segment">
+              <div class="ui inverted segment">
+                <h1 class="ui header">
+                  <i class="settings icon"></i>
+                  {{{coin-spec}}}
+                </h1>
+                <a class="ui grey button right floated" href="https://wpsmartcontracts.com/#tutorials" target="_blank">
+                  {{{learn-more}}}
+                </a>
+                <p>{{{coin-spec-desc}}}</p>
+              </div>
+            </div>
+            {{#readonly}}
+              <input type="hidden" name="wpsc-readonly" value="true">
+            {{/readonly}}
+            {{^readonly}}
+            <div class="ui secondary segment">
+              <div class="grouped fields">
+                <h3 class="ui dividing header">{{{flavor}}}</h3>
+                <div class="ui stackable two column grid">
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-vanilla}}}">
+                      <h3 class="ui dividing header">{{{erc-20-gas-saving}}}</h3>
+                      <p>{{{erc-20-gas-saving-desc}}}</p>
+                      <h5 class="ui dividing header">{{{Features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{erc-20-compliant}}}
+                        <span class="ui icon" data-tooltip="{{{erc-20-compliant-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{balance}}}
+                        <span class="ui icon" data-tooltip="{{{balance-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{transfer}}}
+                        <span class="ui icon" data-tooltip="{{{transfer-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{approve}}}
+                        <span class="ui icon" data-tooltip="{{{approve-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-vanilla" class="wpsc-radio" value="vanilla"
+                          {{{wpsc-flavor}}} 
+                          {{#is-vanilla}}checked="checked"{{/is-vanilla}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-pistachio}}}">
+                      <h3 class="ui dividing header">{{{erc-20-imp-sec}}}</h3>
+                      <p>{{{erc-20-imp-sec-desc}}}</p>
+                      <h5 class="ui dividing header">{{{features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{erc-20-compliant}}}
+                        <span class="ui icon" data-tooltip="{{{erc-20-compliant-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{balance}}}
+                        <span class="ui icon" data-tooltip="{{{balance-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{transfer}}}
+                        <span class="ui icon" data-tooltip="{{{transfer-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{approve}}}
+                        <span class="ui icon" data-tooltip="{{{approve-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-pistachio" class="wpsc-radio" value="pistachio"
+                          {{{wpsc-flavor}}}
+                          {{#is-pistachio}}checked="checked"{{/is-pistachio}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-chocolate}}}">
+                      <h3 class="ui dividing header">{{{erc-20-advanced}}}</h3>
+                      <p>{{{erc-20-advanced-tooltip}}}</p>
+                      <h5 class="ui dividing header">{{{features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{erc-20-compliant}}}
+                        <span class="ui icon" data-tooltip="{{{erc-20-compliant-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{balance}}}
+                        <span class="ui icon" data-tooltip="{{{balance-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{transfer}}}
+                        <span class="ui icon" data-tooltip="{{{transfer-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{approve}}}
+                        <span class="ui icon" data-tooltip="{{{approve-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{burn}}}
+                        <span class="ui icon" data-tooltip="{{{burn-tooltip}}}">
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{mint}}}
+                        <span class="ui icon" data-tooltip="{{{mint-tooltip}}}">
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{pause}}}
+                        <span class="ui icon" data-tooltip="{{{pause-tooltip}}}">
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-chocolate" class="wpsc-radio" value="chocolate"
+                          {{#is-chocolate}}checked="checked"{{/is-chocolate}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="column" id="wpsc-flavor-last-column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-custom}}}">
+                      <h3 class="ui dividing header">{{{erc-20-custom}}}</h3>
+                      <p>{{{custom-message}}}</p>
+                      <p><a href="https://wpsmartcontracts.com/contact-us.php" target="_blank" class="ui blue button">{{{contact-us}}}</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Token Definition Fields -->
+            <div class="ui secondary segment">
+              <h3 class="ui dividing header">{{{definition}}}</h3>
+              <div class="ui stackable two column grid">
+                <!-- name -->
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{name}}}
+                    <div class="sub header">
+                      {{{name-desc}}}
+                      {{{name-tooltip}}}
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input">
+                    <input name="wpsc-coin-name" type="text" placeholder="{{{coin-name}}}" value="{{{wpsc-coin-name}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                    <i class="tag icon"></i>
+                  </div>
+                </div>
+                <!-- Symbol -->
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{symbol}}}
+                    <div class="sub header">
+                      {{{symbol-desc}}}
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input">
+                    <input name="wpsc-coin-symbol" type="text" placeholder="{{{coin-symbol}}}" value="{{{wpsc-coin-symbol}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                    <i class="key icon"></i>
+                  </div>
+                </div>
+                <!-- Decimals -->
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{decimals}}}
+                    <div class="sub header">
+                      {{{decimals-desc}}}
+                      {{{decimals-tooltip}}}
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input" id="wpsc-coin-decimals">
+                    <input name="wpsc-coin-decimals" type="text" placeholder="{{{decimals}}}" value="{{{wpsc-coin-decimals}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                    <i class="calculator icon"></i>
+                  </div>
+                </div>
+                <!-- Total Supply -->
+                <div class="column" id="wpsc-token-definition-last">
+                  <h4 class="ui header">
+                    {{{total-supply}}}
+                    <div class="sub header">
+                      {{{total-supply-desc}}}
+                      {{{total-supply-tooltip}}}
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input" id="wpsc-total-supply">
+                    <input name="wpsc-total-supply" type="text" placeholder="{{{total-supply}}}" value="{{{wpsc-total-supply}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                    <i class="database icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Advanced Token options -->
+            <div id="wpsc-advanced-token" class="ui secondary segment {{#is-chocolate}}hidden{{/is-chocolate}}">
+              <h3 class="ui dividing header">{{{advanced-options}}}</h3>
+              <div class="ui stackable two column grid">
+                <!-- Burnable -->
+                <div class="column">
+                  <div class="ui toggle checkbox">
+                    <input name="wpsc-adv-burn" id="wpsc-adv-burn" type="checkbox" tabindex="0" value="burnable"
+                      {{#is-burnable}}checked="checked"{{/is-burnable}}
+                      {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                    >
+                    <label>{{{burnable}}}</label>
+                  </div>
+                  <h4 class="ui header">
+                    <div class="sub header">
+                      {{{burnable-desc}}} 
+                      {{{burnable-tooltip}}}
+                    </div>
+                  </h4>
+                </div>
+                <!-- Pausable -->
+                <div class="column">
+                  <div class="ui toggle checkbox">
+                    <input name="wpsc-adv-pause" id="wpsc-adv-pause" type="checkbox" tabindex="0" value="pausable"
+                    {{#is-pausable}}checked="checked"{{/is-pausable}}
+                    {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                    >
+                    <label>{{{pausable}}}</label>
+                  </div>
+                  <h4 class="ui header">
+                    <div class="sub header">
+                      {{{pausable-desc}}} 
+                      {{{pausable-tooltip}}}
+                    </div>
+                  </h4>
+                </div>
+                <!-- Mintable -->
+                <div class="column">
+                  <div class="ui toggle checkbox">
+                    <input name="wpsc-adv-mint" id="wpsc-adv-mint" type="checkbox" tabindex="0" value="mintable"
+                    {{#is-mintable}}checked="checked"{{/is-mintable}}
+                    {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                    >
+                    <label>{{{mintable}}}</label>
+                  </div>
+                  <h4 class="ui header">
+                    <div class="sub header">
+                      {{{mitable-desc}}} 
+                      {{{mintable-tooltip}}}
+                    </div>
+                  </h4>
+                </div>
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{mintable-cap}}}
+                    <div class="sub header">
+                      {{{mintable-desc}}} 
+                      {{{mintable-tooltip-cap}}}
+                    </div>
+                  </h4>
+                  <div class="ui fluid icon input" id="wpsc-adv-cap">
+                    <input name="wpsc-adv-cap" type="text" placeholder="{{{maximum-cap}}}" value="{{{wpsc-adv-cap}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                    <i class="suitcase icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/readonly}}
+
+            {{#show_social}}
+            <!-- Social Networks -->
+            <div class="ui secondary segment">
+              <h3 class="ui dividing header">
+                {{{social-networks}}}
+                <span class="ui icon" data-tooltip="{{{social-networks-tooltip}}}">
+                <i class="help mini icon circular"></i>
+                </span>
+              </h3>
+              <div class="ui two column stackable grid container">
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{social-network-icon}}}
+                    <div class="sub header">
+                      {{{social-network-icon-desc}}}
+                    </div>
+                  </h4>
+                  <div id="wpsc-profile-icon" class="ui floating labeled icon dropdown button">
+                    <i class="filter icon"></i>
+                    <span class="text">{{{icon}}}</span>
+                    <div class="menu">
+                      <div class="item">
+                        <i class="bitcoin icon"></i>
+                        Bitcoin Talk
+                      </div>
+                      <div class="item">
+                        <i class="bitbucket icon"></i>
+                        Bitbucket
+                      </div>
+                      <div class="item">
+                        <i class="blogger icon"></i>
+                        Blogger
+                      </div>
+                      <div class="item">
+                        <i class="discord icon"></i>
+                        Discord
+                      </div>
+                      <div class="item">
+                        <i class="facebook icon"></i>
+                        Facebook
+                      </div>
+                      <div class="item">
+                        <i class="github icon"></i>
+                        Github
+                      </div>
+                      <div class="item">
+                        <i class="google plus icon"></i>
+                        Google+
+                      </div>
+                      <div class="item">
+                        <i class="instagram icon"></i>
+                        Instagram
+                      </div>
+                      <div class="item">
+                        <i class="linkedin icon"></i>
+                        LinkedIn
+                      </div>
+                      <div class="item">
+                        <i class="medium icon"></i>
+                        Medium
+                      </div>
+                      <div class="item">
+                        <i class="reddit icon"></i>
+                        Reddit
+                      </div>
+                      <div class="item">
+                        <i class="slack icon"></i>
+                        Slack
+                      </div>
+                      <div class="item">
+                        <i class="stack exchange icon"></i>
+                        Stack Exchange
+                      </div>
+                      <div class="item">
+                        <i class="stack overflow icon"></i>
+                        Stack Overflow
+                      </div>
+                      <div class="item">
+                        <i class="telegram plane icon"></i>
+                        Telegram
+                      </div>
+                      <div class="item">
+                        <i class="trello icon"></i>
+                        Trello
+                      </div>
+                      <div class="item">
+                        <i class="twitter icon"></i>
+                        Twitter
+                      </div>
+                      <div class="item">
+                        <i class="vimeo v icon"></i>
+                        Vimeo
+                      </div>
+                      <div class="item">
+                        <i class="wordpress simple icon"></i>
+                        Wordpress
+                      </div>
+                      <div class="item">
+                        <i class="youtube icon"></i>
+                        Youtube
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{social-network-link}}}
+                    <div class="sub header">
+                      {{{social-network-link-desc}}}
+                    </div>
+                  </h4>
+                  <div id="wpsc-profile-link" class="ui left icon fluid input">
+                    <input id="wpsc-profile-link-input" type="text" placeholder="link.com/myprofile">
+                    <i class="user icon"></i>
+                  </div>
+                </div>
+                <div class="column">
+                  <button id="add-row" class="ui grey button">{{{add}}}</button>
+                </div>
+              </div>
+
+              <div id="wpsc-social-column-container" class="ui stackable three column grid">
+
+                {{{social-networks-html}}}
+
+              </div>
+            </div>
+
+            {{/show_social}}
+
+          </div>
+
+          {{#show_social}}
+          <!-- Forkdelta App -->
+          <div class="ui secondary segment">
+            <h3 class="ui dividing header">
+              {{{dex}}}
+              <span class="ui icon" data-tooltip="{{{forkdelta-link-tooltip}}}">
+              <i class="help mini icon circular"></i>
+              </span>
+            </h3>
+            <div class="ui one column stackable grid container">
+              <div class="column">
+                <h4 class="ui header">
+                  <div class="ui fitted toggle checkbox">
+                    <input tabindex="0" type="checkbox" name="wpsc-forkdelta" id="wpsc-forkdelta" value="forkdelta"
+                      {{#is-forkdelta}}checked="checked"{{/is-forkdelta}}
+                    >
+                    <label>
+                    </label>
+                  </div>
+                  {{{forkdelta-link-desc}}}
+                </h4>
+              </div>
+              <div class="column">
+                <h4 class="ui header">
+                  <div class="ui fitted toggle checkbox">
+                    <input tabindex="0" type="checkbox" name="wpsc-uniswap" id="wpsc-uniswap" value="uniswap"
+                      {{#is-uniswap}}checked="checked"{{/is-uniswap}}
+                    >
+                    <label>
+                    </label>
+                  </div>
+                  {{{uniswap-link-desc}}}
+                </h4>
+                <div id="help-no-exchange" class="ui icon mini message" data-variation="wide mini">
+                  <i class="exclamation triangle icon"></i>
+                  <p>{{{uniswap-link-tooltip}}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/show_social}}

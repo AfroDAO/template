@@ -1,0 +1,13 @@
+.wpsc-warning {
+    background-color: #ff0000!important;
+    border-color: #ff0000!important;
+    color: #fff!important;
+}
+
+.wp-admin-bar-connect-with-metamask-button {
+    padding: 0px;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 35px;
+    background-color: lightgrey;
+}

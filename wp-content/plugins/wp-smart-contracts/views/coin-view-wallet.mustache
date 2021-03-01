@@ -1,0 +1,734 @@
+{{#contract-exists}}
+
+	<input type="hidden" id="wpsc-contract-name" value="{{contract-name}}">
+	<input type="hidden" id="wpsc-contract-flavor" value="{{flavor}}">
+
+	<div class="ui raised center aligned segment" id="wpsc-wallet" style="display: none">
+
+		<h3 class="ui block header left aligned">
+			<img class="ui mini image" src="{{wallet-icon}}">
+			{{{wallet}}}
+		</h3>
+
+		<div id="wpsc-user-balance">
+			<div class="ui active inverted dimmer">
+				<div class="ui loader"></div>
+			</div>
+		</div>
+
+		<div id="wpsc-main-account-roles"></div>
+
+		<a id="wpsc-transfer-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-transfer-modal">
+            <i class="paper plane icon"></i>
+            {{{transfer}}}
+        </a>
+
+		<a id="wpsc-transfer-from-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-transfer-from-modal">
+            <i class="paper plane icon"></i>
+            {{{transfer-from}}}
+        </a>
+
+		<a id="wpsc-approve-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-approve-modal">
+            <i class="check icon"></i>
+            {{{approve}}}
+        </a>
+
+        {{#is_chocolate}}
+
+		<a id="wpsc-mint-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-mint-modal" style="display: none">
+			<i class="tint icon"></i>{{{mint}}}
+        </a>
+
+		<a id="wpsc-burn-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-burn-modal" style="display: none">
+			<i class="fire icon"></i>{{{burn}}}
+        </a>
+
+		<a id="wpsc-burn-from-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-burn-from-modal" style="display: none">
+			<i class="fire icon"></i>{{{burn-from}}}
+        </a>
+
+		<a id="wpsc-pause-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-pause-modal" style="display: none">
+			<i class="pause circle outline icon"></i>{{{pause}}}
+        </a>
+
+		<a id="wpsc-resume-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-resume-modal" style="display: none">
+			<i class="play circle outline icon"></i>{{{resume}}}
+        </a>
+
+		<div class="ui hidden divider"></div>
+
+		<button id="wpsc-renounce-pauser-role" class="ui mini red button" style="display: none">
+		  <i class="pause circle outline icon"></i>
+		  {{{renounce-pauser}}}
+		</button>
+		<button id="wpsc-renounce-minter-role" class="ui mini red button" style="display: none">
+		  <i class="tint icon"></i>
+		  {{{renounce-minter}}}
+		</button>
+
+        {{/is_chocolate}}
+
+	</div>
+
+	<div id="wpsc-transfer-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="paper plane icon"></i>
+		        {{{transfer}}}
+		    </h3>
+
+		    <p>{{{transfer-tooltip}}}</p>
+
+		    <div id="wpsc-transfer-form">
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-transfer-to-account" type="text" value="" placeholder="{{{address-to}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-wallet-transfer-to-account">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-transfer-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-token-transfer">
+						<i class="paper plane icon"></i>{{{transfer}}}
+					</button>
+			    </div>
+
+			    <div id="wpsc-wallet-transfer-to-account-message"></div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-transfer-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-transfer-progress-transfer" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-transfer-from-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="paper plane icon"></i>
+		        {{{transfer-from}}}
+		    </h3>
+
+		    <p>{{{transfer-from-tooltip}}}</p>
+
+		    <div id="wpsc-transfer-from-form">
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-transfer-from-account" type="text" value="" placeholder="{{{address-from}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-wallet-transfer-from-account">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+				<div id="wpsc-wallet-transfer-from-account-message"></div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-transfer-from-to-account" type="text" value="" placeholder="{{{address-to}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-wallet-transfer-from-to-account">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-transfer-from-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-token-transfer-from">
+						<i class="paper plane icon"></i>{{{transfer-from}}}
+					</button>
+			    </div>
+
+				<div id="wpsc-wallet-transfer-from-to-account-message"></div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-transfer-from-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-transfer-progress-transfer-from" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-approve-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="check icon"></i>
+		        {{{approve}}}
+		    </h3>
+
+		    <p>{{{approve-tooltip}}}</p>
+
+		    <div id="wpsc-approve-form">
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-approve-account" type="text" value="" placeholder="{{{address-to}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-wallet-approve-account">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+			    <div id="wpsc-wallet-approve-account-message"></div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-approve-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-approve">
+						<i class="check icon"></i>{{{approve}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-approve-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-approve" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+	    </div>
+
+	</div>
+
+    {{#is_chocolate}}
+
+	<div id="wpsc-mint-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="tint icon"></i>
+		        {{{mint}}}
+		    </h3>
+
+		    <p>{{{mint-tooltip}}}</p>
+
+		    <div id="wpsc-mint-form">
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-mint-account" type="text" value="" placeholder="{{{address-to}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-wallet-mint-account">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+			    <div id="wpsc-wallet-mint-account-message"></div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-mint-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-mint">
+						<i class="tint icon"></i>{{{mint}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-mint-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-mint" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-burn-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="fire icon"></i>
+		        {{{burn}}}
+		    </h3>
+
+		    <p>{{{burn-tooltip}}}</p>
+
+		    <div id="wpsc-burn-form">
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-burn-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-burn">
+						<i class="fire icon"></i>{{{burn}}}
+					</button>
+			    </div>
+
+			    <div id="wpsc-wallet-burn-account-message"></div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-burn-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-burn" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-burn-from-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="fire icon"></i>
+		        {{{burn-from}}}
+		    </h3>
+
+		    <p>{{{burn-from-tooltip}}}</p>
+
+		    <div id="wpsc-burn-from-form">
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-burn-from-account" type="text" value="" placeholder="{{{address-from}}}" class="wpsc-validate-address">
+					<button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-wallet-burn-from-account">
+						<i class="qrcode icon"></i>{{{scan}}}
+					</button>
+				</div>
+
+			    <div id="wpsc-wallet-burn-from-account-message"></div>
+
+			    <div class="ui divider"></div>
+
+				<div class="ui fluid action input">
+					<input name="wpsc-wallet-burn-from-amount" type="text" value="" placeholder="{{{amount}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-burn-from">
+						<i class="fire icon"></i>{{{burn-from}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-burn-from-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-burn-from" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-pause-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="pause circle outline icon"></i>
+		        {{{pause}}}
+		    </h3>
+
+		    <p>{{{pause-tooltip}}}</p>
+
+		    <div id="wpsc-pause-form">
+
+			    <div id="wpsc-wallet-pause-message"></div>
+
+				<div class="ui input">
+					<button class="ui teal right labeled icon button" id="wpsc-pause">
+						<i class="pause circle outline icon"></i>{{{pause}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-pause-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-pause" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-resume-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="play circle outline icon"></i>
+		        {{{resume}}}
+		    </h3>
+
+		    <p>{{{resume-tooltip}}}</p>
+
+		    <div id="wpsc-resume-form">
+
+			    <div id="wpsc-wallet-resume-message"></div>
+
+				<div class="ui input">
+					<button class="ui teal right labeled icon button" id="wpsc-resume">
+						<i class="play circle outline icon"></i>{{{resume}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-resume-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-resume" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+	<div id="wpsc-add-pauser-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="pause circle outline icon"></i>
+		        {{{pause}}}
+		    </h3>
+
+		    <p>{{{tooltip-pauser}}}</p>
+
+		    <div id="wpsc-add-pauser-form">
+
+			    <div id="wpsc-wallet-add-pauser-message"></div>
+
+				<div class="ui input">
+					<button class="ui teal right labeled icon button" id="wpsc-add-pauser">
+						<i class="play circle outline icon"></i>{{{add-pauser}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-add-pauser-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-add-pauser" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+	<div id="wpsc-add-minter-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="pause circle outline icon"></i>
+		        {{{mint}}}
+		    </h3>
+
+		    <p>{{{tooltip-minter}}}</p>
+
+		    <div id="wpsc-add-minter-form">
+
+			    <div id="wpsc-wallet-add-minter-message"></div>
+
+				<div class="ui input">
+					<button class="ui teal right labeled icon button" id="wpsc-add-minter">
+						<i class="play circle outline icon"></i>{{{add-minter}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-add-minter-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-add-minter" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-renounce-pauser-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="pause circle outline icon"></i>
+		        {{{pause}}}
+		    </h3>
+
+		    <p>{{{tooltip-renounce-pauser}}}</p>
+
+		    <div id="wpsc-renounce-pauser-form">
+
+			    <div id="wpsc-wallet-renounce-pauser-message"></div>
+
+				<div class="ui input">
+					<button class="ui red right labeled icon button" id="wpsc-renounce-pauser">
+						<i class="play circle outline icon"></i>{{{renounce-pauser}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-renounce-pauser-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-renounce-pauser" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+
+	<div id="wpsc-renounce-minter-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+		        <i class="tint icon"></i>
+		        {{{mint}}}
+		    </h3>
+
+		    <p>{{{tooltip-renounce-minter}}}</p>
+
+		    <div id="wpsc-renounce-minter-form">
+
+			    <div id="wpsc-wallet-renounce-minter-message"></div>
+
+				<div class="ui input">
+					<button class="ui red right labeled icon button" id="wpsc-renounce-minter">
+						<i class="play circle outline icon"></i>{{{renounce-minter}}}
+					</button>
+			    </div>
+
+			</div>
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-wallet-renounce-minter-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-progress-renounce-minter" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+    {{/is_chocolate}}
+
+{{/contract-exists}}

@@ -1,0 +1,150 @@
+
+
+
+
+
+
+<div id="content" class="">
+	<div class="ui basic container segment">
+		<div class="ui one stackable cards">
+			<div class="ui raised card">
+				<div class="content">
+					<h3 class="ui block centered header">
+						<img class="tiny ui image" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png">My Awesome Faucet
+					</h3>
+					<div class="ui center aligned">
+						<span class="ui yellow image label">
+						<i class="circle icon"></i>Rinkeby Test Network</span>
+						<span class="ui image label">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAADsklEQVR4Xu3dMZFWQRBF4dmMIiQHAwjAAgigCgcYINwMQpxgAAsIwACYIAMRX3BrlkPe9NTt8273vDf/7MOH5x//nov//X78Nl39yy/vp/k1+UMAmIQBYPpxdA5gEuYApt/JAVBADc8BTMEcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPS73wE+v3hH5wF+/nlFEr5+9oviv3/6QfEa/PbrG/ov1vo9BADV7wRADkAE5QC1AAJIW2gtgOQ/tYC1hTUE2hCdA+QAbQOFgXYB7QKEn7NuobUAKl9D4JzghsCGQHyGLbwZoBmACGoG6E0gAdSbwL4GEkDtAki+dgHzXYD2UKz/UQvW9Wv+6x1ABQyAy08EBcB//h4gAAJAXZzitQcrwJq/GYDKfxoC1wRrfqx/AGgB1MI0fwC0CyAG1gBr/mYAKn8zQG8C8WOWtrAcAD9HowE0BK4J1vwB0BBIDKgFK8CavyGQyt8Q2BB4+xCo18WrBempXj2UiQZw1uvXFsI3hASAXVChAAcA3tCRA+CfjMkBcgB6iNY9lBZ/TjNADpAD0EOUA2xvGWsXQPjWAvhjSA6QA9AzqPtoSt4Q6O/Cc4AcgB7CHMCu6m0IJPwaAhsC8efp6mB9C+hbAHlYLYDkewItYH1dvP7FD7VQrD9/C9A/Pq2v4udHwgLgPTEYAJfPADnA4zd6AmoBl98PUAuoBeQAoEAzQDMA4HNOuwCSz98DNAQ2BBKCtYBaAAFUCyD5agH828C2gW0D6RnsRVAvggggDdYjbe0C2gUQg+0C2gUQQPMDIbT6c3gI1fz6BGr+64+ErQXQ/AGAV6RoAfQJ0PwBEADKEMXrA9AMQPL7L6MwPc9AAYAVqAXUAhAhC68FXH5XsJXft8G1AKxALaAWgAhZeC2gFkAE1QJIvraB/PNw1J/3wZq/GaAZQBmi+GaAZgACqBmA5HsCM4DeD4D6FT5WgI+Fj9dfelQgAFDA28MD4PYK4voDAAW8PTwAbq8grj8AUMDbwwPg9gri+gMABbw9PABuryCuPwBQwNvDA+D2CuL6AwAFvD08AG6vIK4/AFDA28MD4PYK4vr5QAjmL3ysQACMC7BOHwDrCozzB8C4AOv0AbCuwDh/AIwLsE4fAOsKjPMHwLgA6/QBsK7AOH8AjAuwTh8A6wqM8wfAuADr9AGwrsA4fwCMC7BOHwDrCozzB8C4AOv0/wCkyrnuVEbjGQAAAABJRU5ErkJggg==">
+						<span class="wpsc-capitalize">0x2364105f17e6DFd5B590692ED96b0653A7C75594</span>
+						</span>
+					</div>
+					<div class="ui hidden divider"></div>
+					<div class="ui center aligned">
+						<span class="ui image label">
+							<i class="database icon"></i>Balance
+							<div class="detail">12,341,234.00</div>
+						</span>
+						<a id="" href="javascript:void(0);" class="ui mini button" data-modal="">
+						Withdraw
+						<i class="angle double right
+							icon"></i>
+						</a>
+					</div>
+					<div class="ui divider"></div>
+					<p>Description HTML faucet</p>
+					<div class="ui divider"></div>
+					<div class="ui center aligned">
+						<button class="ui massive button">
+						<i class="eye dropper icon"></i>
+						Claim
+						</button>
+						<br>
+						<img src="https://www.cmnty.com/support/wp-content/uploads/2017/07/nocaptcha.gif">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="content" class="">
+	<div class="ui basic container segment">
+		<div class="ui one stackable cards">
+			<div class="ui raised card">
+				<div class="content">
+					<style>
+						.countdown-li {
+						display: inline-block;
+						font-size: 1.5em;
+						list-style-type: none;
+						padding: 1em;
+						text-transform: uppercase;
+						}
+						.countdown-li span {
+						display: block;
+						font-size: 5rem;
+						}
+					</style>
+					<script>
+						const second = 1000,
+						      minute = second * 60,
+						      hour = minute * 60,
+						      day = hour * 24;
+						
+						let countDown = new Date('Sep 30, 2019 00:00:00').getTime(),
+						    x = setInterval(function() {
+						
+						      let now = new Date().getTime(),
+						          distance = countDown - now;
+						
+						      document.getElementById('days').innerText = Math.floor(distance / (day)),
+						        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+						        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+						        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+						      
+						      //do something later when date is reached
+						      //if (distance < 0) {
+						      //  clearInterval(x);
+						      //  'IT'S MY BIRTHDAY!;
+						      //}
+						
+						    }, second)
+					</script>
+					<h3 class="ui block centered header">
+						<img class="tiny ui image" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Android_O_Preview_Logo.png">My Awesome Faucet
+					</h3>
+					<div class="ui center aligned">
+						<span class="ui yellow image label">
+						<i class="circle icon"></i>Rinkeby Test Network</span>
+						<span class="ui image label">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAADsklEQVR4Xu3dMZFWQRBF4dmMIiQHAwjAAgigCgcYINwMQpxgAAsIwACYIAMRX3BrlkPe9NTt8273vDf/7MOH5x//nov//X78Nl39yy/vp/k1+UMAmIQBYPpxdA5gEuYApt/JAVBADc8BTMEcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPTLAVA/Ds8BTMIcwPS73wE+v3hH5wF+/nlFEr5+9oviv3/6QfEa/PbrG/ov1vo9BADV7wRADkAE5QC1AAJIW2gtgOQ/tYC1hTUE2hCdA+QAbQOFgXYB7QKEn7NuobUAKl9D4JzghsCGQHyGLbwZoBmACGoG6E0gAdSbwL4GEkDtAki+dgHzXYD2UKz/UQvW9Wv+6x1ABQyAy08EBcB//h4gAAJAXZzitQcrwJq/GYDKfxoC1wRrfqx/AGgB1MI0fwC0CyAG1gBr/mYAKn8zQG8C8WOWtrAcAD9HowE0BK4J1vwB0BBIDKgFK8CavyGQyt8Q2BB4+xCo18WrBempXj2UiQZw1uvXFsI3hASAXVChAAcA3tCRA+CfjMkBcgB6iNY9lBZ/TjNADpAD0EOUA2xvGWsXQPjWAvhjSA6QA9AzqPtoSt4Q6O/Cc4AcgB7CHMCu6m0IJPwaAhsC8efp6mB9C+hbAHlYLYDkewItYH1dvP7FD7VQrD9/C9A/Pq2v4udHwgLgPTEYAJfPADnA4zd6AmoBl98PUAuoBeQAoEAzQDMA4HNOuwCSz98DNAQ2BBKCtYBaAAFUCyD5agH828C2gW0D6RnsRVAvggggDdYjbe0C2gUQg+0C2gUQQPMDIbT6c3gI1fz6BGr+64+ErQXQ/AGAV6RoAfQJ0PwBEADKEMXrA9AMQPL7L6MwPc9AAYAVqAXUAhAhC68FXH5XsJXft8G1AKxALaAWgAhZeC2gFkAE1QJIvraB/PNw1J/3wZq/GaAZQBmi+GaAZgACqBmA5HsCM4DeD4D6FT5WgI+Fj9dfelQgAFDA28MD4PYK4voDAAW8PTwAbq8grj8AUMDbwwPg9gri+gMABbw9PABuryCuPwBQwNvDA+D2CuL6AwAFvD08AG6vIK4/AFDA28MD4PYK4vr5QAjmL3ysQACMC7BOHwDrCozzB8C4AOv0AbCuwDh/AIwLsE4fAOsKjPMHwLgA6/QBsK7AOH8AjAuwTh8A6wqM8wfAuADr9AGwrsA4fwCMC7BOHwDrCozzB8C4AOv0/wCkyrnuVEbjGQAAAABJRU5ErkJggg==">
+						<span class="wpsc-capitalize">0x2364105f17e6DFd5B590692ED96b0653A7C75594</span>
+						</span>
+					</div>
+					<div class="ui hidden divider"></div>
+					<div class="ui center aligned">
+						<span class="ui image label">
+							<i class="database icon"></i>Balance
+							<div class="detail">12,341,234.00</div>
+						</span>
+						<a id="" href="javascript:void(0);" class="ui mini button" data-modal="">
+						Withdraw
+						<i class="angle double right
+							icon"></i>
+						</a>
+					</div>
+					<div class="ui divider"></div>
+					<p>Description HTML faucet</p>
+					<div class="ui divider"></div>
+					<div class="ui center aligned">
+						<p>Thanks for using My Awesome Faucet</p>
+						<h4>Claim Again In</h4>
+						<ul>
+							<li class="countdown-li"><span id="days"></span>days</li>
+							<li class="countdown-li"><span id="hours"></span>Hours</li>
+							<li class="countdown-li"><span id="minutes"></span>Minutes</li>
+							<li class="countdown-li"><span id="seconds"></span>Seconds</li>
+						</ul>
+						<div class="ui segment">
+							<div class="field">
+								<div class="ui toggle checkbox">
+									<input type="checkbox" name="gift" tabindex="0" class="hidden">
+									<label>Play sound when you can claim again</label>
+								</div>
+							</div>
+						</div>
+						<div class="ui mini label">
+							<i class="info icon"></i> Your account is allowed to faucet every 10 minutes
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

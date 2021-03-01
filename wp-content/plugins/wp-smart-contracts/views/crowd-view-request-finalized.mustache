@@ -1,0 +1,25 @@
+{{^is_refresh}}
+<div id="request-card-{{index}}" class="card">
+{{/is_refresh}}
+	<div class="finalized content">
+		<div class="ui grey header">
+			{{{desc}}}
+		</div>
+		{{#approvalCount}}
+		<div class="floating ui black mini label" data-tooltip="{{{approvers}}}">
+			{{approvalCount}}
+		</div>
+		{{/approvalCount}}
+		<div class="meta">
+			{{to}} <span>{{recipient_short}}</span>
+		</div>
+		<span class="ui basic label">
+		{{{value}}} {{native_coin}}
+		</span>
+	</div>
+	<div class="finalized bottom">
+		{{{transferred}}}
+	</div>
+{{^is_refresh}}
+</div>
+{{/is_refresh}}

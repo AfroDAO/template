@@ -1,0 +1,310 @@
+{{#contract-exists}}
+
+	<input type="hidden" id="wpsc-panel-network" value="{{network}}">
+	<input type="hidden" id="wpsc-contract-name" value="{{contract-name}}">
+	<input type="hidden" id="wpsc-contract-flavor" value="{{wpsc-flavor}}">
+	<input type="hidden" id="wpsc-ico-contract" value="{{wpsc-contract-address}}">
+
+    <div class="ui center aligned basic segment">
+        <div class="ui two stackable centered cards">
+            {{#wpsc_adv_timed}}
+            <div class="ui raised card">
+                {{^is_open}}
+                {{^is_closed}}
+                <div class="content">
+                    <h4 class="ui block header"><i class="calendar outline icon"></i>{{{ico-will-open}}}</h4>
+                    <div class="header">{{{ico-begins}}}</div>
+                    <div class="meta">
+                        <span class="category">{{{opening_human}}}</span>
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui big blue label fluid">
+                        <i class="clock icon"></i>
+                        <span id="days"></span> {{{days}}}
+                        <span id="hours"></span> {{{hrs}}}
+                        <span id="minutes"></span> {{{min}}}
+                        <span id="seconds"></span> {{{sec}}}
+                    </div>
+                </div>
+                {{/is_closed}}
+                {{/is_open}}
+                {{#is_open}}
+                <div class="content">
+                    <h4 class="ui block header"><i class="calendar outline icon"></i>{{{ico-is-open}}}</h4>
+                    <div class="header">{{{open-until}}}</div>
+                    <div class="meta">
+                        <span class="category">{{{closing_human}}}</span>
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui big red label fluid">
+                        <i class="clock icon"></i>
+                        <span id="days"></span> {{{days}}}
+                        <span id="hours"></span> {{{hrs}}}
+                        <span id="minutes"></span> {{{min}}}
+                        <span id="seconds"></span> {{{sec}}}
+                    </div>
+                </div>
+                {{/is_open}}
+                {{#is_closed}}
+                <div class="content">
+                    <h4 class="ui block header"><i class="calendar outline icon"></i>{{{ico-is-closed}}}</h4>
+                    <div class="header">{{{ico-closed}}}</div>
+                    <div class="meta">
+                        <span class="category">{{{closing_human}}}</span>
+                    </div>
+                </div>
+                {{/is_closed}}
+            </div>
+            {{/wpsc_adv_timed}}
+            {{#show_raised}}
+            <div class="ui raised card">
+                <div class="content">
+                    <h4 class="ui block header"><i class="money bill alternate outline icon"></i>{{{raised}}}</h4>
+                    <div class="ui huge green header" style="font-size: 50px;">
+                        <span id="wpsc-eth-raised">
+                            <div class="ui active inline loader"></div>
+                        </span>
+                    </div>
+                    {{#wpsc_adv_hard}}
+                    <div class="ui teal progress active" data-percent="0" id="hardcap-progress-bar">
+                        <div class="bar"></div>
+                        <div class="label"><span id="npercent"></span> {{{hard-cap-reached}}}</div>
+                    </div>
+                    {{/wpsc_adv_hard}}
+                </div>
+            </div>
+            {{/show_raised}}
+        </div>
+
+        {{#can_contribute}}
+        <style>
+        .ui.placeholder.segment .button, .ui.placeholder.segment textarea {
+            display: inline-flex;
+        }
+        @media only screen and (max-width: 425px) {
+            .ui.placeholder.segment {
+                padding-right: 0!important;
+                padding-left: 0!important;
+            }
+            .hide-small-dev {
+                display: none!important;
+            }
+        }
+        </style>
+        <div class="ui hidden divider"></div>
+        <span id="wpsc-buy-tokens-panel">
+            <h1 class="ui header">
+                {{{buy-tokens}}}
+            </h1>
+            <div class="ui placeholder segment">
+                <div class="ui two column stackable center aligned grid">
+                    <div class="ui vertical divider hide-small-dev">{{or}}</div>
+                    <div class="middle aligned row">
+                        <div class="column">
+                            <div class="ui icon header">
+                                <i class="ethereum icon"></i>{{{send-ether-address}}}
+                            </div>
+                            <div class="wpsc-address" id="wpscContractAddressDiv">
+                                <div class="ui mini labeled button" tabindex="0">
+                                    <div class="ui mini button">
+                                        <span class="desktop-only">
+                                        <img src="{{wpsc_blockie}}" class="ui image super-mini circular floated left">
+                                        </span>
+                                        <span class="no-desktop">
+                                        <i class="icon ethereum"></i>
+                                        </span>
+                                    </div>
+                                    <span class="ui basic left pointing label">
+                                    <a href="javascript:void(0);" onclick="copyToClipboard('{{wpsc_contract_address}}', 'wpscContractAddressDiv')"><i class="icon copy"></i></a>
+                                    <input name="wpscContractAddress" type="hidden" value="{{wpsc_contract_address}}">
+                                    <a href="{{etherscan}}address/{{wpsc_contract_address}}" target="_blank">
+                                        <span class="big-desktop-only">
+                                            {{wpsc_contract_address_short}}
+                                        <i class="icon external alternate"></i>
+                                        </span>
+                                        <span class="no-big-desktop">{{wpsc_contract_address_short}}</span>
+                                    </a>
+                                    </span>
+                                    <div class="ui mini icon button showfluid" style=""><i class="qrcode icon"></i></div>
+                                    <div class="ui flowing popup top left transition hidden" style="top: auto; bottom: 318.262px; left: 315.605px; right: auto;">
+                                        <img src="{{wpsc_qr_code}}" class="ui centered small image">
+                                        <div class="ui divider"></div>
+                                        <div class="ui label">
+                                            {{wpsc_contract_address}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui hidden divider"></div>
+                            <div id="help-no-exchange" class="ui icon mini message" data-content="{{{erc20-wallet}}}" data-variation="wide mini">
+                                <i class="exclamation triangle icon"></i>
+                                {{{no-exchange}}}
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="ui icon header">
+                                <i class="window restore outline icon"></i> {{{browser-wallet}}}
+                            </div>
+                            <div>
+                                <a id="wpsc-contribute-link" href="javascript:void(0);" class="ui big green button" data-modal="wpsc-contribute-modal">
+                                    <img src="{{wpsc_blockie}}" class="ui circular mini image buy-tokens-icon"> 
+                                    {{{buy-tokens}}}
+                                </a>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui hidden divider"></div>
+                <div class="ui hidden divider"></div>
+            </div>
+        </span>
+        {{/can_contribute}}
+
+    </div>
+
+
+    <div id="wpsc-contribute-modal" class="ui basic modal">
+
+		<div class="ui center aligned inverted segment">
+
+		    <h3 class="ui header">
+                <img class="ui mini image" src="{{ico-contribute}}">
+		        {{{buy-tokens}}}
+		    </h3>
+
+		    <p>{{{contribute-tooltip}}}</p>
+
+		    <div id="wpsc-contribute-form">
+
+                <div class="ui fluid action input">
+                    <input name="wpsc-beneficiary" type="text" placeholder="{{{beneficiary}}}" class="wpsc-validate-address">
+                    <button class="ui right labeled icon button wpsc-open-qr-scanner" data-input-name="wpsc-beneficiary">
+                        <i class="qrcode icon"></i>{{{scan}}}
+                    </button>
+                </div>
+
+                <div class="ui inverted accordion field">
+                    <div class="ui left aligned inverted mini segment">
+                        <div class="title">
+                            <i class="icon dropdown"></i>
+                            {{{what-is}}}
+                        </div>
+                        <div class="content field">
+                            <label class="transition hidden">{{{contribute-help}}}</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui divider"></div>
+
+                <div class="ui fluid action input">
+					<input name="wpsc-crowd-contribute-amount" type="text" value="" placeholder="{{{amount-ether}}}">
+					<button class="ui teal right labeled icon button" id="wpsc-crowd-contribute">
+						<i class="paper plane icon"></i>{{{send}}}
+					</button>
+			    </div>
+
+            </div>
+
+		    <div id="wpsc-crowd-contribute-to-account-message"></div>
+
+
+		    <div class="ui hidden divider"></div>
+
+			<div class="actions">
+				<div id="wpsc-crowd-contribute-cancel-button" class="ui red basic cancel inverted button">
+					<i class="remove icon"></i>
+					{{{cancel}}}
+				</div>
+			</div>
+
+			<div id="wpsc-contribute-progress-contribute" class="ui icon black message hidden">
+				<div class="content">
+					<div class="header">
+						{{{tx-in-progress}}}
+					</div>
+					<p class="wpsc-small">
+						<img class="ui mini left floated image" src="{{deploy-icon}}">
+						{{{click-confirm}}} {{{please-patience}}}
+					</p>
+				</div>
+			</div>
+
+
+	    </div>
+
+	</div>
+
+    <script>
+
+            function countdown(endDate) {
+            
+                let days, hours, minutes, seconds;
+                
+                // endDate = new Date(endDate).getTime();
+                
+                if (isNaN(endDate)) {
+                    return;
+                }
+                
+                setInterval(calculate, 1000);
+
+                function calculate() {
+
+                    let startDate = new Date().getTime();
+                    
+                    let timeRemaining = parseInt((endDate - startDate) / 1000);
+                    
+                    if (timeRemaining >= 0) {
+
+                        days = parseInt(timeRemaining / 86400);
+                        timeRemaining = (timeRemaining % 86400);
+                        
+                        hours = parseInt(timeRemaining / 3600);
+                        timeRemaining = (timeRemaining % 3600);
+                        
+                        minutes = parseInt(timeRemaining / 60);
+                        timeRemaining = (timeRemaining % 60);
+                        
+                        seconds = parseInt(timeRemaining);
+                        
+                        document.getElementById("days").innerHTML = parseInt(days, 10);
+                        document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+                        document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+                        document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+                    } else {
+                        return;
+                    }
+                }
+            }
+            
+            (function () { 
+                {{^is_open}}
+                    {{^is_closed}}
+                        countdown({{opening}});
+                    {{/is_closed}}
+                {{/is_open}}
+            
+                {{#is_open}}
+                    countdown({{closing}});
+                {{/is_open}}
+            }());
+
+            jQuery('#hardcap-progress-bar').progress();
+            
+            jQuery('#help-no-exchange')
+              .popup()
+            ;
+            jQuery('#what-is-beneficiary')
+              .popup()
+            ;
+
+            jQuery('.ui.accordion')
+                .accordion()
+            ;
+        </script>
+
+{{/contract-exists}}

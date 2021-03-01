@@ -1,0 +1,32 @@
+            <div class="ui placeholder segment">
+              <div class="ui one column center aligned grid">
+                  <div class="middle aligned row">
+                      <div class="column">
+                          <div class="ui icon header">
+                            <i class="ethereum icon"></i>{{{deploy-using-ether}}}
+                          </div>
+                          <p>{{{deploy-desc}}}</p>
+                          <div class="ui hidden divider"></div>
+                          <button id="{{button-id}}" class="ui labeled icon green button big">
+                            <i class="cloud upload icon"></i>
+                            {{{deploy}}}
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="ui hidden divider"></div>
+              <div class="ui hidden divider"></div>
+          </div>
+
+          {{#show_load}}
+          {{#load-desc}}
+          <p class="wpsc-centered">
+            {{{do-you-have-an-erc20-address}}}
+          </p>
+          <p class="wpsc-centered">
+            <button id="wpsc-load-contract-button" class="ui button">
+              {{{load-desc}}}
+            </button>
+          </p>
+          {{/load-desc}}
+          {{/show_load}}

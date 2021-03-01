@@ -1,0 +1,79 @@
+{
+	"1": {
+		"code": 1,
+		"color": "green",
+		"name": "mainnet",
+		"title": "Main Network",
+		"network": "main",
+		"url": "//api.etherscan.io/api",
+        "url2": "https://etherscan.io/",
+		"color-html": "#21ba45",
+		"icon": "ethereum"
+	},
+	"3": {
+		"code": 3,
+		"color": "pink",
+		"name": "ropsten",
+		"title": "Ropsten",
+		"network": "ropsten",
+		"url": "//api-ropsten.etherscan.io/api",
+        "url2": "https://ropsten.etherscan.io/",
+		"color-html": "#e03997",
+		"icon": "circle"
+	},
+	"4": {
+		"code": 4,
+		"color": "yellow",
+		"name": "rinkeby",
+		"title": "Rinkeby",
+		"network": "rinkeby",
+		"url": "//api-rinkeby.etherscan.io/api",
+        "url2": "https://rinkeby.etherscan.io/",
+		"color-html": "#fbbd08",
+		"icon": "circle"
+	},
+	"42": {
+		"code": 42,
+		"color": "purple",
+		"name": "kovan",
+		"title": "Kovan",
+		"network": "kovan",
+		"url": "//api-kovan.etherscan.io/api",
+        "url2": "https://kovan.etherscan.io/",
+		"color-html": "#a333c8",
+		"icon": "circle"
+	},
+	"5": {
+		"code": 5,
+		"color": "blue",
+		"name": "goerli",
+		"title": "Goerli",
+		"network": "goerli",
+		"url": "//api-goerli.etherscan.io/api",
+        "url2": "https://goerli.etherscan.io/",
+		"color-html": "#69b2f1",
+		"icon": "circle"
+	},
+	"77": {
+		"code": 77,
+		"color": "grey",
+		"name": "xdaitest",
+		"title": "xDai Testnet",
+		"network": "xdaitest",
+		"url": "//blockscout.com/poa/sokol/",
+        "url2": "https://blockscout.com/poa/sokol/",
+		"color-html": "#999999",
+		"icon": "square"
+	},
+	"100": {
+		"code": 100,
+		"color": "teal",
+		"name": "xdai",
+		"title": "xDai",
+		"network": "xdai",
+		"url": "//blockscout.com/poa/xdai/",
+        "url2": "https://blockscout.com/poa/xdai/",
+		"color-html": "#48a9a6",
+		"icon": "square"
+	}
+}

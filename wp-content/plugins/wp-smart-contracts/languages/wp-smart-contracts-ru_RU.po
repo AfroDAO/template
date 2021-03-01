@@ -1,0 +1,2567 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Smart Contracts\n"
+"POT-Creation-Date: 2020-01-09 13:00-0600\n"
+"PO-Revision-Date: 2020-01-11 20:14+0000\n"
+"Last-Translator: admin <igor_rnc2002@mail.ru>\n"
+"Language-Team: Русский\n"
+"Language: ru-RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-smart-contracts.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#: classes/wpsc-assets.php:40 classes/wpsc-mustache.php:145 
+#: classes/wpsc-web3.php:31
+msgid "Mandatory Field"
+msgstr "Обязательное поле"
+
+#: classes/wpsc-assets.php:41 classes/wpsc-web3.php:32
+msgid "Please select a Social Network"
+msgstr "Пожалуйста, выберите социальную сеть"
+
+#: classes/wpsc-assets.php:42
+msgid "Please select approvers percentage "
+msgstr "Пожалуйста, выберите процент одобрения"
+
+#: classes/wpsc-assets.php:43 classes/wpsc-web3.php:33
+msgid "Please write your profile link"
+msgstr "Пожалуйста, напишите ссылку на профиль"
+
+#: classes/wpsc-assets.php:44 classes/wpsc-web3.php:34
+msgid "Are you sure you want to delete this social network?"
+msgstr "Вы уверены, что хотите удалить эту социальную сеть?"
+
+#: classes/wpsc-assets.php:45 classes/wpsc-web3.php:35
+msgid "Code copied to clipboard!"
+msgstr "Код скопирован на буфер обмена!"
+
+#: classes/wpsc-assets.php:46 classes/wpsc-web3.php:36
+msgid "Please write the address of the Smart Contract you want to load"
+msgstr ""
+"Пожалуйста, напишите адрес смарт-контракта, который вы хотите загрузить"
+
+#: classes/wpsc-assets.php:94 classes/wpsc-assets.php:184 
+#: classes/wpsc-shortcodes.php:670
+msgid "Copied!"
+msgstr "Скопировано!"
+
+#: classes/wpsc-cpt-coin.php:62
+msgctxt "post type general name"
+msgid "Coins"
+msgstr "Токены"
+
+#: classes/wpsc-cpt-coin.php:63
+msgctxt "post type singular name"
+msgid "Coin"
+msgstr "Монета"
+
+#: classes/wpsc-cpt-coin.php:64
+msgctxt "admin menu"
+msgid "Coins"
+msgstr "Токены"
+
+#: classes/wpsc-cpt-coin.php:65
+msgctxt "add new on admin bar"
+msgid "Coin"
+msgstr "Монета"
+
+#: classes/wpsc-cpt-coin.php:66
+msgctxt "coin"
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: classes/wpsc-cpt-coin.php:67
+msgid "Add New Coin"
+msgstr "Добавить новую монету"
+
+#: classes/wpsc-cpt-coin.php:68
+msgid "New Coin"
+msgstr "Новая монета"
+
+#: classes/wpsc-cpt-coin.php:69
+msgid "Edit Coin"
+msgstr "Редактировать монету"
+
+#: classes/wpsc-cpt-coin.php:70
+msgid "View Coin"
+msgstr "Посмотреть монету"
+
+#: classes/wpsc-cpt-coin.php:71
+msgid "All Coins"
+msgstr "Все монеты"
+
+#: classes/wpsc-cpt-coin.php:72
+msgid "Search Coins"
+msgstr "Поиск монет"
+
+#: classes/wpsc-cpt-coin.php:73
+msgid "Parent Coins:"
+msgstr "Родительские монеты:"
+
+#: classes/wpsc-cpt-coin.php:74 classes/wpsc-cpt-crowdfunding.php:73 
+#: classes/wpsc-cpt-ico.php:73
+msgid "No cryptocurrencies found."
+msgstr "Криптовалюты не найдены."
+
+#: classes/wpsc-cpt-coin.php:75 classes/wpsc-cpt-crowdfunding.php:74 
+#: classes/wpsc-cpt-ico.php:74
+msgid "No cryptocurrencies found in Trash."
+msgstr "В корзине не найдено криптовалют."
+
+#: classes/wpsc-cpt-coin.php:80 classes/wpsc-cpt-crowdfunding.php:79 
+#: classes/wpsc-cpt-ico.php:79
+msgid "Description."
+msgstr "Описание."
+
+#: classes/wpsc-cpt-coin.php:105 classes/wpsc-cpt-ico.php:103 
+#: classes/wpsc-metabox-coin.php:248 classes/wpsc-metabox-coin.php:377 
+#: classes/wpsc-metabox-ico.php:374 classes/wpsc-metabox-ico.php:500 
+#: classes/wpsc-mustache.php:179 classes/wpsc-mustache.php:219 
+#: classes/wpsc-shortcodes.php:113
+msgid "Symbol"
+msgstr "Символ"
+
+#: classes/wpsc-cpt-coin.php:106 classes/wpsc-metabox-coin.php:250 
+#: classes/wpsc-metabox-coin.php:379 classes/wpsc-mustache.php:181 
+#: classes/wpsc-shortcodes.php:115
+msgid "Decimals"
+msgstr "Количество разрядов"
+
+#: classes/wpsc-cpt-coin.php:107 classes/wpsc-metabox-coin.php:252 
+#: classes/wpsc-metabox-coin.php:380 classes/wpsc-metabox-ico.php:376 
+#: classes/wpsc-mustache.php:182 classes/wpsc-mustache.php:221 
+#: classes/wpsc-shortcodes.php:116
+msgid "Initial Supply"
+msgstr "Всего выпущено"
+
+#: classes/wpsc-cpt-coin.php:108 classes/wpsc-cpt-crowdfunding.php:105 
+#: classes/wpsc-cpt-ico.php:105 classes/wpsc-metabox-coin.php:216 
+#: classes/wpsc-metabox-coin.php:400 classes/wpsc-metabox-coin.php:452 
+#: classes/wpsc-metabox-crowdfunding.php:144 
+#: classes/wpsc-metabox-crowdfunding.php:273 
+#: classes/wpsc-metabox-crowdfunding.php:325 classes/wpsc-metabox-ico.php:268 
+#: classes/wpsc-metabox-ico.php:516 classes/wpsc-metabox-ico.php:579
+msgid "Smart Contract"
+msgstr "Смарт-контракт"
+
+#: classes/wpsc-cpt-coin.php:109 classes/wpsc-cpt-crowdfunding.php:106 
+#: classes/wpsc-cpt-ico.php:106
+msgid "Network"
+msgstr "Сеть"
+
+#: classes/wpsc-cpt-coin.php:110 classes/wpsc-cpt-crowdfunding.php:107 
+#: classes/wpsc-cpt-ico.php:107 classes/wpsc-metabox-coin.php:220 
+#: classes/wpsc-metabox-crowdfunding.php:150 classes/wpsc-metabox-ico.php:274
+msgid "Flavor"
+msgstr "Вкус"
+
+#: classes/wpsc-cpt-coin.php:112 classes/wpsc-cpt-crowdfunding.php:109 
+#: classes/wpsc-cpt-ico.php:109 classes/wpsc-shortcodes.php:178
+msgid "Date"
+msgstr "Дата"
+
+#: classes/wpsc-cpt-crowdfunding.php:61
+msgctxt "post type general name"
+msgid "Crowdfundings"
+msgstr "Краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:62
+msgctxt "post type singular name"
+msgid "Crowdfunding"
+msgstr "Краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:63
+msgctxt "admin menu"
+msgid "Crowdfundings"
+msgstr "Краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:64
+msgctxt "add new on admin bar"
+msgid "Crowdfunding"
+msgstr "Краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:65
+msgctxt "crowdfunding"
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: classes/wpsc-cpt-crowdfunding.php:66
+msgid "Add New Crowdfunding"
+msgstr "Добавить новый краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:67
+msgid "New Crowdfunding"
+msgstr "Новый краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:68
+msgid "Edit Crowdfunding"
+msgstr "Редактировать Краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:69
+msgid "View Crowdfunding"
+msgstr "Посмотреть краудфандинг"
+
+#: classes/wpsc-cpt-crowdfunding.php:70
+msgid "All Crowdfundings"
+msgstr "Все краудфандингии"
+
+#: classes/wpsc-cpt-crowdfunding.php:71
+msgid "Search Crowdfundings"
+msgstr "Поиск краудфандинга"
+
+#: classes/wpsc-cpt-crowdfunding.php:72
+msgid "Parent Crowdfundings:"
+msgstr "Родительские краудфандинги:"
+
+#: classes/wpsc-cpt-crowdfunding.php:103 
+#: classes/wpsc-metabox-crowdfunding.php:264 classes/wpsc-mustache.php:214 
+#: classes/wpsc-shortcodes.php:426
+msgid "Minimum"
+msgstr "Минимум"
+
+#: classes/wpsc-cpt-crowdfunding.php:104
+msgid "Percentage"
+msgstr "Процент"
+
+#: classes/wpsc-cpt-ico.php:61
+msgctxt "post type general name"
+msgid "Initial Coin Offerings (ICOs)"
+msgstr "Первоначальные предложения монет (ICO)"
+
+#: classes/wpsc-cpt-ico.php:62
+msgctxt "post type singular name"
+msgid "ICO"
+msgstr "Ico"
+
+#: classes/wpsc-cpt-ico.php:63
+msgctxt "admin menu"
+msgid "ICOs"
+msgstr "ICO"
+
+#: classes/wpsc-cpt-ico.php:64
+msgctxt "add new on admin bar"
+msgid "ICO"
+msgstr "Ico"
+
+#: classes/wpsc-cpt-ico.php:65
+msgctxt "ICO"
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: classes/wpsc-cpt-ico.php:66
+msgid "Add New ICO"
+msgstr "Добавить новое ICO"
+
+#: classes/wpsc-cpt-ico.php:67
+msgid "New ICO"
+msgstr "Новое ICO"
+
+#: classes/wpsc-cpt-ico.php:68
+msgid "Edit ICO"
+msgstr "Редактировать ICO"
+
+#: classes/wpsc-cpt-ico.php:69
+msgid "View ICO"
+msgstr "Посмотреть ICO"
+
+#: classes/wpsc-cpt-ico.php:70
+msgid "All ICOs"
+msgstr "Все ICO"
+
+#: classes/wpsc-cpt-ico.php:71
+msgid "Search ICOs"
+msgstr "Поиск ИТ-инотов"
+
+#: classes/wpsc-cpt-ico.php:72
+msgid "Parent ICOs:"
+msgstr "Родительские IPO:"
+
+#: classes/wpsc-cpt-ico.php:104 classes/wpsc-metabox-coin.php:246 
+#: classes/wpsc-metabox-coin.php:378 classes/wpsc-metabox-ico.php:371 
+#: classes/wpsc-metabox-ico.php:501 classes/wpsc-mustache.php:180 
+#: classes/wpsc-mustache.php:220 classes/wpsc-shortcodes.php:114
+msgid "Name"
+msgstr "Название токена"
+
+#: classes/wpsc-metabox-coin.php:217
+msgid "Coin Specification"
+msgstr "Спецификация токена"
+
+#: classes/wpsc-metabox-coin.php:218 classes/wpsc-metabox-coin.php:401 
+#: classes/wpsc-metabox-coin.php:453 classes/wpsc-metabox-coin.php:617 
+#: classes/wpsc-metabox-crowdfunding.php:145 
+#: classes/wpsc-metabox-crowdfunding.php:274 
+#: classes/wpsc-metabox-crowdfunding.php:326 
+#: classes/wpsc-metabox-crowdfunding.php:411 classes/wpsc-metabox-ico.php:269 
+#: classes/wpsc-metabox-ico.php:517 classes/wpsc-metabox-ico.php:580 
+#: classes/wpsc-metabox-ico.php:665 classes/wpsc-settings.php:46
+msgid "Learn More"
+msgstr "Узнать больше"
+
+#: classes/wpsc-metabox-coin.php:219
+msgid "Choose the type of ERC-20 Contracts that better suit your needs."
+msgstr ""
+"Выберите тип ERC-20 Контракта, который наиболее соответствуют вашим "
+"потребностям."
+
+# й 
+#: classes/wpsc-metabox-coin.php:221
+msgid "ERC-20 Gas Saving Token"
+msgstr "ERC-20 с минимальной комиссией за переводы"
+
+#: classes/wpsc-metabox-coin.php:222
+msgid "A Standard Ethereum Token, focused on Gas Saving transactions"
+msgstr ""
+"Standard Ethereum Token, ориентированный на транзакции по экономии газа"
+
+#: classes/wpsc-metabox-coin.php:223 classes/wpsc-metabox-coin.php:230 
+#: classes/wpsc-metabox-coin.php:237 classes/wpsc-metabox-crowdfunding.php:153 
+#: classes/wpsc-metabox-ico.php:277
+msgid "Features"
+msgstr "Особенности"
+
+#: classes/wpsc-metabox-coin.php:224 classes/wpsc-metabox-coin.php:231 
+#: classes/wpsc-metabox-coin.php:238
+msgid "ERC-20 compliant"
+msgstr "Соответствие страндарту ERC-20"
+
+#: classes/wpsc-metabox-coin.php:225 classes/wpsc-metabox-coin.php:232 
+#: classes/wpsc-metabox-coin.php:239 classes/wpsc-mustache.php:250 
+#: classes/wpsc-shortcodes.php:230 classes/wpsc-shortcodes.php:477
+msgid "Balance"
+msgstr "Баланс"
+
+#: classes/wpsc-metabox-coin.php:226 classes/wpsc-metabox-coin.php:233 
+#: classes/wpsc-metabox-coin.php:240 classes/wpsc-shortcodes.php:233
+msgid "Transfer"
+msgstr "Перевод"
+
+#: classes/wpsc-metabox-coin.php:227 classes/wpsc-metabox-coin.php:234 
+#: classes/wpsc-metabox-coin.php:241 classes/wpsc-mustache.php:209 
+#: classes/wpsc-mustache.php:240 classes/wpsc-shortcodes.php:237 
+#: classes/wpsc-shortcodes.php:484
+msgid "Approve"
+msgstr "Разрешить снять в вашего счёта"
+
+#: classes/wpsc-metabox-coin.php:228
+msgid "ERC-20 Improved Security Token"
+msgstr "ERC-20 Улучшенный маркер безопасности"
+
+#: classes/wpsc-metabox-coin.php:229
+msgid "A Standard Ethereum Token, focused on security"
+msgstr "Стандартный токен Ethereum, посвященный безопасности"
+
+#: classes/wpsc-metabox-coin.php:235
+msgid "ERC-20 Advanced Token"
+msgstr "Продвинутый токен ERC-20"
+
+#: classes/wpsc-metabox-coin.php:236
+msgid "A Standard Ethereum Token, secure with advanced features."
+msgstr "Стандартный токен Ethereum, защищенный расширенными функциями."
+
+#: classes/wpsc-metabox-coin.php:242 classes/wpsc-shortcodes.php:239
+msgid "Burn"
+msgstr "Сжечь"
+
+#: classes/wpsc-metabox-coin.php:243 classes/wpsc-shortcodes.php:243
+msgid "Mint"
+msgstr "Mint"
+
+#: classes/wpsc-metabox-coin.php:244 classes/wpsc-mustache.php:253 
+#: classes/wpsc-shortcodes.php:249 classes/wpsc-shortcodes.php:710
+msgid "Pause"
+msgstr "Пауза"
+
+#: classes/wpsc-metabox-coin.php:245
+msgid "Definition"
+msgstr "Определенные"
+
+#: classes/wpsc-metabox-coin.php:247 classes/wpsc-metabox-ico.php:372
+msgid "The name of the coin"
+msgstr "Название монеты"
+
+#: classes/wpsc-metabox-coin.php:249 classes/wpsc-metabox-ico.php:375
+msgid "The symbol of the coin. Keep it short - e.g. \"HIX\""
+msgstr "Символ монеты. Сделайте его коротким - например, \"HIX\""
+
+#: classes/wpsc-metabox-coin.php:251
+msgid "The number of decimals the coin uses"
+msgstr "Количество десятичных знаков, которые использует монета"
+
+#: classes/wpsc-metabox-coin.php:253
+msgid "The initial amount of coins for your contract."
+msgstr "Начальная сумма монет для вашего контракта."
+
+#: classes/wpsc-metabox-coin.php:254
+msgid "Advanced Options"
+msgstr "Расширенные опции"
+
+#: classes/wpsc-metabox-coin.php:255 classes/wpsc-metabox-coin.php:381 
+#: classes/wpsc-metabox-ico.php:380 classes/wpsc-mustache.php:183 
+#: classes/wpsc-shortcodes.php:117
+msgid "Burnable"
+msgstr "Сжигаемый"
+
+#: classes/wpsc-metabox-coin.php:256 classes/wpsc-metabox-ico.php:381
+msgid "Ability to irreversibly burn (destroy) coins you own."
+msgstr "Возможность необратимо сжигать (уничтожать) монеты у вас есть."
+
+#: classes/wpsc-metabox-coin.php:257 classes/wpsc-metabox-coin.php:384 
+#: classes/wpsc-metabox-ico.php:351 classes/wpsc-metabox-ico.php:382 
+#: classes/wpsc-metabox-ico.php:498 classes/wpsc-mustache.php:186 
+#: classes/wpsc-mustache.php:217 classes/wpsc-shortcodes.php:120
+msgid "Pausable"
+msgstr "Приостанавливаемое"
+
+#: classes/wpsc-metabox-coin.php:258 classes/wpsc-metabox-ico.php:383
+msgid "Ability to pause all the activity of the coins."
+msgstr "Возможность приостановить всю активность монет."
+
+#: classes/wpsc-metabox-coin.php:259 classes/wpsc-metabox-coin.php:382 
+#: classes/wpsc-mustache.php:184 classes/wpsc-shortcodes.php:118
+msgid "Mintable"
+msgstr "Mintable"
+
+#: classes/wpsc-metabox-coin.php:260 classes/wpsc-metabox-ico.php:385
+msgid "Ability to create (mint) new coins for any account."
+msgstr "Возможность создавать (mint) новые монеты для любого счета."
+
+#: classes/wpsc-metabox-coin.php:261 classes/wpsc-metabox-ico.php:386
+msgid "Mintable Cap"
+msgstr "Mintable Cap"
+
+#: classes/wpsc-metabox-coin.php:262 classes/wpsc-metabox-ico.php:387
+msgid "If Mintable, this will be the maximum supply the coin can reach."
+msgstr "Если Mintable, это будет максимальная поставка монета может достичь."
+
+#: classes/wpsc-metabox-coin.php:263
+msgid "Social Networks"
+msgstr "Социальные сети"
+
+#: classes/wpsc-metabox-coin.php:264
+msgid "Social Network Icon"
+msgstr "Значок социальной сети"
+
+#: classes/wpsc-metabox-coin.php:265
+msgid "Select the social network icon"
+msgstr "Выберите значок социальной сети"
+
+#: classes/wpsc-metabox-coin.php:266
+msgid "Icon"
+msgstr "Иконка"
+
+#: classes/wpsc-metabox-coin.php:267
+msgid "Social Network Link"
+msgstr "Ссылка на социальную сеть"
+
+#: classes/wpsc-metabox-coin.php:268
+msgid "Select the social network link"
+msgstr "Выберите ссылку на социальную сеть"
+
+#: classes/wpsc-metabox-coin.php:269
+msgid "Add"
+msgstr "Добавить"
+
+#: classes/wpsc-metabox-coin.php:270
+msgid "Decentralized Exchange (DEX)"
+msgstr "Децентрализованная биржа (DEX)"
+
+#: classes/wpsc-metabox-coin.php:271
+msgid "Add Exchanges to your Block Explorer"
+msgstr "Добавить ссылки на обменники в страницу обзора токена"
+
+#: classes/wpsc-metabox-coin.php:272
+msgid ""
+"Add your token to a DEX and give your users the ability to buy or sell "
+"tokens online for Ether."
+msgstr ""
+"Добавьте свой токен в DEX и предоставьте пользователям возможность покупать "
+"или продавать токены онлайн для Ether."
+
+#: classes/wpsc-metabox-coin.php:273 classes/wpsc-metabox-coin.php:277 
+#: classes/wpsc-metabox-coin.php:280
+msgid "Ethereum Token compatible with any ERC-20 standard wallet"
+msgstr "Ethereum Token совместим с любым стандартным кошельком ERC-20"
+
+#: classes/wpsc-metabox-coin.php:274 classes/wpsc-metabox-coin.php:278 
+#: classes/wpsc-metabox-coin.php:281 classes/wpsc-shortcodes.php:232
+msgid "Check the balance of specific accounts"
+msgstr "Проверка баланса конкретных счетов"
+
+#: classes/wpsc-metabox-coin.php:275 classes/wpsc-metabox-coin.php:282
+msgid "Transfer an amount of tokens between accounts"
+msgstr "Перевод количества токенов между счетами"
+
+#: classes/wpsc-metabox-coin.php:276 classes/wpsc-metabox-coin.php:279 
+#: classes/wpsc-metabox-coin.php:283
+msgid ""
+"Allows an authorized spender to withdraw your tokens up to a specified amount"
+msgstr ""
+"Позволяет авторизованному пользователю токена снять ваши токены до указанной "
+"суммы"
+
+#: classes/wpsc-metabox-coin.php:284
+msgid "Holders can destroy (burn) their tokens"
+msgstr "Держатели могут уничтожить (сжечь) свои токены"
+
+#: classes/wpsc-metabox-coin.php:285
+msgid "Authorized accounts can create (mint) new tokens"
+msgstr "Авторизованные учетные записи могут создавать (mint) новые токены"
+
+#: classes/wpsc-metabox-coin.php:286
+msgid "Authorized accounts can pause all the token activity"
+msgstr ""
+"Авторизованные учетные записи могут приостановить всю активность токенов"
+
+#: classes/wpsc-metabox-coin.php:287 classes/wpsc-metabox-ico.php:373
+msgid ""
+"By default the post title will be used if not defined here. Once the "
+"contract is deployed this name will be frozen."
+msgstr ""
+"По умолчанию будет использоваться название поста  Wordpress, если не "
+"определено здесь. Как только смарт-контракт будет развернут, это название "
+"нельзя будет изменить."
+
+#: classes/wpsc-metabox-coin.php:288
+msgid ""
+"E.g. 8 means to divide the amount by 100.000.000. Only for display purposes, "
+"all operations are always done using 18 decimals."
+msgstr ""
+"Например, 8 означает разделить сумму на 100.000.000. Только для отображения "
+"все операции всегда выполняются с использованием 18 десятичных знаков."
+
+#: classes/wpsc-metabox-coin.php:289
+msgid ""
+"The initial supply is the total amount of coins that your contract will have "
+"at the moment of creation. The amount is integer, do not include decimal "
+"representation or wei like numbers. This is going to be also the initial "
+"balance of the creator's account."
+msgstr ""
+"Всего выпущено - это общая сумма монет, которые ваш контракт будет иметь на "
+"момент создания. Сумма неисчислима, не включают десятичное представление или "
+"Вэй, как цифры. Это будет также первоначальный баланс счета создателя."
+
+#: classes/wpsc-metabox-coin.php:290 classes/wpsc-metabox-ico.php:388
+msgid ""
+"Holders will have the ability to burn a specific amount of tokens. This will "
+"reduce the total supply of the coin"
+msgstr ""
+"Держатели будут иметь возможность записать определенное количество токенов. "
+"Это сократит общий объем поставок монеты"
+
+#: classes/wpsc-metabox-coin.php:291 classes/wpsc-metabox-ico.php:389
+msgid ""
+"Authorized accounts will have the ability to pause/unpause all transfer and "
+"all activity of the coins."
+msgstr ""
+"Уполномоченные счета будут иметь возможность приостановить / unpause все "
+"передачи и все действия монет."
+
+#: classes/wpsc-metabox-coin.php:292 classes/wpsc-metabox-ico.php:390
+msgid ""
+"Authorized accounts will have the ability to create or mint a specific "
+"amount of coins. This will increment the total supply of the coins."
+msgstr ""
+"Уполномоченные счета будут иметь возможность создавать или чеканить "
+"определенное количество монет. Это позволит приравнить общий запас монет."
+
+#: classes/wpsc-metabox-coin.php:293 classes/wpsc-metabox-ico.php:391
+msgid ""
+"The maximum capitalization your coin can have. This is an integer number, do "
+"not include decimal representation or wei like numbers. 0 cap means "
+"unlimited capitalization."
+msgstr ""
+"Максимальная капитализация, которая может быть у вашей монеты. Это целый "
+"номер, не включают десятичное представление или Вэй, как номера. 0 крышка "
+"означает неограниченную капитализацию."
+
+#: classes/wpsc-metabox-coin.php:294
+msgid ""
+"This social networks will be shown in the block explorer section of your coin"
+msgstr ""
+"Эта социальная сеть будет показана в разделе block Explorer вашей монеты"
+
+#: classes/wpsc-metabox-coin.php:383 classes/wpsc-mustache.php:185 
+#: classes/wpsc-shortcodes.php:119
+msgid "Max. cap"
+msgstr "Max. cap"
+
+#: classes/wpsc-metabox-coin.php:402 classes/wpsc-metabox-coin.php:454
+msgid ""
+"Go live with your Coin. You can publish your ERC-20 Token in a test net or "
+"in the main Ethereum network."
+msgstr ""
+"Создай свой собственный токен. Вы можете опубликовать свой токен ERC-20 в "
+"тестовой сети или в основной сети Ethereum."
+
+#: classes/wpsc-metabox-coin.php:403 classes/wpsc-metabox-coin.php:498 
+#: classes/wpsc-metabox-crowdfunding.php:276 
+#: classes/wpsc-metabox-crowdfunding.php:371 classes/wpsc-metabox-ico.php:622
+msgid "Deployed Smart Contract"
+msgstr "Уже созданный смарт-контракт"
+
+#: classes/wpsc-metabox-coin.php:409 classes/wpsc-metabox-crowdfunding.php:282 
+#: classes/wpsc-metabox-ico.php:527 classes/wpsc-shortcodes.php:139 
+#: classes/wpsc-shortcodes.php:438
+msgid "Contract Address"
+msgstr "Адрес контракта"
+
+#: classes/wpsc-metabox-coin.php:410
+msgid "The Smart Contract Address of your coin"
+msgstr "Смарт-контракт Адрес вашей монеты"
+
+#: classes/wpsc-metabox-coin.php:411 classes/wpsc-metabox-crowdfunding.php:284 
+#: classes/wpsc-metabox-ico.php:529 classes/wpsc-shortcodes.php:140 
+#: classes/wpsc-shortcodes.php:439
+msgid "Transaction ID"
+msgstr "ID транзакции"
+
+#: classes/wpsc-metabox-coin.php:412 classes/wpsc-metabox-crowdfunding.php:285 
+#: classes/wpsc-metabox-ico.php:530 classes/wpsc-shortcodes.php:141 
+#: classes/wpsc-shortcodes.php:440
+msgid "Owner Account"
+msgstr "Учетная запись владельца"
+
+#: classes/wpsc-metabox-coin.php:426 classes/wpsc-metabox-crowdfunding.php:298 
+#: classes/wpsc-metabox-ico.php:553 classes/wpsc-shortcodes.php:173 
+#: classes/wpsc-shortcodes.php:706
+msgid "Block Explorer"
+msgstr "История всех транзакций"
+
+#: classes/wpsc-metabox-coin.php:455 classes/wpsc-metabox-crowdfunding.php:328 
+#: classes/wpsc-metabox-ico.php:582
+msgid "New Smart Contract"
+msgstr "Новый смарт-контракт"
+
+#: classes/wpsc-metabox-coin.php:456 classes/wpsc-metabox-crowdfunding.php:329 
+#: classes/wpsc-metabox-ico.php:583
+msgid ""
+"To deploy your Smart Contracts you need to be connected to an Ethereum "
+"Network. Please connect to Metamask and choose the right network to continue."
+msgstr ""
+"Для развертывания смарт-контрактов необходимо подключиться к сети Ethereum. "
+"Пожалуйста, подключитесь к Metamask и выберите правильную сеть для "
+"продолжения."
+
+#: classes/wpsc-metabox-coin.php:458 classes/wpsc-metabox-crowdfunding.php:331 
+#: classes/wpsc-metabox-ico.php:585
+msgid "Connect to Metamask"
+msgstr "Подключение к сервису Metamask"
+
+#: classes/wpsc-metabox-coin.php:463 classes/wpsc-metabox-crowdfunding.php:336 
+#: classes/wpsc-metabox-ico.php:589
+msgid "Deploy"
+msgstr "СОЗДАТЬ"
+
+#: classes/wpsc-metabox-coin.php:464 classes/wpsc-metabox-crowdfunding.php:337 
+#: classes/wpsc-metabox-ico.php:590
+msgid "Deploy your Smart Contract to the Blockchain using Ether"
+msgstr "Создание смарт-контракта в блокчейн с помощью Ether"
+
+#: classes/wpsc-metabox-coin.php:465 classes/wpsc-metabox-crowdfunding.php:338 
+#: classes/wpsc-metabox-ico.php:591
+msgid ""
+"Deploy your Smart Contract to the Blockchain using WPST is a two step "
+"process:"
+msgstr ""
+"Создание смарт-контракта в блокчейне с помощью WPST является двухступенчатым "
+"процессом:"
+
+#: classes/wpsc-metabox-coin.php:466 classes/wpsc-metabox-crowdfunding.php:339 
+#: classes/wpsc-metabox-ico.php:592
+msgid "First you need to authorize the factory to use the WPST funds"
+msgstr "Сначала нужно уполномочить фабрику использовать средства WPST"
+
+#: classes/wpsc-metabox-coin.php:467 classes/wpsc-metabox-crowdfunding.php:340 
+#: classes/wpsc-metabox-ico.php:593
+msgid "Then you can deploy your contract using WPST"
+msgstr "Затем вы можете развернуть свой контракт с помощью WPST"
+
+#: classes/wpsc-metabox-coin.php:468 classes/wpsc-metabox-crowdfunding.php:341 
+#: classes/wpsc-metabox-ico.php:594
+msgid "No WPST found"
+msgstr "WPST не найдено"
+
+#: classes/wpsc-metabox-coin.php:469 classes/wpsc-metabox-crowdfunding.php:342 
+#: classes/wpsc-metabox-ico.php:595
+msgid "Not enough WPST found"
+msgstr "Найдено недостаточно WPST"
+
+#: classes/wpsc-metabox-coin.php:470 classes/wpsc-metabox-crowdfunding.php:343 
+#: classes/wpsc-metabox-ico.php:596
+msgid "Authorize"
+msgstr "Авторизация"
+
+#: classes/wpsc-metabox-coin.php:471 classes/wpsc-metabox-crowdfunding.php:344 
+#: classes/wpsc-metabox-ico.php:597
+msgid "Authorization was successful, click \"Deploy\" to proceed"
+msgstr "Авторизация была успешной, нажмите \"Развертывание\", чтобы продолжить"
+
+#: classes/wpsc-metabox-coin.php:472 classes/wpsc-metabox-crowdfunding.php:345 
+#: classes/wpsc-metabox-ico.php:598
+msgid "Deploy using WP Smart Tokens (WPST)"
+msgstr "Создание с помощью смарт-токенов WP (WPST)"
+
+#: classes/wpsc-metabox-coin.php:474 classes/wpsc-metabox-crowdfunding.php:347 
+#: classes/wpsc-metabox-ico.php:600
+msgid "Deploy using Ether"
+msgstr "Создание с помощью Etherium"
+
+#: classes/wpsc-metabox-coin.php:475 classes/wpsc-metabox-crowdfunding.php:348 
+#: classes/wpsc-metabox-ico.php:601
+msgid "Learn how to get WPST"
+msgstr "Узнайте, как получить WPST"
+
+#: classes/wpsc-metabox-coin.php:476 classes/wpsc-metabox-crowdfunding.php:349 
+#: classes/wpsc-metabox-ico.php:602
+msgid "Learn how to get Ether"
+msgstr "Узнайте, как получить ETH"
+
+#: classes/wpsc-metabox-coin.php:477 classes/wpsc-metabox-crowdfunding.php:350 
+#: classes/wpsc-metabox-ico.php:603
+msgid "Do you already have an ERC20 token address?"
+msgstr "У вас есть адрес уже созданного токена ERC20?"
+
+#: classes/wpsc-metabox-coin.php:478 classes/wpsc-metabox-crowdfunding.php:351 
+#: classes/wpsc-metabox-ico.php:604
+msgid "WPST Balance"
+msgstr "Баланс WPST"
+
+#: classes/wpsc-metabox-coin.php:479 classes/wpsc-metabox-coin.php:493 
+#: classes/wpsc-metabox-crowdfunding.php:352 
+#: classes/wpsc-metabox-crowdfunding.php:366 classes/wpsc-metabox-ico.php:617
+msgid "Load"
+msgstr "Загрузить"
+
+#: classes/wpsc-metabox-coin.php:480 classes/wpsc-metabox-crowdfunding.php:353
+msgid "Load an existing Smart Contract"
+msgstr "Загрузите существующий смарт-контракт"
+
+#: classes/wpsc-metabox-coin.php:487 classes/wpsc-metabox-crowdfunding.php:360 
+#: classes/wpsc-metabox-ico.php:611
+msgid "Ethereum Network Contract Address"
+msgstr "Адрес контракта Ethereum Network"
+
+#: classes/wpsc-metabox-coin.php:488 classes/wpsc-metabox-crowdfunding.php:361 
+#: classes/wpsc-metabox-ico.php:612
+msgid "Please fill out the contract address you want to import"
+msgstr "Пожалуйста, заполните адрес контракта, который вы хотите импортировать"
+
+#: classes/wpsc-metabox-coin.php:489 classes/wpsc-metabox-crowdfunding.php:362 
+#: classes/wpsc-metabox-ico.php:613
+msgid "Important"
+msgstr "Важно"
+
+#: classes/wpsc-metabox-coin.php:490 classes/wpsc-metabox-crowdfunding.php:363 
+#: classes/wpsc-metabox-ico.php:614
+msgid ""
+"Keep in mind that the contract is going to be loaded using the current "
+"network and current ethereum account as owner"
+msgstr ""
+"Имейте в виду, что контракт будет загружен с использованием текущей сети и "
+"текущего счета эфириума в качестве владельца"
+
+#: classes/wpsc-metabox-coin.php:491 classes/wpsc-metabox-crowdfunding.php:364 
+#: classes/wpsc-metabox-ico.php:615
+msgid "Currently active Ethereum Network and account:"
+msgstr "В настоящее время активная сеть Ethereum и учетная запись:"
+
+#: classes/wpsc-metabox-coin.php:492 classes/wpsc-metabox-crowdfunding.php:365 
+#: classes/wpsc-metabox-ico.php:616
+msgid "Smart Contract Address"
+msgstr "Адрес смарт-контракта"
+
+#: classes/wpsc-metabox-coin.php:494 classes/wpsc-metabox-crowdfunding.php:367 
+#: classes/wpsc-metabox-ico.php:618 classes/wpsc-mustache.php:129
+msgid "Ethereum Network Deploy"
+msgstr "Развертывание сети Ethereum"
+
+#: classes/wpsc-metabox-coin.php:495 classes/wpsc-mustache.php:130
+msgid ""
+"Are you ready to deploy your Coin to the currently active Ethereum Network?"
+msgstr ""
+"Готовы ли вы развернуть монету в действующей в настоящее время сети Ethereum?"
+
+#: classes/wpsc-metabox-coin.php:496 classes/wpsc-metabox-crowdfunding.php:369 
+#: classes/wpsc-metabox-ico.php:620 classes/wpsc-mustache.php:254 
+#: classes/wpsc-shortcodes.php:259 classes/wpsc-shortcodes.php:481 
+#: classes/wpsc-shortcodes.php:711 classes/wpsc-shortcodes.php:746
+msgid "Cancel"
+msgstr "Отмена"
+
+#: classes/wpsc-metabox-coin.php:497 classes/wpsc-metabox-crowdfunding.php:370 
+#: classes/wpsc-metabox-ico.php:621
+msgid "Yes, please proceed"
+msgstr "Да, пожалуйста, продолжайте"
+
+#: classes/wpsc-metabox-coin.php:541
+msgid "Contract Source Code"
+msgstr "Исходный код контракта"
+
+#: classes/wpsc-metabox-coin.php:542
+msgid "Copy Source Code"
+msgstr "Скопировать исходный код"
+
+#: classes/wpsc-metabox-coin.php:543
+msgid "View Contract Source Code"
+msgstr "Код исходного кода контракта"
+
+#: classes/wpsc-metabox-coin.php:544
+msgid "Solidity Source Code verified in Etherscan"
+msgstr "Источник твердости проверен в Etherscan"
+
+#: classes/wpsc-metabox-coin.php:545
+msgid "Copy Contract ABI"
+msgstr "Копировать Контракт ABI"
+
+#: classes/wpsc-metabox-coin.php:546
+msgid "View Contract ABI"
+msgstr "Просмотр контракта ABI"
+
+#: classes/wpsc-metabox-coin.php:547
+msgid "Contract ABI verified in Etherscan"
+msgstr "Контракт ABI проверен в Этерскане"
+
+#: classes/wpsc-metabox-coin.php:548
+msgid "Contract Name"
+msgstr "Название контракта"
+
+#: classes/wpsc-metabox-coin.php:549
+msgid "Solidity version"
+msgstr "Версия твердости"
+
+#: classes/wpsc-metabox-coin.php:550
+msgid "Contract ABI"
+msgstr "Контракт ABI"
+
+#: classes/wpsc-metabox-coin.php:588
+msgid ""
+"With great powers come great responsibilities. You need to be cautious with "
+"your ETH."
+msgstr ""
+"С большой силой приходит и большая ответственность. Вы должны быть осторожны "
+"с eTH."
+
+#: classes/wpsc-metabox-coin.php:589
+msgid ""
+"We at WPSmartContracts are not responsible for your actions using this "
+"plugin, it is completely forbidden to use this software to scam or harm in "
+"any way. We truly hope that you do good and feel empowered by the potential "
+"that this technology puts in the hands of the people."
+msgstr ""
+"Мы в WPSmartContracts не несем никакой ответственности за ваши действия, "
+"совершенные с помощью этого плагина. Так же совершенно запрещено "
+"использовать это программное обеспечение для мошенничества или иного другого "
+"преступления. Мы искренне надеемся, что вы делаете доброе дело и "
+"приобщаетесь к сообществу криптоэнтузиастов с благими намерениями."
+
+#: classes/wpsc-metabox-coin.php:590
+msgid ""
+"The Smart Contracts we use are developed following high standards for code "
+"quality and security, most of them provide tested and community-audited code,"
+" but please use common sense when doing anything that deals with real money! "
+"If you intend to do a real project, you have to test the contracts in "
+"Testnets and do a proper quality assurance tailored to your specs."
+msgstr ""
+"Смарт-контракты, которые мы используем, разработаны в соответствии с "
+"высокими стандартами качества кода и безопасности, большинство из них "
+"обеспечивают проверенный и проверенный сообществом код, но, пожалуйста, "
+"используйте здравый смысл, делая все, что имеет дело с реальными деньгами! "
+"Если вы собираетесь сделать реальный проект, вы должны проверить контракты в "
+"Testnets и сделать надлежащее обеспечение качества с учетом ваших "
+"спецификаций."
+
+#: classes/wpsc-metabox-coin.php:591
+msgid ""
+"Although WPSmartContracts makes its best effort to create the best tool to "
+"deploy and use Smart Contracts we have no liability resulting from the use "
+"of this software in the case of any interruption, malfunction, downtime, "
+"loss or damage of any kind."
+msgstr ""
+"Хотя WPSmartContracts прилагает все усилия для создания наилучшего "
+"инструмента для развертывания и использования смарт-контрактов, мы не несем "
+"никакой ответственности в результате использования этого программного "
+"обеспечения в случае любого перерыва, неисправности, простоя, потери или "
+"повреждения любого рода."
+
+#: classes/wpsc-metabox-coin.php:592
+msgid ""
+"WP Smart Contracts is licensed under the <a href=\"https://wpsmartcontracts."
+"com/legal.php\" target=\"_blank\">MIT License</a>"
+msgstr ""
+"Смарт-контракты WP лицензированы под <a href=\"https://wpsmartcontracts."
+"com/legal.php\" target=\"_blank\">лицензией MIT</a>"
+
+#: classes/wpsc-metabox-coin.php:606 classes/wpsc-metabox-crowdfunding.php:404 
+#: classes/wpsc-metabox-ico.php:656
+msgid "Tutorials"
+msgstr "Учебники"
+
+#: classes/wpsc-metabox-coin.php:607 classes/wpsc-metabox-crowdfunding.php:405 
+#: classes/wpsc-metabox-ico.php:657
+msgid ""
+"Here you can find a few tutorials that might be useful to deploy, test and "
+"use your Smart Contracts."
+msgstr ""
+"Здесь вы можете найти несколько учебников, которые могут быть полезны для "
+"развертывания, тестирования и использования смарт-контрактов."
+
+#: classes/wpsc-metabox-coin.php:608 classes/wpsc-metabox-crowdfunding.php:406 
+#: classes/wpsc-metabox-ico.php:658
+msgid "Screencasts"
+msgstr "Видеоролики"
+
+#: classes/wpsc-metabox-coin.php:609
+msgid "How to deploy coins using Ether?"
+msgstr "Как развернуть монеты с помощью эфира?"
+
+#: classes/wpsc-metabox-coin.php:613
+msgid ""
+"How to deploy coins using <a href=\"https://wpsmartcontracts.com/wp-smart-"
+"tokens.php\" target=\"_blank\">WPST</a>?"
+msgstr ""
+"Как развернуть монеты с помощью <a href=\"https://wpsmartcontracts.com/wp-"
+"smart-tokens.php\" target=\"_blank\">WPST?</a>"
+
+#: classes/wpsc-metabox-coin.php:618 classes/wpsc-metabox-crowdfunding.php:412 
+#: classes/wpsc-metabox-ico.php:666
+msgid "Documentation"
+msgstr "Документация"
+
+#: classes/wpsc-metabox-crowdfunding.php:146
+msgid "Safe Crowdfunding"
+msgstr "Безопасный краудфандинг"
+
+#: classes/wpsc-metabox-crowdfunding.php:147
+msgid ""
+"A simple crowdfunding campaign that can receive contributions in Ether. The "
+"owner can spend the donations only on contributors approval."
+msgstr ""
+"Простая краудфандинговая кампания, которая может получать взносы в Эфир. "
+"Владелец может потратить пожертвования только на пожертвования вкладчикам."
+
+#: classes/wpsc-metabox-crowdfunding.php:148
+msgid "Crowdsale ICO"
+msgstr "Краудсейл ICO"
+
+#: classes/wpsc-metabox-crowdfunding.php:149 classes/wpsc-metabox-ico.php:273
+msgid ""
+"An advanced crowdsale to create Initial Coin Offerings with multiple "
+"features."
+msgstr ""
+"Расширенный crowdsale для создания первоначальных предложений монет с "
+"несколькими функциями."
+
+#: classes/wpsc-metabox-crowdfunding.php:151
+msgid "Crowdfunding Specification"
+msgstr "Спецификация краудфандинга"
+
+#: classes/wpsc-metabox-crowdfunding.php:152
+msgid ""
+"Choose the type of Smart Contract that better suit your needs and define "
+"your Crowdfunding attributes."
+msgstr ""
+"Выберите тип смарт-контракта, который лучше соответствует вашим потребностям,"
+" и определите атрибуты краудфайндинга."
+
+#: classes/wpsc-metabox-crowdfunding.php:154
+msgid "Can receive contributions in Ether"
+msgstr "Может получать взносы в ETH"
+
+#: classes/wpsc-metabox-crowdfunding.php:155
+msgid "Supporters can send contributions in Ether"
+msgstr "Сторонники могут отправлять взносы в Эфир"
+
+#: classes/wpsc-metabox-crowdfunding.php:156
+msgid "Minimum amount for contributions"
+msgstr "Минимальная сумма взносов"
+
+#: classes/wpsc-metabox-crowdfunding.php:157 
+#: classes/wpsc-metabox-crowdfunding.php:180
+msgid ""
+"The crowdfunding will not accept contributions for less than this minimum"
+msgstr "Краудфандинг не будет принимать взносы менее чем за этот минимум"
+
+#: classes/wpsc-metabox-crowdfunding.php:158
+msgid "Funds release will depend on contributos approval."
+msgstr "Освобождение средств будет зависеть от одобрения contributos."
+
+#: classes/wpsc-metabox-crowdfunding.php:159
+msgid "Request to spend the funds must be approved by contributors"
+msgstr "Запрос на расхододобавление средств должен быть одобрен вкладчиками"
+
+#: classes/wpsc-metabox-crowdfunding.php:162 
+#: classes/wpsc-metabox-crowdfunding.php:163
+msgid "Minted Crowdsale"
+msgstr "Minted Краудсейл"
+
+#: classes/wpsc-metabox-crowdfunding.php:164 
+#: classes/wpsc-metabox-crowdfunding.php:165
+msgid "Capped Crowdsale"
+msgstr "Крытый Crowdsale"
+
+#: classes/wpsc-metabox-crowdfunding.php:166 
+#: classes/wpsc-metabox-crowdfunding.php:167
+msgid "Timed Crowdsale"
+msgstr "Приуроченный Кроудсейл"
+
+#: classes/wpsc-metabox-crowdfunding.php:168 
+#: classes/wpsc-metabox-crowdfunding.php:169
+msgid "Whitelisted Crowdsale"
+msgstr "Белый список Crowdsale"
+
+#: classes/wpsc-metabox-crowdfunding.php:170 
+#: classes/wpsc-metabox-crowdfunding.php:171
+msgid "Refundable Crowdsale"
+msgstr "Возмещаемый краудсейл"
+
+#: classes/wpsc-metabox-crowdfunding.php:172 
+#: classes/wpsc-metabox-crowdfunding.php:173
+msgid "ICO Presale"
+msgstr "Предпродажа ICO"
+
+#: classes/wpsc-metabox-crowdfunding.php:174 
+#: classes/wpsc-metabox-crowdfunding.php:175
+msgid "Finalize Crowdsale"
+msgstr "Завершение Crowdsale"
+
+#: classes/wpsc-metabox-crowdfunding.php:176 
+#: classes/wpsc-metabox-crowdfunding.php:177
+msgid "Token Distribution"
+msgstr "Распределение токенов"
+
+#: classes/wpsc-metabox-crowdfunding.php:178
+msgid "Safe Crowdfunding Options"
+msgstr "Безопасные варианты краудфандинга"
+
+#: classes/wpsc-metabox-crowdfunding.php:179 classes/wpsc-shortcodes.php:474
+msgid "Minimum contribution"
+msgstr "Минимальный взнос"
+
+#: classes/wpsc-metabox-crowdfunding.php:181
+msgid ""
+"Minimum contributions are set in Ethers, you can specify a minimum of less "
+"than 1 Ether using points as a decimal separator, i.e: 0.01"
+msgstr ""
+"Минимальные взносы устанавливаются в Эфирах, можно указать как минимум менее "
+"1 эфира, используя баллы в качестве десятичного сепаратора, т.е.: 0.01"
+
+#: classes/wpsc-metabox-crowdfunding.php:182
+msgid "Percentage of approvers required"
+msgstr "Процент требуемых одобрителей"
+
+#: classes/wpsc-metabox-crowdfunding.php:183
+#, fuzzy
+#, php-format
+msgid "% of approvers required to release a request of the owner"
+msgstr "% из одобрителей, необходимых для освобождения запроса владельца"
+
+#: classes/wpsc-metabox-crowdfunding.php:184
+msgid ""
+"Owner can't release the funds unless this minimum percentage of contributors "
+"approves the transfer."
+msgstr ""
+"Владелец не может освободить средства, если этот минимальный процент "
+"вкладчиков одобряет перевод."
+
+#: classes/wpsc-metabox-crowdfunding.php:263 classes/wpsc-mustache.php:213 
+#: classes/wpsc-shortcodes.php:425
+msgid "Approvers Percentage"
+msgstr "Процент одобрителей"
+
+#: classes/wpsc-metabox-crowdfunding.php:275 
+#: classes/wpsc-metabox-crowdfunding.php:327
+msgid ""
+"Go live with your Crowdfunding. You can publish your Crowdfunding in a test "
+"net or in the main Ethereum network."
+msgstr ""
+"Создайте собственный краудфандинг. Вы можете опубликовать свой краудфандинг "
+"в тестовой сети или в основной сети Ethereum."
+
+#: classes/wpsc-metabox-crowdfunding.php:283
+msgid "The Smart Contract Address of your crowdfunding"
+msgstr "Смарт-контракт Адрес вашего краудфандинга"
+
+#: classes/wpsc-metabox-crowdfunding.php:368
+msgid ""
+"Are you ready to deploy your Crowdfunding to the currently active Ethereum "
+"Network?"
+msgstr ""
+"Готовы ли вы развернуть свой краудфандинг в действующей в настоящее время "
+"сети Ethereum?"
+
+#: classes/wpsc-metabox-crowdfunding.php:407
+msgid "How to deploy a crowdfunding using Ether?"
+msgstr "Как развернуть краудфандинг с помощью Эфира?"
+
+#: classes/wpsc-metabox-crowdfunding.php:409
+msgid ""
+"How to deploy a crowdfunding using <a href=\"https://wpsmartcontracts.com/wp-"
+"smart-tokens.php\" target=\"_blank\">WPST</a>?"
+msgstr ""
+"Как развернуть краудфандинг с помощью <a href=\"https://wpsmartcontracts."
+"com/wp-smart-tokens.php\" target=\"_blank\">WPST?</a>"
+
+#: classes/wpsc-metabox-ico.php:270
+msgid "Pausable Initial Coin Offering"
+msgstr "Приостанавливаемое Первоначальное предложение монет"
+
+#: classes/wpsc-metabox-ico.php:271
+msgid ""
+"A simple Initial Coin Offering that can receive contributions in Ether. "
+"Contributors automatically receive an amount of tokens in return."
+msgstr ""
+"Простое первоначальное предложение монет, которые могут делать взносы в ETH. "
+"Вкладчики автоматически получают взамен количество токенов."
+
+#: classes/wpsc-metabox-ico.php:272
+msgid "Advanced Initial Coin Offering"
+msgstr "Расширенное первичное предложение монет"
+
+#: classes/wpsc-metabox-ico.php:275
+msgid "ICO Specification"
+msgstr "Спецификация ICO"
+
+#: classes/wpsc-metabox-ico.php:276
+msgid ""
+"Choose the type of Smart Contract that better suit your needs and define "
+"your ICO attributes."
+msgstr ""
+"Выберите тип смарт-контракта, который лучше соответствует вашим потребностям,"
+" и определите ваши атрибуты ICO."
+
+#: classes/wpsc-metabox-ico.php:298
+msgid "Receive contributions in Ether"
+msgstr "Получение взносов в Эфире"
+
+#: classes/wpsc-metabox-ico.php:299
+msgid ""
+"Supporters can send contributions in Ether directly to your Contract Address"
+msgstr ""
+"Сторонники могут отправлять взносы в Эфире непосредственно на ваш адрес "
+"контракта"
+
+#: classes/wpsc-metabox-ico.php:301
+msgid "Supporters can send contributions using an GUI"
+msgstr "Сторонники могут отправлять взносы с помощью gui"
+
+#: classes/wpsc-metabox-ico.php:302
+msgid "Your supporters can use your ICO page to contribute using Metamask"
+msgstr ""
+"Ваши сторонники могут использовать вашу страницу ICO, чтобы внести свой "
+"вклад с помощью Metamask"
+
+#: classes/wpsc-metabox-ico.php:304
+msgid "Distribute tokens to supporters automatically"
+msgstr "Распространение токенов для сторонников автоматически"
+
+#: classes/wpsc-metabox-ico.php:305
+msgid "Define the number of tokens that a buyer gets per each contribution"
+msgstr ""
+"Определите количество токенов, которые покупатель получает за каждый вклад"
+
+#: classes/wpsc-metabox-ico.php:307
+msgid "Receive the funds directly in your ETH wallet"
+msgstr "Получайте средства непосредственно в бумажнике ETH"
+
+#: classes/wpsc-metabox-ico.php:308
+msgid ""
+"Funds are automatically sent to your custom Ethereum address for every "
+"contribution"
+msgstr ""
+"Средства автоматически отправляются на ваш пользовательский адрес Ethereum "
+"для каждого вклада"
+
+#: classes/wpsc-metabox-ico.php:310
+msgid "Standard ERC20 Token emission"
+msgstr "Стандартная эмиссия токенов ERC20"
+
+#: classes/wpsc-metabox-ico.php:311
+msgid "Your token will a Pistachio token flavor"
+msgstr "Ваш маркер будет с ФИСТАШКОВЫМ вкусом"
+
+#: classes/wpsc-metabox-ico.php:313
+msgid "Advanced ERC20 Token emission"
+msgstr "Расширенный выброс токенов ERC20"
+
+#: classes/wpsc-metabox-ico.php:314
+msgid "Your token will a Chocolate token"
+msgstr "Ваш токен будет с ШОКОЛАДНЫМ вкусом"
+
+#: classes/wpsc-metabox-ico.php:316
+msgid "New tokens are minted on every contribution"
+msgstr "Новые токены добавлены на каждом вкладе"
+
+#: classes/wpsc-metabox-ico.php:317
+msgid ""
+"Everytime a supporter sends a contribution the tokens will be minted and "
+"assigned to supporters account"
+msgstr ""
+"Каждый раз, когда сторонник посылает вклад токены будут отчеканены и "
+"назначены на счет сторонников"
+
+#: classes/wpsc-metabox-ico.php:319
+msgid "Add a hard cap"
+msgstr "Добавить hard cap"
+
+#: classes/wpsc-metabox-ico.php:320
+msgid "Crowdsale with a limit for total contributions."
+msgstr "Краудсейл с лимитом на общий взнос."
+
+#: classes/wpsc-metabox-ico.php:322
+msgid "Whitelist your contributors"
+msgstr "Белый список ваших участников"
+
+#: classes/wpsc-metabox-ico.php:323
+msgid "Only whitelisted accounts can contribute to your ICO."
+msgstr ""
+"Только учетные записи из белого списка могут внести свой вклад в ваше ICO."
+
+#: classes/wpsc-metabox-ico.php:325
+msgid "Ability to pause/unpause"
+msgstr "Возможность паузы/непаузы"
+
+#: classes/wpsc-metabox-ico.php:326
+msgid "Admins can pause/unpause the ICO."
+msgstr "Админы могут приостановить/сделать паузу ICO."
+
+#: classes/wpsc-metabox-ico.php:328
+msgid "Opening and closing dates"
+msgstr "Даты открытия и закрытия"
+
+#: classes/wpsc-metabox-ico.php:329
+msgid "Time lapse for the ICO to be open"
+msgstr "Промежуток времени для открытия ICO"
+
+#: classes/wpsc-metabox-ico.php:331
+msgid "Token distribution rate"
+msgstr "Скорость распределения токенов"
+
+#: classes/wpsc-metabox-ico.php:332
+msgid "The ratio of distribution per each ether contributed."
+msgstr "Соотношение распределения на каждый эфир способствовало."
+
+#: classes/wpsc-metabox-ico.php:333
+msgid ""
+"If you want to give 1 Token per ether, then your radio will be 1. If you "
+"want to give 100 Tokens per ether, your ratio is 100. And if you want to "
+"give 1 Token per 4 ethers, the ratio will be 0.25."
+msgstr ""
+"Если вы хотите дать 1 токен в эфир, то ваше радио будет 1. Если вы хотите "
+"дать 100 токенов на эфир, ваше соотношение составляет 100. И если вы хотите "
+"дать 1 токен на 4 ethers, соотношение будет 0,25."
+
+#: classes/wpsc-metabox-ico.php:339
+msgid "ICO Advanced Options"
+msgstr "Расширенные опциии ICO"
+
+#: classes/wpsc-metabox-ico.php:340 classes/wpsc-metabox-ico.php:497
+msgid "Hard capped"
+msgstr "Твердый ограниченный"
+
+#: classes/wpsc-metabox-ico.php:341
+msgid "Strict limit for total contributions (in ethers)"
+msgstr "Строгий лимит на общий взнос (в этерах)"
+
+#: classes/wpsc-metabox-ico.php:342
+msgid ""
+"Your ICO automatically will be closed if the hard cap in ethers is reached. "
+"Also it will not accept contributions if they exceed the maximum cap."
+msgstr ""
+"Ваше ICO автоматически будет закрыто, если будет хард кап в эфириме. Кроме "
+"того, он не будет принимать взносы, если они превышают максимальный предел."
+
+#: classes/wpsc-metabox-ico.php:344
+msgid "Hard cap amount (in ether)"
+msgstr "Сумма Hard cap (в эфире)"
+
+#: classes/wpsc-metabox-ico.php:345
+msgid "Max amount of ether to be contributed"
+msgstr "Максимальное количество эфира, которое будет внесено"
+
+#: classes/wpsc-metabox-ico.php:346
+msgid "Specify the maximum amount, in ethers, that your ICO can reach"
+msgstr "Укажите максимальную сумму, в ethers, которую может достичь ваш ICO"
+
+#: classes/wpsc-metabox-ico.php:347
+msgid "ethers"
+msgstr "Эфиры"
+
+#: classes/wpsc-metabox-ico.php:349
+msgid ""
+"It is strongly recommended that you set a way of finalizing the ICO, it can "
+"be as a hardcapped or timed ICO"
+msgstr ""
+"Настоятельно рекомендуется, чтобы вы установили способ завершения ICO, это "
+"может быть как hardcapped или приурочен ICO"
+
+#: classes/wpsc-metabox-ico.php:352
+msgid "Ability to pause/unpause your ICO"
+msgstr "Возможность приостановить/сделать паузу в ICO"
+
+#: classes/wpsc-metabox-ico.php:353
+msgid ""
+"The owner of the ICO will be able to pause or resume the ICO activity at any "
+"time"
+msgstr "Владелец ICO сможет приостановить или возобновить ICO в любое время"
+
+#: classes/wpsc-metabox-ico.php:355 classes/wpsc-metabox-ico.php:499 
+#: classes/wpsc-mustache.php:218 classes/wpsc-shortcodes.php:691
+msgid "Timed"
+msgstr "Приурочен"
+
+#: classes/wpsc-metabox-ico.php:356
+msgid "Accept contributions only within a time frame."
+msgstr "Принимать взносы только в сроки."
+
+#: classes/wpsc-metabox-ico.php:357
+msgid "Dates are in UTC format, which is equivalent to GMT time"
+msgstr "Даты находятся в формате UTC, что эквивалентно времени GMT"
+
+#: classes/wpsc-metabox-ico.php:359
+msgid "Opening"
+msgstr "Открытие"
+
+#: classes/wpsc-metabox-ico.php:360
+msgid "ICO opening time"
+msgstr "Время открытия ICO"
+
+#: classes/wpsc-metabox-ico.php:361
+msgid "ICO opening timestamp in Coordinated Universal Time (UTC)"
+msgstr "Время открытия ICO в скоординированном универсальном времени (UTC)"
+
+#: classes/wpsc-metabox-ico.php:363
+msgid "Closing"
+msgstr "Закрывается"
+
+#: classes/wpsc-metabox-ico.php:364
+msgid "ICO closing time"
+msgstr "Время закрытия ICO"
+
+#: classes/wpsc-metabox-ico.php:365
+msgid "ICO closing timestamp in Coordinated Universal Time (UTC)"
+msgstr "Timetime time ICO в скоординированном универсальном времени (UTC)"
+
+#: classes/wpsc-metabox-ico.php:367
+msgid "Token definition"
+msgstr "Определение токенов"
+
+#: classes/wpsc-metabox-ico.php:368 classes/wpsc-metabox-ico.php:504 
+#: classes/wpsc-mustache.php:223 classes/wpsc-shortcodes.php:228
+msgid "Wallet"
+msgstr "Кошелек"
+
+#: classes/wpsc-metabox-ico.php:369
+msgid "Ether wallet address to receive funds"
+msgstr "Ether адрес кошелька для получения средств"
+
+#: classes/wpsc-metabox-ico.php:370
+msgid "The beneficiary ether account that will receive the ICO contributions"
+msgstr "Счет эфира бенефициара, который будет получать взносы ICO"
+
+#: classes/wpsc-metabox-ico.php:377
+msgid ""
+"The initial amount of coins that the owner will have at the beginning of the "
+"ICO."
+msgstr "Начальное количество монет, которые владелец будет иметь в начале ICO."
+
+#: classes/wpsc-metabox-ico.php:378
+msgid ""
+"The tokens of contributors are going to be minted, so, this is the initial "
+"supply of tokens for owners."
+msgstr ""
+"Токены вкладчиков будут отчеканены, так что это начальная поставка токенов "
+"для владельцев."
+
+#: classes/wpsc-metabox-ico.php:384
+msgid "Mintable (this is mandatory for an ICO)"
+msgstr "Mintable (это обязательно для ICO)"
+
+#: classes/wpsc-metabox-ico.php:393
+msgid "Pausable ICO"
+msgstr "Приостанавливаемое ICO"
+
+#: classes/wpsc-metabox-ico.php:394
+msgid "Ability to pause and resume ICO"
+msgstr "Возможность приостановить и возобновить ICO"
+
+#: classes/wpsc-metabox-ico.php:395
+msgid "This option is mandatory, otherwise your ICO will sell tokens forever"
+msgstr ""
+"Эта опция является обязательной, в противном случае ваше ICO будет продавать "
+"токены навсегда"
+
+#: classes/wpsc-metabox-ico.php:502
+msgid "Supply"
+msgstr "Доставка"
+
+#: classes/wpsc-metabox-ico.php:503 classes/wpsc-mustache.php:222 
+#: classes/wpsc-shortcodes.php:655
+msgid "Rate"
+msgstr "Ставка"
+
+#: classes/wpsc-metabox-ico.php:518 classes/wpsc-metabox-ico.php:581
+msgid ""
+"Go live with your ICO. You can publish your ICO in a test net or in the main "
+"Ethereum network."
+msgstr ""
+"Проведите собственное ICO. Вы можете опубликовать ICO в тестовой сети или в "
+"основной сети Ethereum."
+
+#: classes/wpsc-metabox-ico.php:519
+msgid "ICO Smart Contract"
+msgstr "Смарт-контракт ICO"
+
+#: classes/wpsc-metabox-ico.php:520
+msgid "Token Smart Contract"
+msgstr "Токен Смарт-контракт"
+
+#: classes/wpsc-metabox-ico.php:528
+msgid "The Smart Contract Address of your ico"
+msgstr "Смарт-контракт Адрес вашего ico"
+
+#: classes/wpsc-metabox-ico.php:619
+msgid ""
+"Are you ready to deploy your ICO to the currently active Ethereum Network?"
+msgstr ""
+"Готовы ли вы развернуть ICO в действующей в настоящее время сети Ethereum?"
+
+#: classes/wpsc-metabox-ico.php:659
+msgid "How to deploy an ICO using Ether?"
+msgstr "Как развернуть ICO с помощью Ether?"
+
+#: classes/wpsc-metabox-ico.php:662
+msgid ""
+"How to deploy an ICO using <a href=\"https://wpsmartcontracts.com/wp-smart-"
+"tokens.php\" target=\"_blank\">WPST</a>?"
+msgstr ""
+"Как развернуть ICO с помощью <a href=\"https://wpsmartcontracts.com/wp-smart-"
+"tokens.php\" target=\"_blank\">WPST?</a>"
+
+#: classes/wpsc-mustache.php:108 classes/wpsc-mustache.php:200 
+#: classes/wpsc-mustache.php:279
+msgid ""
+"Unable to connect to the Ethereum Network. Please install and run MetaMask."
+msgstr ""
+"Невозможно подключиться к сети Ethereum. Пожалуйста, установите и запустите "
+"MetaMask."
+
+#: classes/wpsc-mustache.php:109
+msgid "MetaMask not found."
+msgstr "Metamask не найден."
+
+#: classes/wpsc-mustache.php:110
+msgid "Main Ethereum Network"
+msgstr "Главная сеть Эфириума"
+
+#: classes/wpsc-mustache.php:111
+msgid "Ropsten Test Network"
+msgstr "Сеть испытаний Ropsten"
+
+#: classes/wpsc-mustache.php:112
+msgid "Kovan Test Network"
+msgstr "Тестовая сеть Kovan"
+
+#: classes/wpsc-mustache.php:113
+msgid "Rinkeby Test Network"
+msgstr "Тестовая сеть Ринкебю"
+
+#: classes/wpsc-mustache.php:114
+msgid "You have selected"
+msgstr "Вы выбрали"
+
+#: classes/wpsc-mustache.php:115
+msgid ""
+"but looks like you are not logged in with MetaMask, please Log In if you "
+"want to deploy Smart Contracts"
+msgstr ""
+"похоже вы не вошли в систему с помощью сервиса MetaMask, пожалуйста, войдите "
+"в систему, если вы хотите развернуть смарт-контракты"
+
+#: classes/wpsc-mustache.php:116
+msgid "You are connected to"
+msgstr "Вы подключены к"
+
+#: classes/wpsc-mustache.php:117
+msgid "with the account"
+msgstr "с аккаунтом"
+
+#: classes/wpsc-mustache.php:118
+msgid "ERROR, PLEASE CONNECT TO METAMASK"
+msgstr "ОШИБКА, ПОЖАЛУЙСТА ПОДКЛЮЧИТЕСЬ К METAMASK"
+
+#: classes/wpsc-mustache.php:119 classes/wpsc-mustache.php:202 
+#: classes/wpsc-mustache.php:281
+msgid ""
+"Do you see a \"Connect to Ehereum Network\" in WP admin bar? if so, click "
+"there to connect. Are you logged in to Metamask? if not, please log in. If "
+"the error persist try reloading this page."
+msgstr ""
+"Видите ли вы \"Подключение к сети Ehereum\" в панели администратора WP ? "
+"если это так, нажмите там, чтобы подключиться. Вы вошли в Metamask? если нет,"
+" пожалуйста, войдите в систему. При сохранении ошибки попробуйте "
+"перезагрузить эту страницу."
+
+#: classes/wpsc-mustache.php:120
+msgid "Network error"
+msgstr "Ошибка сети"
+
+#: classes/wpsc-mustache.php:121
+msgid "Unknown network selected"
+msgstr "Выбрана неизвестная сеть"
+
+#: classes/wpsc-mustache.php:122
+msgid "Transient Cache"
+msgstr "Переходный кэш"
+
+#: classes/wpsc-mustache.php:123
+msgid "Transient Cache flushed"
+msgstr "Переходный кэш сброшен"
+
+#: classes/wpsc-mustache.php:125
+msgid "Connect to Ethereum Network"
+msgstr "Подключение к сети Ethereum"
+
+#: classes/wpsc-mustache.php:127
+msgid "Authorize the use of WPST funds"
+msgstr "Разрешить использование средств WPST"
+
+#: classes/wpsc-mustache.php:128
+msgid "Deploy using WP Smart Tokens"
+msgstr "Создание с помощью смарт-токенов WP"
+
+#: classes/wpsc-mustache.php:136
+msgid "Please make sure you fully understand the following:"
+msgstr "Пожалуйста, убедитесь, что вы полностью понимаете следующее:"
+
+#: classes/wpsc-mustache.php:137
+msgid ""
+"I understand that deploying a contract in the Main Ethereum Network can cost "
+"me real money (in Ether)."
+msgstr ""
+"Я понимаю, что развертывание контракта в сети Main Ethereum может стоить мне "
+"реальных денег (в эфире)."
+
+#: classes/wpsc-mustache.php:138
+msgid ""
+"I understand what are the fees and gas expenses for deploying a contract."
+msgstr "Я понимаю, каковы сборы и расходы на газ для развертывания контракта."
+
+#: classes/wpsc-mustache.php:139
+msgid ""
+"I understand that I am going to Authorize WP Smart Contracts factory to "
+"spend my WPST tokens deploying contracts"
+msgstr ""
+"Я понимаю, что я собираюсь разрешить WPSmartContracts заводу тратить мои "
+"токены WPST развертывания контрактов"
+
+#: classes/wpsc-mustache.php:140
+msgid "I understand what are the fees and gas expenses of this operation."
+msgstr "Я понимаю, каковы сборы и расходы на газ этой операции."
+
+#: classes/wpsc-mustache.php:141
+msgid "I understand that this action is irreversible."
+msgstr "Я понимаю, что это действие необратимо."
+
+#: classes/wpsc-mustache.php:142
+msgid "I accept the terms of service explained here."
+msgstr "Я принимаю условия обслуживания объясненные здесь."
+
+#: classes/wpsc-mustache.php:143
+msgid ""
+"Deploy can take several minutes (in any network used). Please don't cancel "
+"this operation once initiated."
+msgstr ""
+"Развертывание может занять несколько минут (в любой используемой сети). "
+"Пожалуйста, не отменяйте эту операцию после начала."
+
+#: classes/wpsc-mustache.php:144
+msgid ""
+"If you are not sure of what you are doing click <strong>Cancel</strong> and "
+"learn more in the tutorials section before proceeding"
+msgstr ""
+"Если вы не уверены в том, что вы делаете <strong>нажмите Отменить</strong> и "
+"узнать больше в разделе учебники, прежде чем приступить"
+
+#: classes/wpsc-mustache.php:146
+msgid "Please write the contract address"
+msgstr "Пожалуйста, напишите адрес контракта"
+
+#: classes/wpsc-mustache.php:147
+msgid "Invalid address"
+msgstr "Неверный адрес"
+
+#: classes/wpsc-mustache.php:148
+msgid "Wrong Type or Value"
+msgstr "Неправильный тип или значение"
+
+#: classes/wpsc-mustache.php:149
+msgid ""
+"To deploy please accept all the terms and conditions, otherwise click "
+"\"Cancel\""
+msgstr ""
+"Для развертывания, пожалуйста, примите все условия, в противном случае "
+"нажмите \"Отмена\""
+
+#: classes/wpsc-mustache.php:150
+msgid "I have read, understand, and agree to the above statements."
+msgstr "Я читал, понимал и соглашаюсь с вышеуказанными заявлениями."
+
+#: classes/wpsc-mustache.php:151
+msgid "Please select a flavor."
+msgstr "Пожалуйста, выберите аромат."
+
+#: classes/wpsc-mustache.php:152
+msgid ""
+"Please fill in all definition fields (name, symbol, decimals and supply)"
+msgstr ""
+"Пожалуйста, заполните все поля определения (имя, символ, десятичные знаков и "
+"поставки)"
+
+#: classes/wpsc-mustache.php:153
+msgid "Please fill in all definition fields (name, symbol, decimals and rate)"
+msgstr ""
+"Пожалуйста, заполните все поля определения (имя, символ, десятичные знаков и "
+"скорость)"
+
+#: classes/wpsc-mustache.php:154
+msgid "Please fill in the wallet address"
+msgstr "Пожалуйста, заполните адрес кошелька"
+
+#: classes/wpsc-mustache.php:155
+msgid ""
+"It is strongly recommended that you set a way of finalizing the ICO, it can "
+"be as a hardcapped or timed ICO. Are you sure you want continue without "
+"setting a hardcap or a timed option?"
+msgstr ""
+"Настоятельно рекомендуется, чтобы вы установили способ завершения ICO, это "
+"может быть как hardcapped или приурочен ICO. Вы уверены, что вы хотите "
+"продолжить без установки hardcap или приурочен вариант?"
+
+#: classes/wpsc-mustache.php:156
+msgid "It must be a positive number"
+msgstr "Это должно быть положительное число"
+
+#: classes/wpsc-mustache.php:157
+msgid "Error in Timed Options"
+msgstr "Ошибка в приуроченных опциях"
+
+#: classes/wpsc-mustache.php:158
+msgid ""
+"Please check that opening and closing dates are set and that closing date is "
+"greater than the opening date"
+msgstr ""
+"Пожалуйста, проверьте, что даты открытия и закрытия установлены и что дата "
+"закрытия больше, чем дата открытия"
+
+#: classes/wpsc-mustache.php:159
+msgid ""
+"Decimals must be a number, greater than or equal than 0 or less than 18."
+msgstr ""
+"Десятичные показатели должны быть числом, больше или равна 0 или менее 18."
+
+#: classes/wpsc-mustache.php:160
+msgid "Initial supply must be a number"
+msgstr "Всего выпущено должно быть числом"
+
+#: classes/wpsc-mustache.php:161
+msgid "Hard cap must be a number greater than zero"
+msgstr "Hard cap должно быть числом больше нуля"
+
+#: classes/wpsc-mustache.php:162
+msgid "Rate must be a positive number"
+msgstr "Ставка должна быть положительным числом"
+
+#: classes/wpsc-mustache.php:163
+msgid ""
+"Mintable Cap must be 0 for unlimited cap or positive number for a limited cap"
+msgstr ""
+"Mintable Cap должен быть 0 для неограниченного крышки или положительное "
+"число для ограниченного крышки"
+
+#: classes/wpsc-mustache.php:164
+msgid "Initial supply must be a number."
+msgstr "Всего выпущено должно быть номером."
+
+#: classes/wpsc-mustache.php:165
+msgid ""
+"If the token is mintable, the mintable cap must be a number greater or equal "
+"than 0"
+msgstr "Если токен чеканейный, мята крышка должна быть больше или равна 0"
+
+#: classes/wpsc-mustache.php:170 classes/wpsc-shortcodes.php:260 
+#: classes/wpsc-shortcodes.php:494 classes/wpsc-shortcodes.php:713 
+#: classes/wpsc-shortcodes.php:749
+msgid "Transaction in progress"
+msgstr "Транзакция в процессе"
+
+#: classes/wpsc-mustache.php:171 classes/wpsc-shortcodes.php:261 
+#: classes/wpsc-shortcodes.php:495 classes/wpsc-shortcodes.php:715 
+#: classes/wpsc-shortcodes.php:751
+msgid ""
+"If you agree and wish to proceed, please click \"CONFIRM\" transaction in "
+"the Metamask Window, otherwise click \"REJECT\"."
+msgstr ""
+"Если вы согласны и хотите продолжить работу, пожалуйста, нажмите "
+"\"ПОДТВЕРДИТЬ\" транзакции в окне Metamask, в противном случае нажмите "
+"\"ОТКЛОНИТЬ\"."
+
+#: classes/wpsc-mustache.php:172 classes/wpsc-shortcodes.php:262 
+#: classes/wpsc-shortcodes.php:496 classes/wpsc-shortcodes.php:716 
+#: classes/wpsc-shortcodes.php:752
+msgid ""
+"Please be patient. It can take several minutes. Don't close or reload this "
+"window."
+msgstr ""
+"Пожалуйста, будьте терпеливы. Это может занять несколько минут. Не "
+"закрывайте и не перезагружайте это окно."
+
+#: classes/wpsc-mustache.php:195 classes/wpsc-mustache.php:258
+msgid "Error"
+msgstr "Ошибка"
+
+#: classes/wpsc-mustache.php:196 classes/wpsc-mustache.php:282
+msgid "No contract found"
+msgstr "Контракт не найден"
+
+#: classes/wpsc-mustache.php:197 classes/wpsc-mustache.php:278
+msgid "Please specify a valid amount greater than zero"
+msgstr "Пожалуйста, укажите действительную сумму, превышающее ноль"
+
+#: classes/wpsc-mustache.php:198
+msgid "Please specify a valid address in the \"Destination address\" field"
+msgstr "Пожалуйста, укажите действительный адрес в поле \"Адрес назначения\""
+
+#: classes/wpsc-mustache.php:199
+msgid "Please specify a description in the \"Add a description\" field"
+msgstr "Пожалуйста, укажите описание в поле \"Добавить описание\""
+
+#: classes/wpsc-mustache.php:201 classes/wpsc-mustache.php:280
+msgid "Looks like you are connected to a different network."
+msgstr "Похоже, вы подключены к другой сети."
+
+#: classes/wpsc-mustache.php:203
+msgid "Thanks for your contribution!"
+msgstr "Спасибо за ваш вклад!"
+
+#: classes/wpsc-mustache.php:204
+msgid "Your contribution was completed"
+msgstr "Ваш вклад был завершен"
+
+#: classes/wpsc-mustache.php:205
+msgid "Close"
+msgstr "Закрыть"
+
+#: classes/wpsc-mustache.php:206
+msgid "Your approval was successfully completed."
+msgstr "Ваше одобрение было успешно завершено."
+
+#: classes/wpsc-mustache.php:207
+msgid "Your request was successfully finalized"
+msgstr "Ваш запрос был успешно завершен"
+
+#: classes/wpsc-mustache.php:208 classes/wpsc-mustache.php:239 
+#: classes/wpsc-shortcodes.php:180
+msgid "To"
+msgstr "Кому"
+
+#: classes/wpsc-mustache.php:210 classes/wpsc-mustache.php:241
+msgid "Finalize"
+msgstr "Сохранить"
+
+#: classes/wpsc-mustache.php:211 classes/wpsc-mustache.php:242
+msgid "Transferred"
+msgstr "Передано"
+
+#: classes/wpsc-mustache.php:212 classes/wpsc-mustache.php:243
+msgid "Approvers"
+msgstr "Одобрители"
+
+#: classes/wpsc-mustache.php:216
+msgid "Hard Capped"
+msgstr "Твердый capped"
+
+#: classes/wpsc-mustache.php:251 classes/wpsc-shortcodes.php:245
+msgid "Add Minter Role"
+msgstr "Добавить роль Minter"
+
+#: classes/wpsc-mustache.php:252 classes/wpsc-shortcodes.php:247
+msgid "Add Pauser Role"
+msgstr "Добавить роль Pauser"
+
+#: classes/wpsc-mustache.php:255
+msgid "Filtered by"
+msgstr "Отфильтрованные по"
+
+#: classes/wpsc-mustache.php:256
+msgid "Error search data field"
+msgstr "Поле поиска ошибок"
+
+#: classes/wpsc-mustache.php:257
+msgid "It doesn't look as a valid address or transaction ID"
+msgstr "Похоже это не действительный адрес или идентификатор транзакции"
+
+#: classes/wpsc-mustache.php:259
+msgid "This is not a valid Ethereum address"
+msgstr "Это не действительный адрес Ethereum"
+
+#: classes/wpsc-mustache.php:260
+msgid "No transactions found"
+msgstr "Транзакций не найдено"
+
+#: classes/wpsc-mustache.php:261
+msgid "FAILED"
+msgstr "НЕУДАЧА"
+
+#: classes/wpsc-mustache.php:262
+msgid "CONFIRMED"
+msgstr "ПОДТВЕРЖДЕНО"
+
+#: classes/wpsc-mustache.php:263
+msgid "TRANSFER"
+msgstr "ПЕРЕВОД"
+
+#: classes/wpsc-mustache.php:264
+msgid "TRANSFER FROM"
+msgstr "ПЕРЕДАЧА ИЗ"
+
+#: classes/wpsc-mustache.php:265
+msgid "MINT"
+msgstr "Mint"
+
+#: classes/wpsc-mustache.php:266
+msgid "BURN"
+msgstr "СЖЕЧЬ"
+
+#: classes/wpsc-mustache.php:267
+msgid "BURN FROM"
+msgstr "ОЖОГ ОТ"
+
+#: classes/wpsc-mustache.php:268
+msgid "APPROVE"
+msgstr "ОДОБРИТЬ"
+
+#: classes/wpsc-mustache.php:269
+msgid "RESUME"
+msgstr "ПРОДОЛЖИТЬ"
+
+#: classes/wpsc-mustache.php:270
+msgid "PAUSE"
+msgstr "ПАУЗА"
+
+#: classes/wpsc-mustache.php:271
+msgid "Click to filter"
+msgstr "Нажмите, чтобы отфильтровать"
+
+#: classes/wpsc-mustache.php:272
+msgid "Your account has an allowance to spend from this account of:"
+msgstr ""
+"Ваша учетная запись имеет все необходимые разрешения, чтобы совершать траты "
+"с этого счета:"
+
+#: classes/wpsc-mustache.php:273
+msgid "Latest account transactions"
+msgstr "Последние операции на аккаунте"
+
+#: classes/wpsc-mustache.php:274
+msgid "All transactions"
+msgstr "Все транзакци"
+
+#: classes/wpsc-mustache.php:275
+msgid "Transaction detail"
+msgstr "Детали транзакции"
+
+#: classes/wpsc-mustache.php:276
+msgid "Please specify a valid address in the \"To address\" field"
+msgstr "Пожалуйста, укажите действительный адрес в поле \"Адрес\""
+
+#: classes/wpsc-mustache.php:277
+msgid "Please specify a valid address in the \"From address\" field"
+msgstr "Пожалуйста, укажите действительный адрес в поле \"От адреса\""
+
+#: classes/wpsc-mustache.php:283
+msgid "Are you sure you want to transfer the specified amount to this address?"
+msgstr "Вы уверены, что хотите перевести указанную сумму на этот адрес?"
+
+#: classes/wpsc-mustache.php:284
+msgid "Are you sure you want to approve the specified amount to this address?"
+msgstr "Вы уверены, что хотите утвердить указанную сумму на этот адрес?"
+
+#: classes/wpsc-mustache.php:285
+msgid ""
+"Are you sure you want to create the specified amount of tokens and add them "
+"to this address?"
+msgstr ""
+"Вы уверены, что хотите создать указанное количество токенов и добавить их в "
+"этот адрес?"
+
+#: classes/wpsc-mustache.php:286
+msgid ""
+"Are you sure you want to destroy the specified amount of tokens from your "
+"account?"
+msgstr ""
+"Вы уверены, что хотите уничтожить указанное количество токенов с вашей "
+"учетной записи?"
+
+#: classes/wpsc-mustache.php:287
+msgid "An error occurred processing this transaction"
+msgstr "Произошла ошибка обработки этой транзакции"
+
+#: classes/wpsc-mustache.php:288
+msgid "Minter"
+msgstr "Минтер"
+
+#: classes/wpsc-mustache.php:289
+msgid "Pauser"
+msgstr "Паузер"
+
+#: classes/wpsc-mustache.php:290
+msgid "Are you sure you want to destroy previously approved from this account?"
+msgstr ""
+"Вы уверены, что хотите уничтожить ранее утвержденный с этой учетной записи?"
+
+#: classes/wpsc-mustache.php:291
+msgid "Are you sure you want to pause all the token activity?"
+msgstr "Вы уверены, что хотите приостановить все действия маркеров?"
+
+#: classes/wpsc-mustache.php:292
+msgid "Are you sure you want to resume all the token activity?"
+msgstr "Вы уверены, что хотите возобновить все действия маркеров?"
+
+#: classes/wpsc-mustache.php:293
+msgid ""
+"Are you sure you give this account the priviledge to pause token activity?"
+msgstr ""
+"Вы уверены, что вы даете этот счет priviledge приостановить активность "
+"маркеров?"
+
+#: classes/wpsc-mustache.php:294
+msgid "Are you sure you give this account the priviledge to create new tokens?"
+msgstr ""
+"Вы уверены, что вы даете этот счет priviledge для создания новых токенов?"
+
+#: classes/wpsc-mustache.php:295
+msgid ""
+"Are you sure you want to remove your pauser privilege from your account?"
+msgstr ""
+"Вы уверены, что хотите удалить привилегию pauser из вашей учетной записи?"
+
+#: classes/wpsc-mustache.php:296
+msgid ""
+"Are you sure you want to remove your minter privilege from your account?"
+msgstr ""
+"Вы уверены, что хотите удалить привилегию minter из своей учетной записи?"
+
+#: classes/wpsc-mustache.php:297
+msgid "Renounce Pauser"
+msgstr "Откажитесь от Паузера"
+
+#: classes/wpsc-mustache.php:298
+msgid "Contract Creation"
+msgstr "Создание контракта"
+
+#: classes/wpsc-mustache.php:299
+msgid "ICO Buy Tokens"
+msgstr "ICO Купить токены"
+
+#: classes/wpsc-mustache.php:300
+msgid "ICO Direct Transfer"
+msgstr "Прямая передача ICO"
+
+#: classes/wpsc-mustache.php:301
+msgid "Renounce Minter"
+msgstr "Откажитесь от роли Минтера"
+
+#. Plugin Name of the plugin/theme
+#: classes/wpsc-settings.php:26
+msgid "WP Smart Contracts"
+msgstr "Смарт-контракты WP"
+
+#: classes/wpsc-settings.php:45
+msgid "WP Smart Contracts Settings"
+msgstr "Настройки смарт-контрактов WP"
+
+#: classes/wpsc-settings.php:47
+msgid "Internal settings for the Block Explorer sections and others"
+msgstr "Внутренние настройки для разделов Block Explorer и других"
+
+#: classes/wpsc-settings.php:50
+msgid "Etherscan API Key Token"
+msgstr "Etherscan API Key Token"
+
+#: classes/wpsc-settings.php:51
+msgid "Register for free, to get an"
+msgstr "Зарегистрируйтесь бесплатно, чтобы получить"
+
+#: classes/wpsc-settings.php:52
+msgid "Etherscan API Key"
+msgstr "Etherscan API Ключ"
+
+#: classes/wpsc-settings.php:53
+msgid "Optimize the Coin Block Explorer section with a free Etherscan API Key."
+msgstr ""
+"Оптимизируйте раздел Coin Block Explorer с помощью бесплатного aPI-ключа "
+"Etherscan."
+
+#: classes/wpsc-settings.php:55
+msgid "Infura PROJECT ID"
+msgstr "Infura PROJECT ID"
+
+#: classes/wpsc-settings.php:56
+msgid ""
+"If you are using Crowdfundings you will need an Infura PROJECT ID (please do "
+"not confuse this with the PROJECT SECRET) "
+msgstr ""
+"Если вы используете Crowdfundings вам понадобится Infura PROJECT ID "
+"(пожалуйста, не путайте это с PROJECT SECRET)"
+
+#: classes/wpsc-settings.php:57
+msgid "If you are using Crowdfundings you will need an Infura PROJECT ID"
+msgstr "Если вы используете Crowdfundings, вам понадобится Infura PROJECT ID"
+
+#: classes/wpsc-settings.php:60
+msgid "Please do not confuse this with the PROJECT SECRET "
+msgstr "Пожалуйста, не путайте это с PROJECT SECRET"
+
+#: classes/wpsc-settings.php:61
+msgid "Coin settings"
+msgstr "Настройки монеты"
+
+#: classes/wpsc-settings.php:62
+msgid "Infura"
+msgstr "Infura"
+
+#: classes/wpsc-settings.php:63
+msgid "Separator Format"
+msgstr "Формат сепаратора"
+
+#: classes/wpsc-settings.php:64
+msgid "Thousands and decimals separator"
+msgstr "Сепаратор тысяч и десятичных знаков"
+
+#: classes/wpsc-settings.php:65
+msgid "Choose an option to override system number separator (comma or point)"
+msgstr ""
+"Выберите опцию переопределения сепаратора номеров системы (комма или точка)"
+
+#: classes/wpsc-settings.php:66
+msgid "Choose separators"
+msgstr "Выбрать разделитель разрядов"
+
+#: classes/wpsc-settings.php:67
+msgid "Choose expiration time"
+msgstr "Выбрать время истечения срока действия"
+
+#: classes/wpsc-settings.php:77
+msgid "Cache deactivated"
+msgstr "Кэш отключен"
+
+#: classes/wpsc-settings.php:78 classes/wpsc-settings.php:79
+msgid "seconds"
+msgstr "секунд"
+
+#: classes/wpsc-settings.php:80
+msgid "minute"
+msgstr "минута"
+
+#: classes/wpsc-settings.php:81 classes/wpsc-settings.php:82 
+#: classes/wpsc-settings.php:83
+msgid "minutes"
+msgstr "минут"
+
+#: classes/wpsc-settings.php:84
+msgid "hour"
+msgstr "час"
+
+#: classes/wpsc-settings.php:85 classes/wpsc-settings.php:86 
+#: classes/wpsc-settings.php:87
+msgid "hours"
+msgstr "часов"
+
+#: classes/wpsc-settings.php:88
+msgid "day"
+msgstr "день"
+
+#: classes/wpsc-settings.php:89 classes/wpsc-shortcodes.php:659
+msgid "days"
+msgstr "дней"
+
+#: classes/wpsc-settings.php:90
+msgid "week"
+msgstr "неделя"
+
+#: classes/wpsc-settings.php:92
+msgid "Date Format in"
+msgstr "Формат даты в"
+
+#: classes/wpsc-settings.php:93
+msgid "PHP style"
+msgstr "Стиль PHP"
+
+#: classes/wpsc-settings.php:94
+msgid "Specify the date format to show the timestamp of transactions"
+msgstr "Укажите формат даты для отобржаения отметки времени транзакций"
+
+#: classes/wpsc-settings.php:96
+msgid "Block Explorer Cache"
+msgstr "Блок Explorer кэш"
+
+#: classes/wpsc-settings.php:97
+msgid "Etherscan API cache duration in seconds."
+msgstr "Длительность кэша API Etherscan  в секундах."
+
+#: classes/wpsc-settings.php:98
+msgid "Duration time to store API responses."
+msgstr "Продолжительность хранения ответов API."
+
+#: classes/wpsc-settings.php:99
+msgid "Flush transient cache now"
+msgstr "Флеш переходный кэш сейчас"
+
+#: classes/wpsc-settings.php:100
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: classes/wpsc-settings.php:104
+msgid "Decimals to show in the value of transactions"
+msgstr "Десятичные показатели, отображаемые в стоимости сделок"
+
+#: classes/wpsc-settings.php:105
+msgid "This is an integer between 0 decimals and a maximum of 18"
+msgstr "Это ряд между 0 десятичных знаков и максимум 18"
+
+#: classes/wpsc-settings.php:106
+msgid "The number of decimals by default is 4"
+msgstr "Количество десятичных знаков по умолчанию составляет 4"
+
+#: classes/wpsc-shortcodes.php:27
+msgid "Align the QR code with the camera"
+msgstr "Поместите QR код в видоискатель камеры"
+
+#: classes/wpsc-shortcodes.php:103
+msgid "Unlimited"
+msgstr "Неограниченно"
+
+#: classes/wpsc-shortcodes.php:174
+msgid "Search by Address or Txhash"
+msgstr "Поиск по адресу или Txhash"
+
+#: classes/wpsc-shortcodes.php:175
+msgid "Transfers"
+msgstr "Переводы"
+
+#: classes/wpsc-shortcodes.php:176
+msgid "Holders"
+msgstr "Держатели"
+
+#: classes/wpsc-shortcodes.php:177
+msgid "Page"
+msgstr "Страница"
+
+#: classes/wpsc-shortcodes.php:179 classes/wpsc-shortcodes.php:692
+msgid "From"
+msgstr "От кого"
+
+#: classes/wpsc-shortcodes.php:181
+msgid "Amount and Transaction"
+msgstr "Сумма и транзакция"
+
+#: classes/wpsc-shortcodes.php:182
+msgid "Value"
+msgstr "Значение"
+
+#: classes/wpsc-shortcodes.php:183
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: classes/wpsc-shortcodes.php:184
+msgid "Next"
+msgstr "Далее"
+
+#: classes/wpsc-shortcodes.php:185
+msgid "Synced with blockchain every minute"
+msgstr "Синхронизируется с блокчейном каждую минуту"
+
+#: classes/wpsc-shortcodes.php:192
+msgid "Total supply"
+msgstr "Общее количество"
+
+#: classes/wpsc-shortcodes.php:194
+msgid "Internal Transactions"
+msgstr "Внутренние транзакции"
+
+#: classes/wpsc-shortcodes.php:195
+msgid "Transactions"
+msgstr "Транзакции"
+
+#: classes/wpsc-shortcodes.php:211
+msgid "Addresses"
+msgstr "Адреса"
+
+#: classes/wpsc-shortcodes.php:223
+msgid "Genesis"
+msgstr "Происхождение"
+
+#: classes/wpsc-shortcodes.php:234
+msgid "Transfer an amount of tokens from your account to another"
+msgstr "Перевод количество токенов с вашего счета на другой"
+
+#: classes/wpsc-shortcodes.php:235
+msgid "Transfer from"
+msgstr "Исходящая транзакция"
+
+#: classes/wpsc-shortcodes.php:236
+msgid "Expend tokens previously approved from an account"
+msgstr "Оттаженые токены, ранее утвержденные с учетной записи"
+
+#: classes/wpsc-shortcodes.php:238
+msgid "Authorize an account to withdraw your tokens up to a specified amount"
+msgstr "Разрешить учетной записи снять ваши токены до указанной суммы"
+
+#: classes/wpsc-shortcodes.php:240
+msgid "Destroy (burn) an specific amount of tokens from your account"
+msgstr ""
+"Уничтожить (сжечь) определенное количество токенов с вашей учетной записи"
+
+#: classes/wpsc-shortcodes.php:241
+msgid "Burn from"
+msgstr "Сжечь из"
+
+#: classes/wpsc-shortcodes.php:242
+msgid "Burn tokens previously approved from an account"
+msgstr "Сжечь токены, ранее утвержденные с учетной записи"
+
+#: classes/wpsc-shortcodes.php:244
+msgid "Create new tokens and assign them to an account"
+msgstr "Создание новых токенов и присвоение их учетной записи"
+
+#: classes/wpsc-shortcodes.php:246
+msgid "Allow this account to create tokens"
+msgstr "Разрешить этой учетной записи создавать токены"
+
+#: classes/wpsc-shortcodes.php:248
+msgid "Allow this account to pause all activity in this contract"
+msgstr ""
+"Разрешить этой учетной записи приостановить все действия в этом контракте"
+
+#: classes/wpsc-shortcodes.php:250
+msgid "Pause token activity"
+msgstr "Приостановка активности токенов"
+
+#: classes/wpsc-shortcodes.php:251 classes/wpsc-shortcodes.php:709
+msgid "Resume"
+msgstr "Продолжить"
+
+#: classes/wpsc-shortcodes.php:252
+msgid "Resume token activity"
+msgstr "Возобновление активности токенов"
+
+#: classes/wpsc-shortcodes.php:253
+msgid "From address"
+msgstr "С адреса"
+
+#: classes/wpsc-shortcodes.php:254
+msgid "To address"
+msgstr "Адрес"
+
+#: classes/wpsc-shortcodes.php:255
+msgid "Amount"
+msgstr "Сумма"
+
+#: classes/wpsc-shortcodes.php:256 classes/wpsc-shortcodes.php:490 
+#: classes/wpsc-shortcodes.php:747
+msgid "Scan"
+msgstr "Сканировать"
+
+#: classes/wpsc-shortcodes.php:263
+msgid "Renounce Pauser Role"
+msgstr "Откажитесь от роли Паузера"
+
+#: classes/wpsc-shortcodes.php:264
+msgid "Remove the pauser Role from your account"
+msgstr "Удалите роль pauser из вашей учетной записи"
+
+#: classes/wpsc-shortcodes.php:265
+msgid "Renounce Minter Role"
+msgstr "Откажитесь от роли Минтера"
+
+#: classes/wpsc-shortcodes.php:266
+msgid "Remove the minter Role from your account"
+msgstr "Удалить роль minter из вашей учетной записи"
+
+#: classes/wpsc-shortcodes.php:270
+msgid "Exchanges"
+msgstr "Обменники"
+
+#: classes/wpsc-shortcodes.php:271
+msgid "Exchange"
+msgstr "Обмен"
+
+#: classes/wpsc-shortcodes.php:316 classes/wpsc-shortcodes.php:522 
+#: classes/wpsc-shortcodes.php:773
+msgid "Important Information"
+msgstr "Важная информация"
+
+#: classes/wpsc-shortcodes.php:333 classes/wpsc-shortcodes.php:539 
+#: classes/wpsc-shortcodes.php:790
+msgid "Please connect or choose the right Ethereum Network"
+msgstr "Пожалуйста, подключите или выберите правильную сеть Ethereum"
+
+#: classes/wpsc-shortcodes.php:461
+msgid "Crowdfunding"
+msgstr "Краудфандинг"
+
+#: classes/wpsc-shortcodes.php:475
+msgid "Contributions"
+msgstr "Вклады"
+
+#: classes/wpsc-shortcodes.php:476
+msgid "Requests"
+msgstr "Запросы"
+
+#: classes/wpsc-shortcodes.php:478 classes/wpsc-shortcodes.php:676
+msgid "Contribute"
+msgstr "Сделать вклад"
+
+#: classes/wpsc-shortcodes.php:479
+msgid "Amount of Ethers to donate to the campaign"
+msgstr "Количество Ethers пожертвовать на кампанию"
+
+#: classes/wpsc-shortcodes.php:480 classes/wpsc-shortcodes.php:745
+msgid "Send"
+msgstr "Отправить"
+
+#: classes/wpsc-shortcodes.php:482
+msgid "Amount of ethers"
+msgstr "Количество этеров"
+
+#: classes/wpsc-shortcodes.php:483
+msgid "Contributors"
+msgstr "Авторы"
+
+#: classes/wpsc-shortcodes.php:485
+msgid "Create Request"
+msgstr "Создание запроса"
+
+#: classes/wpsc-shortcodes.php:486
+msgid "Create request"
+msgstr "Создание запроса"
+
+#: classes/wpsc-shortcodes.php:487
+msgid "Add a description"
+msgstr "Добавить описание"
+
+#: classes/wpsc-shortcodes.php:488
+msgid ""
+"A request to withdraw ether from the contract. Requests must be approved by "
+"approvers"
+msgstr ""
+"Запрос на снятие эфира с договора. Запросы должны быть одобрены одобрителями"
+
+#: classes/wpsc-shortcodes.php:489
+msgid "Finalize Request"
+msgstr "Завершение запроса"
+
+#: classes/wpsc-shortcodes.php:491
+msgid "Destination address"
+msgstr "Адрес назначения"
+
+#: classes/wpsc-shortcodes.php:498
+msgid "Check contribution"
+msgstr "Проверка вклада"
+
+#: classes/wpsc-shortcodes.php:540 classes/wpsc-shortcodes.php:791
+msgid "You are connected to a different network, please choose the right one"
+msgstr "Вы подключены к другой сети, пожалуйста, выберите правильную"
+
+#: classes/wpsc-shortcodes.php:651
+msgid "Token name"
+msgstr "Имя токена"
+
+#: classes/wpsc-shortcodes.php:652
+msgid "Token Symbol"
+msgstr "Символ токена"
+
+#: classes/wpsc-shortcodes.php:653
+msgid "Initial supply"
+msgstr "Всего выпущено"
+
+#: classes/wpsc-shortcodes.php:654
+msgid "Hard cap"
+msgstr "Hard cap"
+
+#: classes/wpsc-shortcodes.php:656
+msgid "Calendar"
+msgstr "Календарь"
+
+#: classes/wpsc-shortcodes.php:657
+msgid "ICO Begins"
+msgstr "ICO начинается"
+
+#: classes/wpsc-shortcodes.php:658
+msgid "Open until"
+msgstr "Открыт до тех пор, пока"
+
+#: classes/wpsc-shortcodes.php:660
+msgid "hrs"
+msgstr "часов"
+
+#: classes/wpsc-shortcodes.php:661
+msgid "Whitelist"
+msgstr "Белый список"
+
+#: classes/wpsc-shortcodes.php:662
+msgid "Only whitelisted users can contribute"
+msgstr "Только пользователи, включенные в белый список, могут"
+
+#: classes/wpsc-shortcodes.php:663
+msgid "min"
+msgstr "мин"
+
+#: classes/wpsc-shortcodes.php:664
+msgid "sec"
+msgstr "сек"
+
+#: classes/wpsc-shortcodes.php:665
+msgid "Raised"
+msgstr "Поднятый"
+
+#: classes/wpsc-shortcodes.php:666
+msgid "sold!"
+msgstr "Продано!"
+
+#: classes/wpsc-shortcodes.php:667
+msgid "Hardcap reached"
+msgstr "Хардкап достиг"
+
+#: classes/wpsc-shortcodes.php:668
+msgid "Contribute by transfering Ether"
+msgstr "Внести свой вклад путем передачи эфира"
+
+#: classes/wpsc-shortcodes.php:669
+msgid "Sending Ethers"
+msgstr "Отправка Этерс"
+
+#: classes/wpsc-shortcodes.php:671
+msgid ""
+"You will receive your tokens in the same address you use to send Ether "
+"contribution. Please make sure you are using an ERC20 Token compatible "
+"wallet."
+msgstr ""
+"Вы получите ваши токены по тому же адресу, который вы используете для "
+"отправки вклада Ether. Пожалуйста, убедитесь, что вы используете совместимый "
+"с ERC20 token кошелек."
+
+#: classes/wpsc-shortcodes.php:672
+msgid "Do not send contributions from an exchange"
+msgstr "Не отправлять взносы с биржи"
+
+#: classes/wpsc-shortcodes.php:673
+msgid "Buy Tokens"
+msgstr "Купить токены"
+
+#: classes/wpsc-shortcodes.php:674
+msgid "Buy"
+msgstr "Купить"
+
+#: classes/wpsc-shortcodes.php:675
+msgid "Using Metamask"
+msgstr "Использование Metamask"
+
+#: classes/wpsc-shortcodes.php:677
+msgid "You can receive your tokens in a different Ethereum account"
+msgstr "Вы можете получить токены в другой учетной записи Ethereum"
+
+#: classes/wpsc-shortcodes.php:693
+msgid "to"
+msgstr "до"
+
+#: classes/wpsc-shortcodes.php:694
+msgid "Token Address"
+msgstr "Адрес токенов"
+
+#: classes/wpsc-shortcodes.php:695
+msgid "OR"
+msgstr "ИЛИ"
+
+#: classes/wpsc-shortcodes.php:735
+msgid "ICO Coming Soon"
+msgstr "ICO скоро начнется"
+
+#: classes/wpsc-shortcodes.php:736
+msgid "ICO Is Open"
+msgstr "ICO открыто"
+
+#: classes/wpsc-shortcodes.php:737
+msgid "ICO Is Closed"
+msgstr "ICO закрыто"
+
+#: classes/wpsc-shortcodes.php:738
+msgid "Closed on"
+msgstr "Закрыто на"
+
+#: classes/wpsc-shortcodes.php:741
+msgid "Purchase tokens directly from ICO contract."
+msgstr "Покупка токенов непосредственно по контракту ICO."
+
+#: classes/wpsc-shortcodes.php:742
+msgid ""
+"This is the address where you are going to receive the tokens. The "
+"beneficiary account has to be a valid ERC20 token compatible address."
+msgstr ""
+"Это адрес, по которому вы собираетесь получать токены. Учетная запись "
+"бенефициара должна быть действительным адресом, совместимым с токенами ERC20."
+
+#: classes/wpsc-shortcodes.php:743
+msgid "What's this?"
+msgstr "Что это?"
+
+#: classes/wpsc-shortcodes.php:744
+msgid "Amount to spend in ethers"
+msgstr "Сумма, которую можно потратить в ETH"
+
+#: classes/wpsc-shortcodes.php:748
+msgid "Beneficiary account"
+msgstr "Счет бенефициара"
+
+#: index.js:8
+msgid "Show a post title 2"
+msgstr "Показать название поста 2"
+
+#: index.js:9
+msgid "common"
+msgstr "общие"
+
+#: index.js:46
+msgid "Post Title"
+msgstr "Заголовок поста"
+
+#: index.js:55
+msgid "Heading"
+msgstr "Заголовок"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.wpsmartcontracts.com/"
+msgstr "https://www.wpsmartcontracts.com/"
+
+#. Description of the plugin/theme
+msgid "Easily create powerful Ethereum Smart Contracts."
+msgstr "Легко создавать мощные смарт-контракты Ethereum."
+
+#. Author of the plugin/theme
+msgid "WPSmartContracts.com"
+msgstr "WPSmartContracts.com"

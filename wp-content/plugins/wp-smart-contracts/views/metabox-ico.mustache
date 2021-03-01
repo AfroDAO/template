@@ -1,0 +1,648 @@
+          <input id="tmpTx" type="hidden">
+          <input id="tmpNewIco" type="hidden">
+          <input id="tmpDefAcc" type="hidden">
+          <input id="tmpNetVer" type="hidden">
+          <div class="wpsc">
+            <input type="hidden" id="wpsc-change">
+            {{#readonly}}
+              <input type="hidden" name="wpsc-readonly" value="true">
+              {{{ico-info}}}
+            {{/readonly}}
+            {{^readonly}}
+            <div class="ui inverted segment">
+              <div class="ui inverted segment">
+                <h1 class="ui header">
+                  <i class="settings icon"></i>
+                  {{{ico-spec}}}
+                </h1>
+                <a class="ui grey button right floated" href="https://wpsmartcontracts.com/#tutorials" target="_blank">
+                  {{{learn-more}}}
+                </a>
+                <p>{{{ico-spec-desc}}}</p>
+              </div>
+            </div>
+            <div class="ui secondary segment">
+              <div class="grouped fields">
+                <h3 class="ui dividing header">{{{flavor}}}</h3>
+                <div class="ui stackable two column grid">
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-raspberry}}}">
+                      <h3 class="ui dividing header">{{{ico-donation}}}</h3>
+                      <p>{{{ico-donation-desc}}}</p>
+                      <h5 class="ui dividing header">{{{features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-ether}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-ether-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-sent}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-sent-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{rate}}}
+                        <span class="ui icon" data-tooltip="{{{rate-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{wallet}}}
+                        <span class="ui icon" data-tooltip="{{{wallet-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{token_adv}}}
+                        <span class="ui icon" data-tooltip="{{{token-tooltip_adv}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{token-mint}}}
+                        <span class="ui icon" data-tooltip="{{{token-mint-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{adv-pause}}}
+                        <span class="ui icon" data-tooltip="{{{adv-pause-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-raspberry" class="wpsc-radio-ico" value="raspberry"
+                          {{{wpsc-flavor}}} 
+                          {{#is-raspberry}}checked="checked"{{/is-raspberry}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-bluemoon}}}">
+                      <h3 class="ui dividing header">{{{crowdsale-advanced}}}</h3>
+                      <p>{{{crowdsale-advanced-desc}}}</p>
+                      <h5 class="ui dividing header">{{{features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-ether}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-ether-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-sent}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-sent-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{rate}}}
+                        <span class="ui icon" data-tooltip="{{{rate-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{wallet}}}
+                        <span class="ui icon" data-tooltip="{{{wallet-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{token}}}
+                        <span class="ui icon" data-tooltip="{{{token-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{token-mint}}}
+                        <span class="ui icon" data-tooltip="{{{token-mint-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+
+                      <p>
+                        <i class="check icon"></i>
+                        {{{adv-cap}}}
+                        <span class="ui icon" data-tooltip="{{{adv-cap-tooltip}}}"></i>
+                            <i class="small help icon circular"></i>
+                        </span>
+                        </p>
+                        <p>
+                        <i class="check icon"></i>
+                        {{{adv-timed}}}
+                        <span class="ui icon" data-tooltip="{{{adv-timed-tooltip}}}"></i>
+                            <i class="small help icon circular"></i>
+                        </span>
+                        </p>
+              
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-bluemoon" class="wpsc-radio-ico" value="bluemoon"
+                          {{{wpsc-flavor}}}
+                          {{#is-bluemoon}}checked="checked"{{/is-bluemoon}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 
+
+                    Removing bubblegum temporarily 
+
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-bubblegum}}}">
+                      <h3 class="ui dividing header">{{{crowdsale-with-tokens}}}</h3>
+                      <p>{{{crowdsale-with-tokens-desc}}}</p>
+                      <h5 class="ui dividing header">{{{features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-ether}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-ether-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-sent}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-sent-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{rate}}}
+                        <span class="ui icon" data-tooltip="{{{rate-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{wallet}}}
+                        <span class="ui icon" data-tooltip="{{{wallet-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{custom-token}}}
+                        <span class="ui icon" data-tooltip="{{{custom-token-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{dynamic-cap}}}
+                        <span class="ui icon" data-tooltip="{{{dynamic-cap-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{payments-in-token}}}
+                        <span class="ui icon" data-tooltip="{{{payments-in-token-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-bubblegum" class="wpsc-radio-ico" value="bubblegum"
+                          {{{wpsc-flavor}}}
+                          {{#is-bubblegum}}checked="checked"{{/is-bubblegum}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+                    </div>
+                  </div>
+                  -->
+                  <div class="column" id="wpsc-flavor-last-column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-custom}}}">
+                      <h3 class="ui dividing header">{{{erc-20-custom}}}</h3>
+                      <p>{{{custom-message}}}</p>
+                      <p><a href="https://wpsmartcontracts.com/contact-us.php" target="_blank" class="ui blue button">{{{contact-us}}}</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Advanced ICO options -->
+            <div id="wpsc-advanced-ico" class="ui secondary segment {{#is-bluemoon}}hidden{{/is-bluemoon}}">
+                <h3 class="ui dividing header">{{{advanced-options}}}</h3>
+                <div class="ui stackable two column grid">
+
+
+
+                  <!-- Hard cap -->
+                  <div class="column" id="column-bluemoon-2">
+                    <div class="ui toggle checkbox">
+                      <input name="wpsc-adv-hard" id="wpsc-adv-hard" type="checkbox" tabindex="0" value="hardcap"
+                        {{#wpsc_adv_hard}}checked="checked"{{/wpsc_adv_hard}}
+                        {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                      >
+                      <label>
+                        <strong>
+                          {{{hard-cap}}}
+                        </strong>
+                      </label>
+                    </div>
+                    <h4 class="ui header">
+                      <div class="sub header">
+                        {{{hard-cap-desc}}} 
+                        {{{hard-cap-tooltip}}}
+                      </div>
+                    </h4>
+                  </div>
+
+                  <div class="column" id="wpsc-hard-cap-div">
+                    <h4 class="ui header">
+                      {{{hard-cap-amount}}}
+                      <div class="sub header">
+                        {{{hard-cap-amount-desc}}} 
+                        {{{hard-cap-amount-tooltip}}}
+                      </div>
+                    </h4>
+                    <div class="ui fluid icon input" id="wpsc-adv-cap">
+                      <input name="wpsc-adv-cap" type="text" placeholder="{{{maximum-cap}}}" value="{{{wpsc_adv_cap}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                      <i class="suitcase icon"></i>
+                    </div>
+                  </div>
+
+                  <!-- Timed -->
+                  <div class="column" id="column-bluemoon-1">
+                    <div class="ui toggle checkbox">
+                      <input name="wpsc-adv-timed" id="wpsc-adv-timed" type="checkbox" tabindex="0" value="timed"
+                      {{#wpsc_adv_timed}}checked="checked"{{/wpsc_adv_timed}}
+                      {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                      >
+                      <label>
+                        <strong>
+                          {{{timed}}}
+                        </strong>
+                      </label>
+                    </div>
+                    <h4 class="ui header">
+                      <div class="sub header">
+                        {{{timed-desc}}} 
+                        {{{timed-tooltip}}}
+                      </div>
+                    </h4>
+                  </div>
+
+                  <div class="column" id="wpsc-bluemoon-warning">
+                    <div id="help-no-exchange" class="ui icon mini message" data-variation="wide mini">
+                      <i class="exclamation triangle icon"></i>
+                      {{{bluemoon-warning}}}
+                    </div>
+                  </div>
+
+                  <!-- Pausable ICO -->
+                  <div class="column" id="column-raspberry">
+                    <div class="ui toggle checkbox">
+                      <input name="wpsc-adv-pause-ico" id="wpsc-adv-pause-ico" type="checkbox" tabindex="0" value="pause-ico"
+                        checked="checked" readonly disabled="disabled"
+                      >
+                      <label>
+                        <strong>
+                          {{{pause-ico}}}
+                        </strong>
+                      </label>
+                    </div>
+                    <h4 class="ui header">
+                      <div class="sub header">
+                        {{{pause-ico-desc}}} 
+                        {{{pause-ico-tooltip}}}
+                      </div>
+                    </h4>
+                  </div>
+
+                  <div class="column" id="timed-dates-div">
+
+                    <div class="ui two column doubling stackable grid">
+
+                      <div class="column">
+
+                        <h4 class="ui header">
+                          {{{opening}}}
+                          <div class="sub header">
+                            {{{opening-desc}}} 
+                            {{{opening-tooltip}}}
+                          </div>
+                        </h4>
+                        <div class="ui fluid icon input">
+                          <input name="wpsc-adv-opening" type="date" value="{{{wpsc_adv_opening}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                          <i class="calendar alternate icon"></i>
+                        </div>
+
+                      </div>
+
+                      <div class="column">
+                        <h4 class="ui header">
+                          {{{closing}}}
+                          <div class="sub header">
+                            {{{closing-desc}}} 
+                            {{{closing-tooltip}}}
+                          </div>
+                        </h4>
+                        <div class="ui fluid icon input">
+                          <input name="wpsc-adv-closing" type="date" value="{{{wpsc_adv_closing}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                          <i class="calendar alternate icon"></i>
+                        </div>
+                      </div>
+
+                    </div>
+  
+                  </div>
+
+                </div>
+
+              </div>
+
+            <!-- Token Definition Fields -->
+            <div id="the-token-definition" class="ui secondary segment">
+                <h3 class="ui dividing header">{{{token-definition}}}</h3>
+                <div class="ui stackable two column grid">
+                    <!-- name -->
+                    <div class="column">
+                        <h4 class="ui header">
+                            {{{name}}}
+                            <div class="sub header">
+                            {{{name-desc}}}
+                            {{{name-tooltip}}}
+                            </div>
+                        </h4>
+                        <div class="ui fluid icon input">
+                            <input name="wpsc-coin-name" type="text" placeholder="{{{coin-name}}}" value="{{{wpsc_coin_name}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                            <input name="wpsc-coin-decimals" type="hidden">
+                            <i class="tag icon"></i>
+                        </div>
+                    </div>
+                    <!-- Symbol -->
+                    <div class="column">
+                        <h4 class="ui header">
+                            {{{symbol}}}
+                            <div class="sub header">
+                            {{{symbol-desc}}}
+                            </div>
+                        </h4>
+                        <div class="ui fluid icon input">
+                            <input name="wpsc-coin-symbol" type="text" placeholder="{{{coin-symbol}}}" value="{{{wpsc_coin_symbol}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                            <i class="key icon"></i>
+                        </div>
+                    </div>
+                    <!-- Total Supply -->
+                    <div class="column" id="token-definition-initial-supply">
+                        <h4 class="ui header">
+                            {{{initial-supply}}}
+                            <div class="sub header">
+                            {{{initial-supply-desc}}}
+                            {{{initial-supply-tooltip}}}
+                            </div>
+                        </h4>
+                        <div class="ui fluid icon input" id="wpsc-total-supply">
+                            <input name="wpsc-total-supply" type="text" placeholder="{{{total-supply}}}" value="{{{wpsc_total_supply}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                            <i class="database icon"></i>
+                        </div>
+                    </div>
+
+                  </div>
+                  <div class="ui stackable two column grid" id="wpsc-advanced-ico-token" style="display: none;">
+
+                    <!-- Burnable -->
+                    <div class="column">
+                      <div class="ui toggle checkbox">
+                        <input name="wpsc-adv-burn" id="wpsc-adv-burn" type="checkbox" tabindex="0" value="burnable"
+                          {{#is-burnable}}checked="checked"{{/is-burnable}}
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label>{{{burnable}}}</label>
+                      </div>
+                      <h4 class="ui header">
+                        <div class="sub header">
+                          {{{burnable-desc}}} 
+                          {{{burnable-tooltip}}}
+                        </div>
+                      </h4>
+                    </div>
+                    <!-- Pausable -->
+                    <div class="column">
+                      <div class="ui toggle checkbox">
+                        <input name="wpsc-adv-pause" id="wpsc-adv-pause" type="checkbox" tabindex="0" value="pausable"
+                        {{#is-pausable}}checked="checked"{{/is-pausable}}
+                        {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label>{{{pausable}}}</label>
+                      </div>
+                      <h4 class="ui header">
+                        <div class="sub header">
+                          {{{pausable-desc}}} 
+                          {{{pausable-tooltip}}}
+                        </div>
+                      </h4>
+                    </div>
+                    <!-- Mintable -->
+                    <div class="column">
+                      <div class="ui toggle checkbox">
+                        <input name="wpsc-adv-mint" id="wpsc-adv-mint" type="checkbox" tabindex="0" value="mintable"
+                        checked="checked"
+                        readonly disabled="disabled"
+                        >
+                        <label>{{{mintable_mandatory}}}</label>
+                      </div>
+                      <h4 class="ui header">
+                        <div class="sub header">
+                          {{{mitable-desc}}} 
+                          {{{mintable-tooltip}}}
+                        </div>
+                      </h4>
+                    </div>
+                    <div class="column"  id="wpsc-token-definition-last">
+                      <h4 class="ui header">
+                        {{{mintable-cap}}}
+                        <div class="sub header">
+                          {{{mintable-desc}}} 
+                          {{{mintable-tooltip-cap}}}
+                        </div>
+                      </h4>
+                      <div class="ui fluid icon input" id="wpsc-adv-cap-token">
+                        <input name="wpsc-adv-cap-token" type="text" placeholder="{{{maximum-cap}}}" value="{{{wpsc_adv_cap_token}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                        <i class="suitcase icon"></i>
+                      </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="the-token-rate" class="ui secondary segment">
+                <h3 class="ui dividing header">{{{token-rate}}}</h3>
+
+                  <!-- Distribution rate -->
+                  <div class="column" id="wpsc-rate-id">
+                    <h4 class="ui header">
+                        <div class="sub header">
+                        {{{token-rate-desc}}}
+                        {{{token-rate-desc-tooltip}}}
+                        </div>
+                    </h4>
+                    <div class="ui fluid icon input" id="wpsc-rate">
+                        <input name="wpsc-rate" type="text" placeholder="{{{token-rate}}}" value="{{{wpsc_rate}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                        <i class="database icon"></i>
+                    </div>
+                  </div>
+
+            </div>
+
+            <!-- Token To Sell -->
+            <div id="token-to-sell-box" class="ui secondary segment">
+              <h3 class="ui dividing header">{{{token-to-sell}}}</h3>
+              <div class="ui stackable grid" id="wpsc-token2sell-div">
+                  <!-- name -->
+                  <div class="column">
+                      <h4 class="ui header">
+                          {{{token-address}}}
+                          <div class="sub header">
+                          {{{token-address-desc}}}
+                          {{{token-address-desc-tooltip}}}
+                          </div>
+                      </h4>
+                      <div  id="id-wpsc-token-to-sell" class="ui fluid icon input">
+                          <input name="wpsc-token-to-sell" type="text" value="{{{wpsc_to_sell}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                          <i class="ethereum icon"></i>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+
+            <div id="token-to-receive-box" class="ui secondary segment">
+              <h3 class="ui dividing header">
+                {{{tokens-to-receive}}}
+              </h3>
+
+                <table style="width: 100%" id="the-token-table">
+                  <tr>
+                    <td style="width: 60%">
+                      <h4 class="ui header">
+                        {{{tokens-to-receive-address}}}
+                        <div class="sub header">
+                          {{{tokens-to-receive-address-desc}}}
+                          {{{tokens-to-receive-addresses-desc-tooltip}}}
+                        </div>
+                      </h4>
+                    </td>
+                    <td style="width: 40%">
+                      <h4 class="ui header">
+                        {{{tokens-to-receive-rate}}}
+                        <div class="sub header">
+                          {{{tokens-to-receive-rate-desc}}}
+                          {{{tokens-to-receive-addresses-desc-tooltip}}}
+                        </div>
+                      </h4>
+                    </td>
+                  </tr>
+                  {{#erc20_payments_rates}}
+                  <tr>
+                    <td>
+                      <div id="wpsc-erc-20-ico-address" class="ui left icon fluid input">
+                        <input id="wpsc-erc-20-ico-address-input" name="erc20_payments[]" type="text" placeholder="0x..." value="{{payment_token}}">
+                        <i class="ethereum icon"></i>
+                      </div>                      
+                    </td>
+                    <td>
+                      <div id="wpsc-erc-20-ico-rate" class="ui left icon fluid input">
+                        <input id="wpsc-erc-20-ico-rate-input" name="erc20_rates[]" type="text" placeholder="{{{rate-per-token}}}" value="{{payment_rate}}">
+                        <i class="database icon"></i>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="javascript:void(0);" id="deleteRow"><i class="icon trash"></i></a>
+                    </td>
+                  </tr>
+                  {{/erc20_payments_rates}}
+                </table>
+
+                <div class="column">
+                  <button id="add-row-token" class="ui grey button">Add</button>
+                </div>
+              </div>
+
+            
+
+            <!-- Walletre -->
+            <div class="ui secondary segment">
+              <h3 class="ui dividing header">{{{wallet}}}</h3>
+              <div class="ui stackable grid" id="wpsc-wallet-div">
+                  <!-- name -->
+                  <div class="column">
+                      <h4 class="ui header">
+                          {{{wallet}}}
+                          <div class="sub header">
+                          {{{wallet-desc}}}
+                          <span class="ui icon" data-tooltip="{{{wallet-desc-tooltip}}}"></i>
+                            <i class="small help icon circular"></i>
+                          </span>
+                          </div>
+                      </h4>
+                      <div class="ui fluid icon input">
+                          <input name="wpsc-wallet" type="text" value="{{{wpsc_wallet}}}" {{#readonly}}readonly disabled="disabled"{{/readonly}}>
+                          <i class="ethereum icon"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          {{/readonly}}
+
+          </div>
+
+<script>
+  if (jQuery.isFunction(jQuery('#example1').calendar)) {
+    jQuery('#example1').calendar();
+  }
+</script>

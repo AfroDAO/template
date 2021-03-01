@@ -1,0 +1,317 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Cryptoniq\n"
+"POT-Creation-Date: 2018-08-03 22:54+0400\n"
+"PO-Revision-Date: 2018-08-05 13:40+0400\n"
+"Language-Team: DivEngine <admin@cryptoniq.io>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;"
+"__ngettext_noop:1,2\n"
+"Last-Translator: DivEngine <admin@cryptoniq.io>\n"
+"Language: hi_IN\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin.php:89
+msgid "Coin name"
+msgstr "सिक्के का नाम"
+
+#: admin.php:94
+msgid "Amount of coins"
+msgstr "सिक्कों की संख्या"
+
+#: admin.php:99
+msgid "Step"
+msgstr "स्टेप"
+
+#: admin.php:104
+msgid "Start time"
+msgstr "प्रारंभ समय"
+
+#: admin.php:109
+msgid "Transaction ID"
+msgstr "लेनदेन आईडी"
+
+#: admin.php:114
+msgid "Address"
+msgstr "पता"
+
+#: coins/btc.php:73 coins/doge.php:81 coins/eth.php:133 coins/ltc.php:73
+msgid "The client completed payment"
+msgstr "ग्राहक ने भुगतान पूर्ण किया"
+
+#: functions.php:100
+msgid "Transaction is found"
+msgstr "लेनदेन आईडी प्रापत की"
+
+#: functions.php:101
+msgid "Transaction is not found"
+msgstr "लेनदेन प्राप्त नहीं हुआ"
+
+#: functions.php:103
+msgid "That is an old transaction"
+msgstr "उक्त एक पुराना लेनदेन है"
+
+#: functions.php:104
+msgid "Transaction is expired. Payment failed"
+msgstr "लेनदेन समाप्त हो गया है भुगतान असफल"
+
+#: functions.php:106 payment.php:178
+msgid "Checking..."
+msgstr "चेकिंग"
+
+#: functions.php:107
+msgid "Processing..."
+msgstr "प्रोसेसिंग"
+
+#: functions.php:108
+msgid "Completed"
+msgstr "पुर्ण"
+
+#: functions.php:109
+msgid "Redirecting..."
+msgstr "पुन: निर्देशित"
+
+#: functions.php:110
+msgid "Error. Try to refresh the page"
+msgstr "त्रुटि, फिर से प्रयास करें"
+
+#: functions.php:111
+msgid "Time is expired"
+msgstr "समय समाप्त"
+
+#: functions.php:174
+msgid "Total:"
+msgstr "कुल"
+
+#: functions.php:178
+msgid "Address:"
+msgstr "पता"
+
+#: functions.php:182
+msgid "Transaction:"
+msgstr "लेनदेन"
+
+#: gateway.php:10 gateway.php:23
+msgid "Pay with cryprocurrencies."
+msgstr "क्रिप्टो करंसी में भुगतान करें"
+
+#: gateway.php:37
+msgid "Online/Offline gateway"
+msgstr "ऑनलाईन/ऑफलाईन गेटवे"
+
+#: gateway.php:39
+msgid "Enable"
+msgstr "ऑनलाईन"
+
+#: index.php:89
+msgid "Every 30 Minutes"
+msgstr "प्रत्येक 30 मिनिट"
+
+#: index.php:98
+msgid "Every 3 Hours"
+msgstr "प्रत्येक 3 घंटे"
+
+#: options.php:143
+msgid "Payment"
+msgstr "भुगतान"
+
+#: options.php:152
+msgid "Payment Coins"
+msgstr "सिक्कों का भुगतान"
+
+#: options.php:164
+msgid "Order Status"
+msgstr "ऑर्डर की स्थिति"
+
+#: options.php:165
+msgid "Select status for order after completed payment"
+msgstr "भुगतान पूर्ण होने के बाद ऑर्डर की स्थिति को चुनें"
+
+#: options.php:178
+msgid "Wallets"
+msgstr "वोलेट"
+
+#: options.php:179
+#, php-format
+msgid ""
+"Add your wallets addresses for each payment coin. Try to add as much as possible. Read more "
+"%1$s."
+msgstr "सिक्कों के प्रत्येक भुगतान के लिए आपके वॉलेट पते को जोडें। जहां तक संभव हो प्रयास करें। %1$s से अधिक पढें"
+
+#: options.php:179 options.php:291 options.php:301 options.php:309
+msgid "here"
+msgstr "यहां"
+
+#: options.php:186 options.php:193 options.php:200 options.php:207
+msgid "Wallet"
+msgstr "वॉलेट"
+
+#: options.php:187 options.php:194 options.php:201 options.php:208
+msgid "Add your BTC addresses (at least 10-20)."
+msgstr "अपना BTC पता जोडें (कम से कम 10-20)"
+
+#: options.php:188
+msgid "Add address"
+msgstr "पते को जोडें"
+
+#: options.php:195 options.php:202 options.php:209
+msgid "Add wallet"
+msgstr "वॉलेट को जोडें"
+
+#: options.php:216
+msgid "Prices"
+msgstr "मूल्य"
+
+#: options.php:223
+msgid "Show coin prices"
+msgstr "सिक्कों का मूल्य बताएं"
+
+#: options.php:224
+msgid "Add coin calculated prices near products prices."
+msgstr "उत्पाद के मूल्य के पास सिक्कों की गणना की हुए मूल्य को जोडें"
+
+#: options.php:230
+msgid "Coin"
+msgstr "सिक्के"
+
+#: options.php:244
+msgid "Sign"
+msgstr "चिन्‍ह"
+
+#: options.php:246
+msgid "Text"
+msgstr "टेक्स्ट"
+
+#: options.php:247
+msgid "Icon"
+msgstr "आयकन"
+
+#: options.php:248
+msgid "None"
+msgstr "कोई नहीं"
+
+#: options.php:257
+msgid "Divider"
+msgstr "डिवाईडर"
+
+#: options.php:266
+msgid "Titles"
+msgstr "टाईटल"
+
+#: options.php:273
+msgid "Description"
+msgstr "विवरण"
+
+#: options.php:274
+msgid "Write some description for this payment type. It will be shown in 'Checkout' page."
+msgstr "इस प्रकार के भुगतान के लिए कुछ विवरण लिखें। यह “चेकआउट” पेज में दिखई देगा"
+
+#. Description of the plugin/theme
+#: options.php:275
+msgid "Pay with cryptocurrencies."
+msgstr "क्रिप्टो करंसी में भुगतान करें"
+
+#: options.php:283
+msgid "Api Keys"
+msgstr "APi कीज"
+
+#: options.php:290
+msgid "ETH Api Key"
+msgstr "ETH APi की"
+
+#: options.php:291
+#, php-format
+msgid "See how to get api-key %1$s."
+msgstr "%1$s, Api की किस प्रकार प्राप्त कर सकते हैं"
+
+#: options.php:298
+msgid "Documentation"
+msgstr "दस्तावेजीकरण"
+
+#: options.php:301
+#, php-format
+msgid "For documentation please visit %1$s."
+msgstr "दस्तावेजीकरण के लिए कृपया %1$s, को देखें"
+
+#: options.php:306
+msgid "Support"
+msgstr "सपोर्ट"
+
+#: options.php:309
+#, php-format
+msgid "For support please open a ticket %1$s."
+msgstr "सपोर्ट के लिए कृपया एक टिकिट %1$s, को खोलें"
+
+#: options.php:314
+msgid "Import / Export"
+msgstr "आयात/निर्यात"
+
+#: payment.php:69
+msgid "Payment via"
+msgstr "के माध्यम से भुगतान"
+
+#: payment.php:83
+msgid "My Cart"
+msgstr "माय कार्ट"
+
+#: payment.php:118
+msgid "How to pay"
+msgstr "भुगतान किस प्रकार करें"
+
+#: payment.php:124
+msgid "Please, send"
+msgstr "कृपया भेजें"
+
+#: payment.php:130
+msgid "To this address"
+msgstr "इस पते पर"
+
+#: payment.php:136
+msgid "Scan QR code"
+msgstr "QR कोड को स्केन करें"
+
+#: payment.php:144
+msgid "Instruction"
+msgstr "निर्देश"
+
+#: payment.php:148
+msgid ""
+"To make a payment, send required amount of coins to mentioned address. It must be as one "
+"transaction (not included the fees)."
+msgstr ""
+"भुगतान करने के लिए, दिए गए पते पर आवश्यक राशि के सिक्के भेजें। यह एक प्रकार का लेनदेन होगा (फीस शामिल नहीं)"
+
+#: payment.php:149
+msgid "After, click on \"Yes, I've sent\" button and wait the system to check your payment."
+msgstr ""
+"“yes” पर किलिक करने के बाद, “I’ve send” बटन पर किलिक करें और सिस्टम को आपके भुगतान को चेक करने तक "
+"प्रतीक्षा करें।"
+
+#: payment.php:150
+msgid ""
+"System will give you 3 hours, in which time the transaction must be completed. So if you "
+"haven't sent the coins before clicking the check button, you still can. But note that if the "
+"coins are not received within a given time, order will be automatically cancelled and payment "
+"will be failed."
+msgstr ""
+"सिस्टम आपको 3 घंटे देगा, इस समय के भीतर लेनदेन पूर्ण हो जाना चाहिए। अगर आपने चक बटन पर किलिक करने से पहले तक "
+"सिक्के नहीं भेजे, आप अब भी भेज सकते हैं। किंतु नोट करें कि अगर सिक्के दिए गए समय में प्राप्त नहीं होते हैं, आर्डर स्वत: "
+"केंसिल हो जाएगा और भुगतान असफल हो जाएगा।"
+
+#: payment.php:170
+msgid "Yes, I've sent"
+msgstr "हां, मैंने भेज दिया है"
+
+#: payment.php:178
+msgid "Time:"
+msgstr "समय"

@@ -1,0 +1,62 @@
+<span class="ui {{color}} image {{size}} label">
+  <img src="{{imgUrl}}{{type}}.png">
+  <span class="wpsc-capitalize">{{type}}</span>
+</span>
+
+{{#is_bluemoon}}
+
+    {{#hardcapped}}
+    <span class="ui {{color}} image {{size}} label">
+        <i class="suitcase icon"></i>
+        {{{hard_capped_label}}} <div class="detail">{{hardcap}}</div>
+    </span>
+    {{/hardcapped}}
+    
+    {{#pause}}
+    <span class="ui {{color}} image {{size}} label">
+        <i class="pause circle outline icon"></i>
+        {{{pausable_label}}}
+    </span>
+    {{/pause}}
+    
+    {{#timed}}
+    <span class="ui {{color}} image {{size}} label">
+        <i class="clock outline icon"></i>
+        {{{timed_label}}}
+        <div class="detail">From {{opening}} to {{closing}}</div>
+    </span>
+    {{/timed}}
+    
+{{/is_bluemoon}}
+
+
+{{#is_bubblegum}}
+<span class="ui  {{color}} image {{size}} label">
+    <i class="ethereum icon"></i>
+    {{{token2sell_label}}} <div class="detail">{{token2sell}}</div>
+</span>
+{{/is_bubblegum}}
+
+{{^is_bubblegum}}
+<span class="ui  {{color}} image {{size}} label">
+    <i class="key icon"></i>
+    {{{symbol_label}}} <div class="detail">{{symbol}}</div>
+</span>
+<span class="ui  {{color}} image {{size}} label">
+    <i class="tag icon"></i>
+    {{{name_label}}} <div class="detail">{{name}}</div>
+</span>
+<span class="ui  {{color}} image {{size}} label">
+    <i class="database icon"></i>
+    {{{supply_label}}} <div class="detail">{{supply}}</div>
+</span>
+<span class="ui  {{color}} image {{size}} label">
+    <i class="percent icon"></i>
+    {{{rate_label}}} <div class="detail">{{rate}}</div>
+</span>
+{{/is_bubblegum}}
+
+<span class="ui  {{color}} image {{size}} label">
+    <i class="ethereum icon"></i>
+    {{{wallet_label}}} <div class="detail">{{wallet}}</div>
+</span>

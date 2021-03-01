@@ -1,0 +1,74 @@
+/************************************************************************************
+HEADER
+*************************************************************************************/
+.boxed-compact #header #searchform-wrap {
+    float: left !important;
+}
+.boxed-compact #site-description {
+	background: linear-gradient(135deg, #1797a3 0%, #60cdb4 100%);
+}
+.boxed-compact .header-bar {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.boxed-compact #headerwrap #searchform #s{
+	border-left: none;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	right: auto;
+	left: 0;
+}
+.boxed-compact #headerwrap #searchform #s:focus,
+.boxed-compact #headerwrap #searchform #s:hover,
+.boxed-compact #headerwrap #searchform .icon-search:hover + #s{
+	left: 0;
+}
+
+/************************************************************************************
+POST WRAP
+*************************************************************************************/
+.loops-wrapper.overlay .post-image+.post-content .post-content-inner {
+    text-align: right;
+}
+
+/************************************************************************************
+POST
+*************************************************************************************/
+.loops-wrapper .post .post-content,
+.loops-wrapper.grid4 .has-post-thumbnail .post-content {
+    text-align: right;
+}
+
+.post-filter {
+    text-align: right;
+}
+
+/************************************************************************************
+POST NAVIGATION
+*************************************************************************************/
+.post-nav .next {
+    padding-left: 2.5em;
+}
+.post-nav .next .arrow::before {
+    right: auto;
+	left: 0;
+    content: "\e803";
+}
+.post-nav .prev {
+    padding-left: 1.5em;
+}
+.post-nav .prev .arrow::before {
+    left: auto;
+	right: 0;
+    content: "\e804";
+}
+
+/* post nav animation */
+@keyframes arrow-prev {
+	0% {right: 0;}
+	50% {right: -10px;}
+	100% {right: 0;}
+}
+@keyframes arrow-next {
+	0% {left: 0;}
+	50% {left: -10px;}
+	100% {left: 0;}
+}

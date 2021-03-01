@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="Material WP">
+  <domain name="material-wp">
+    <project name="Material WP" slug="material-wp">
+      <source>
+        <directory>.</directory>
+      </source>
+      <target>
+        <directory>.</directory>
+      </target>
+      <template>
+        <file>lang/material-wp.pot</file>
+      </template>
+    </project>
+  </domain>
+</bundle>

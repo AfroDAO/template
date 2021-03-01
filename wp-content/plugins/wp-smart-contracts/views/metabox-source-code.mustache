@@ -1,0 +1,67 @@
+<div class="wpsc">
+   <div class="ui secondary segment center aligned">
+      <h3 class="ui dividing header">
+         <i class="code icon"></i>
+         <div class="content">
+            {{{contrac-source-code}}}
+         </div>
+      </h3>
+      <div class="ui segment">
+         <span class="ui grey label">
+            {{{contract-name}}}
+            <div class="detail">
+               {{#tokenContractName}}{{tokenContractName}} {{version}}{{/tokenContractName}}
+               {{#contractName}}{{contractName}}{{/contractName}}
+            </div>
+         </span>
+         <span class="ui grey label">
+            {{{solidity-version}}}
+            <div class="detail">
+               {{#tokenCompilerVersion}}{{tokenCompilerVersion}}{{/tokenCompilerVersion}}
+               {{#compilerVersion}}{{compilerVersion}}{{/compilerVersion}}
+            </div>
+         </span>
+         <div class="ui divider"></div>
+         <pre class="wpsc-code prettyprint">{{{source}}}</pre>
+         <div class="hidden" id="wpsc_source">
+          {{{source}}}
+         </div>
+         <div class="ui divider"></div>
+         <div id="wpsc_source_code_div">
+            <a href="javascript:void(0);" class="ui tiny button"
+               onclick="copyToClipboard(document.querySelector('#wpsc_source').innerHTML, 'wpsc_source_code_div')">
+               <i class="copy icon"></i>
+               {{{copy-source-code}}}
+            </a>
+            <span class="wpsc-small">
+               <i class="check icon"></i>
+               <a href="{{etherscan}}/address/{{contract-address}}#contracts" target="_blank">{{{source-code-etherscan}}}</a>
+            </span>
+         </div>
+      </div>
+   </div>
+   <div class="ui secondary segment center aligned">
+      <h3 class="ui dividing header">
+         <i class="cogs icon"></i>
+         <div class="content">
+            {{{contract-abi}}}
+         </div>
+      </h3>
+      <div class="ui segment">
+         <pre class="wpsc-code prettyprint abi">{{abi}}</pre>
+         <div class="hidden" id="wpsc_abi">{{{abi}}}</div>
+         <div class="ui divider"></div>
+         <div id="wpsc_abi_div">
+            <a href="javascript:void(0);" class="ui tiny button"
+               onclick="copyToClipboard(document.querySelector('#wpsc_abi').innerHTML, 'wpsc_abi_div')">
+            <i class="copy icon"></i>
+            {{{copy-contract-abi}}}
+            </a>
+            <span class="wpsc-small">
+            <i class="check icon"></i>
+            <a href="{{etherscan}}/address/{{contract-address}}#contracts" target="_blank">{{{contract-abi-etherscan}}}</a>
+            </span>
+         </div>
+      </div>
+   </div>
+</div>

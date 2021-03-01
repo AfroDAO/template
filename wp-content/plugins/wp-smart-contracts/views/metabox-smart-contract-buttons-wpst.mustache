@@ -1,0 +1,117 @@
+            <div class="ui placeholder segment">
+              <div class="ui two column stackable center aligned grid">
+                  <div class="ui vertical divider hide-small-dev">OR</div>
+                  <div class="middle aligned row">
+                      <div class="ui top left attached green label" id="wpsc-deploy-fee-ether"></div>
+                      <div class="column">
+                          <div class="ui icon header">
+                            <i class="ethereum icon"></i>{{{deploy-using-ether}}}
+                          </div>
+                          <p>{{{deploy-desc}}}</p>
+                          <div class="ui hidden divider"></div>
+                          <button id="{{button-id}}" class="ui labeled icon green button big">
+                            <i class="cloud upload icon"></i>
+                            {{{deploy}}}
+                          </button>
+                          <div class="ui divider"></div>
+                          <a class="ui labeled icon mini button" href="https://wpsmartcontracts.com/docs/doc-ethereum-networks.php" target="_blank">
+                            <i class="external alternate icon"></i>{{{learn-how-to-get-ether}}}
+                          </a>                      
+                      </div>
+                      <div class="ui top right attached blue label" id="wpsc-deploy-fee-wpst"></div>
+                      <div class="column">
+                        <img src="{{deploy-token-image}}" class="ui centered tiny image">
+                        <div class="ui center aligned icon header" id="deploy-token-header">
+                          {{{deploy-token}}}
+                        </div>
+
+                        <div class="ui basic segment" id="wpsc-no-wpst" style="display: none;">
+                          <div class="ui message">
+                            <div class="content">
+                              <p class="wpsc-left">
+                                {{{no-wpst}}}
+                              </p>
+                            </div>
+                          </div>  
+                        </div>
+
+                        <div class="ui basic segment" id="not-enough-wpst" style="display: none;">
+                          <div class="ui message">
+                            <div class="content">
+                              <p class="wpsc-left">
+                                {{{not-enough-wpst}}}
+                              </p>
+                            </div>
+                          </div>  
+                        </div>
+
+                        <span  id="wpsc-deploy-steps" style="display: none;">
+                          <div class="ui basic segment">
+                            <div class="ui message">
+                              <div class="content">
+                                <p class="wpsc-left">
+                                  {{{deploy-desc-token}}}
+                                </p>
+                                <div class="ui bulleted mini list wpsc-left">
+                                  <div class="item">{{{deploy-desc-token-1}}}</div>
+                                  <div class="item">{{{deploy-desc-token-2}}}</div>
+                                </div>
+                              </div>
+                            </div>  
+                          </div>
+                          <div class="ui hidden divider"></div>
+                          <button class="ui labeled icon blue button big" id="{{authorize-button-id}}">
+                            <i class="check icon"></i>
+                            {{{authorize}}}
+                          </button>  
+                          <div class="ui divider"></div>
+                        </span>
+
+                        <span  id="wpsc-deploy-ready" style="display: none;">
+                          <div class="ui basic segment">
+                            <div class="ui message">
+                              <div class="content">
+                                <p class="wpsc-left">
+                                  {{{authorize-complete}}}
+                                </p>
+                              </div>
+                            </div>  
+                          </div>
+                          <div class="ui hidden divider"></div>
+                          <button class="ui labeled icon blue button big" id="{{deploy-button-wpst}}">
+                            <i class="cloud upload icon"></i>
+                            {{{deploy}}}
+                          </button>
+                          <div class="ui divider"></div>
+                        </span>
+
+                        <div class="ui image label" id="wpsc-wpst-balance" style="display: none;">
+                          <img src="" class="ui tiny image" id="wpsc-balance-blockie">
+                          <span id="wpst-balance"></span>
+                          <a class="detail">{{{wpst-balance}}}</a>
+                        </div>
+
+                        <div class="ui divider"></div>
+
+                        <a class="ui labeled icon mini button" href="https://wp-ice-cream.wpsmartcontracts.com/" target="_blank">
+                          <i class="external alternate icon"></i>{{{learn-how-to-get-wpst}}}
+                        </a>                      
+                    </div>
+                  </div>
+              </div>
+              <div class="ui hidden divider"></div>
+              <div class="ui hidden divider"></div>
+          </div>
+
+          {{#show_load}}
+          {{#load-desc}}
+          <p class="wpsc-centered">
+            {{{do-you-have-an-erc20-address}}}
+          </p>
+          <p class="wpsc-centered">
+            <button id="wpsc-load-contract-button" class="ui button">
+              {{{load-desc}}}
+            </button>
+          </p>
+          {{/load-desc}}
+          {{/show_load}}

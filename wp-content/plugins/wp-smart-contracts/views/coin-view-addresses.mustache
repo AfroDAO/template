@@ -1,0 +1,104 @@
+{{#contract-exists}}
+	<div class="ui raised center aligned segment">
+
+		<h3 class="ui block header left aligned">
+			<i class="address book outline icon"></i>
+			{{{addresses}}}
+		</h3>
+
+		<div class="wpsc-address" id="wpscContractAddressDiv">
+			<div class="ui mini labeled button" tabindex="0">
+				<div class="ui mini button">
+
+				  <span class="desktop-only">
+					<img src="{{blockie}}" class="ui image super-mini circular floated left">
+				    {{{contract-address-text}}}
+				  </span>
+				  <span class="no-desktop">
+					<i class="icon ethereum"></i>
+				  </span>
+
+				</div>
+				<span class="ui basic left pointing label">
+				  <a href="javascript:void(0);" onclick="copyToClipboard('{{contract-address}}', 'wpscContractAddressDiv')"><i class="icon copy"></i></a>
+					  <input name="wpscContractAddress" type="hidden" value="{{contract-address}}">
+				  <a href="{{etherscan}}address/{{contract-address}}" target="_blank">
+
+				    <span class="big-desktop-only">
+				      {{contract-address}}
+				      <i class="icon external alternate"></i>
+				    </span>
+				    <span class="no-big-desktop">{{contract-address-short}}</span>
+
+				  </a>
+				</span>
+				<div class="ui mini icon button showfluid"><i class="qrcode icon"></i></div>
+				<div class="ui flowing popup top left transition hidden">
+				  <img src="{{qr-code}}" class="ui centered small image">
+				  <div class="ui divider"></div>
+				  <div class="ui label">
+				    {{contract-address}}
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui mini labeled button" tabindex="0" id="wpscOwnerDiv">
+		    <div class="ui mini button">
+
+		      <span class="desktop-only">
+		        <img src="{{blockie-owner}}" class="ui image super-mini circular floated left">
+		        {{{owner-text}}}
+		      </span>
+		      <span class="no-desktop">
+					<i class="icon user"></i>
+		      </span>
+
+		    </div>
+		    <span class="ui basic left pointing label">
+		      <a href="javascript:void(0);" onclick="copyToClipboard('{{owner}}', 'wpscOwnerDiv')"><i class="icon copy"></i></a>
+		      <a href="{{etherscan}}address/{{owner}}" target="_blank">
+		        <span class="big-desktop-only">
+		          {{owner}}
+		          <i class="icon external alternate"></i>
+		        </span>
+		        <span class="no-big-desktop">{{owner-short}}</span>
+		      </a>
+		    </span>
+		</div>
+
+		{{#txid-exists}}
+
+		<div class="ui hidden divider"></div>
+
+		<div class="wpsc-address-txid" id="wpscTxIdDiv">
+			<div class="ui mini labeled button" tabindex="0">
+				<div class="ui mini button">
+				  <span class="desktop-only">
+					<i class="magic icon"></i>
+				    {{{genesis}}}
+				  </span>
+				  <span class="no-desktop">
+				    <i class="pencil icon"></i>
+				  </span>
+				</div>
+				<span class="ui basic left pointing label">
+				  <a href="javascript:void(0);" onclick="copyToClipboard('{{txid}}', 'wpscTxIdDiv')"><i class="icon copy"></i></a>
+				  <a href="{{etherscan}}tx/{{txid}}" target="_blank">
+				    <span class="big-desktop-only">
+				      {{txid}}
+				      <i class="icon external alternate"></i>
+				    </span>
+				    <span class="no-big-desktop">{{txid-short}}</span>
+				  </a>
+				</span>
+			</div>
+		</div>
+
+		{{/txid-exists}}
+
+	</div>
+
+{{/contract-exists}}

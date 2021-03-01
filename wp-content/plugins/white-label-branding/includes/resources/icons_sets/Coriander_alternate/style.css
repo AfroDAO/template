@@ -1,0 +1,68 @@
+/*
+Set Name: Coriander Alternate
+Set URI: http://www.ingredients-divers.fr/
+Description: 
+Version: 1.1
+Author: Guillaume Berry
+Author URI: http://www.ingredients-divers.fr/
+Screenshot: menu.png
+*/
+
+#adminmenu .menu-icon-dashboard div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -59px -32px !important;}
+#adminmenu .menu-icon-dashboard:hover div.wp-menu-image,#adminmenu .menu-icon-dashboard.wp-has-current-submenu div.wp-menu-image,#adminmenu .menu-icon-dashboard.current div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -59px 0px !important}
+#adminmenu .menu-icon-dashboard div.wp-menu-image:before {content:''!important;} /* clear wp38 font-face*/
+
+#adminmenu .menu-icon-post div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -269px -31px !important}
+#adminmenu .menu-icon-post:hover div.wp-menu-image,#adminmenu .menu-icon-post.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -269px 1px !important }
+#adminmenu .menu-icon-post div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-media div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -118px -31px !important}
+#adminmenu .menu-icon-media:hover div.wp-menu-image,#adminmenu .menu-icon-media.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -118px 1px !important}
+#adminmenu .menu-icon-media div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-links div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -88px -31px !important}
+#adminmenu .menu-icon-links:hover div.wp-menu-image,#adminmenu .menu-icon-links.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -88px 1px !important}
+#adminmenu .menu-icon-links div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-page div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -148px -31px !important}
+#adminmenu .menu-icon-page:hover div.wp-menu-image,#adminmenu .menu-icon-pages.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -148px 1px !important}
+#adminmenu .menu-icon-page div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-comments div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -28px -31px !important}
+#adminmenu .menu-icon-comments:hover div.wp-menu-image,#adminmenu .menu-icon-comments.wp-has-current-submenu div.wp-menu-image,#adminmenu .menu-icon-comments.current div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -28px 1px !important}
+#adminmenu .menu-icon-comments div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-appearance div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll 2px -31px !important}
+#adminmenu .menu-icon-appearance:hover div.wp-menu-image,#adminmenu .menu-icon-appearance.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll 2px 1px !important}
+#adminmenu .menu-icon-appearance div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-plugins div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -178px -31px !important}
+#adminmenu .menu-icon-plugins:hover div.wp-menu-image,#adminmenu .menu-icon-plugins.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -178px 1px !important}
+#adminmenu .menu-icon-plugins div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-users div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -298px -31px !important}
+#adminmenu .menu-icon-users:hover div.wp-menu-image,#adminmenu .menu-icon-users.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -298px 1px !important}
+#adminmenu .menu-icon-users div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-tools div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -208px -31px !important}
+#adminmenu .menu-icon-tools:hover div.wp-menu-image,#adminmenu .menu-icon-tools.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -208px 1px !important}
+#adminmenu .menu-icon-tools div.wp-menu-image:before {content:''!important;}
+
+#adminmenu .menu-icon-settings div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -238px -31px !important}
+#adminmenu .menu-icon-settings:hover div.wp-menu-image,#adminmenu .menu-icon-settings.wp-has-current-submenu div.wp-menu-image{background:transparent url(menu.png) no-repeat scroll -238px 1px !important}
+#adminmenu .menu-icon-settings div.wp-menu-image:before {content:''!important;}
+
+/* Big icons wp38 dont have big icons on page title.  */
+#icon-edit,#icon-post{background:transparent url(icons32.png) no-repeat -552px -5px}
+#icon-index{background:transparent url(icons32.png) no-repeat -137px -5px}
+#icon-upload{background:transparent url(icons32.png) no-repeat -251px -5px}
+#icon-link-manager,#icon-link,#icon-link-category{background:transparent url(icons32.png) no-repeat -190px -5px}
+#icon-edit-pages,#icon-page{background:transparent url(icons32.png) no-repeat -312px -5px}
+#icon-edit-comments{background:transparent url(icons32.png) no-repeat -72px -5px}
+#icon-themes{background:transparent url(icons32.png) no-repeat -11px -5px}
+#icon-plugins{background:transparent url(icons32.png) no-repeat -370px -5px}
+#icon-users,#icon-user-edit{background:transparent url(icons32.png) no-repeat -600px -5px}
+#icon-tools,#icon-admin{background:transparent url(icons32.png) no-repeat -432px -5px}
+#icon-options-general{background:transparent url(icons32.png) no-repeat -492px -5px}
+
+/**/

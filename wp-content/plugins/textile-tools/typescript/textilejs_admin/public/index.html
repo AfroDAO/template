@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+    <title>Textile Tools: Demo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/wptextileplugin_admin.css">
+</head>
+<body>
+	
+	<div class="wptextile_row">
+		APIKEY: <input type="text" id="apikey" /><br>
+		
+	</div>
+	<div class="wptextile_row">
+		APISECRET: <input type="text" id="apisecret" /><br>
+	</div>
+	<div class="wptextile_row">
+		TYPE OF KEYS: <label><input name="wptextile_options[wptextile_userdata_typeofapikey]" id="wptextile_userdata_typeofapikey_account_key" type="radio" value="account_key" checked=""> Account keys</label>&nbsp;&nbsp;<label><input name="wptextile_options[wptextile_userdata_typeofapikey]" id="wptextile_userdata_typeofapikey_user_group_key" type="radio" value="user_group_key"> User group keys</label>&nbsp;&nbsp;
+	</div>
+	<div class="wptextile_row">
+		PRIVATEIDENTITY: 
+		<div>
+			<input readonly="readonly" type="text" id="wptextile_userdata_privateidentity" /> <label id="wptextile_userdata_privateidentity_label" style="cursor:pointer"><input type="checkbox" id="wptextile_userdata_privateidentity_chk" /> Editable</label>
+		</div>
+	</div>
+	
+	
+	<br>
+
+	<input class="button button-warning" type="button" id="textile_btn_generate_new_identity" value="GENERATE NEW IDENTITY">
+
+	<br>
+	<!-- General results/errors area -->
+	<div id="wptextile_result_area"></div>
+	<br>
+	<div id="wptextile_tabs_area">
+		<!-- Tabs menu -->
+		<ul class="wptextile_tabs_menu">
+			<li><a data-tab="info" class="main"><img class="wptextile_tabs_menu_icon" src="./img/home.svg" alt="Home"/> Dashboard</a></li><li><a data-tab="archive"><img class="wptextile_tabs_menu_icon"  src="./img/archive.svg" alt="Archive"/> Archive</a></li><li><a data-tab="buckets"><img class="wptextile_tabs_menu_icon"  src="./img/red-bucket.svg" alt="Buckets"/> Buckets</a></li><li><a data-tab="filecoin"><img class="wptextile_tabs_menu_icon" src="./img/filecoin-logo.svg" alt="Filecoin"/> Filecoin</a></li>
+		</ul>
+		<!-- Tabs content -->
+		<div class="wptextile_tabs_container">
+			<!-- Dashboard tab -->
+			<div class="wptextile_tab_content info">
+				<h2 class="tab_title">Dashboard</h2>
+				<div class="wptextile_tabs_content_info_body">
+					<h3 class="wptextile_archive_h3 wptextile_text-left">
+						First steps
+					</h3>
+					<p class="wptextile_text-left">
+						Welcome to Textile Tools for Wordpress.
+					</p>
+					<p class="wptextile_text-left">
+						You need Textile API KEYS to use this plugin. To get your keys you will need The Hub. The Hub is your portal to the IPFS network and the fastest way to start building and experimenting with Textile technologies. 
+					<p class="wptextile_text-left">
+						Please follow the instructions on the next link to get your keys: <a href="https://docs.textile.io/hub/apis/#api-keys" target="_blank">https://docs.textile.io/hub/apis/#api-keys</a>
+					</p>
+					<h3 class="wptextile_archive_h3 wptextile_text-left">
+						Useful links
+					</h3>
+					<p class="wptextile_text-left">
+						Textile official site: <a href="https://docs.textile.io/hub/apis/#api-keys" target="_blank">https://www.textile.io</a>
+					</p>
+					<p class="wptextile_text-left">
+						Textile documentation: <a href="https://docs.textile.io/" target="_blank">https://docs.textile.io/</a>
+					</p>
+					<p class="wptextile_text-left">
+						Github site: <a href="https://github.com/luckyr13/twp" target="_blank">https://github.com/luckyr13/twp</a>
+					</p>
+				</div>
+				
+			</div>
+
+			<!-- TAB: Archive -->
+			<div class="wptextile_tab_content archive hide">
+				<h2 class="tab_title">Static Site Generator</h2>
+				<!-- Bucket settings -->
+				<div id="wptextile_archive_section_bucket_settings">
+					<h3 class="wptextile_archive_h3">Step 1. Select or create a new bucket</h3>
+					<div>
+						<p>
+							Get the list of all your textile buckets.
+							<input class="button button-primary" type="button" id="textile_archive_btn_get_buckets" value="GET BUCKETS">
+						</p>
+						<div id="wptextile_archive_section_bucket_settings_bucklist">
+							<div class="wptextile_content_no_results_text">Results</div>
+						</div>
+					</div>
+					<div class="wptextile_text-center">
+						<label>
+							<strong>*Bucket Name:</strong>
+							<input class="regular-text" type="text" id="textile_archive_txt_bucket_name" value="">
+						</label>
+						<input class="button button-primary" type="button" id="textile_archive_btn_activate_posts" value="SAVE AND GO TO NEXT STEP">
+						<input class="button button-primary" type="button" id="textile_archive_btn_reset" value="RESET">
+					</div>
+					<p class="wptextile_text-center wptextile_content_no_results_text">
+						*A new bucket will be created by default if bucket does not exist.
+					</p>
+					<div id="textile_archive_div_bucket_gen_info"></div>
+					
+				</div>
+				<!-- Posts list -->
+				<div id="wptextile_archive_section_post_list" class="hide">
+					<h3 class="wptextile_archive_h3">Step 2. Create index<span class="wptextile_red">(Optional)</span></h3>
+					<p>
+						This is the main page for your bucket. An index.html file will be autogenerated and uploaded for you to your bucket.
+					</p>
+					<div>
+						<input 
+							type="text" 
+							class="regular-text" 
+							placeholder="Your website's name" 
+							id="textile_archive_txt_site_name"
+							name="textile_archive_txt_site_name">
+						<input 
+							class="button button-primary" 
+							type="button" id="textile_archive_btn_generate_index" 
+							value="CREATE INDEX FILE">
+					</div>
+						
+					<div id="wptextile_archive_section_bucket_create_index_res">
+						<div class="wptextile_content_no_results_text">Results</div>
+					</div>
+					<h3 class="wptextile_archive_h3">Step 3. Posts list</h3>
+					<p>
+						<label>
+							From:
+							<input class="regular-text" type="text" id="textile_archive_txt_date_from" value="">
+						</label>
+						<label>
+							To:
+							<input class="regular-text" type="text" id="textile_archive_txt_date_to" value="">
+						</label>
+
+						<input class="button button-primary" type="button" id="textile_archive_btn_get_posts" value="GET POSTS">
+					</p>
+						
+					<br>
+					<!-- Post results -->
+					<div id="textile_archive_div_results">
+						<div class="wptextile_content_no_results_text">Results</div>
+					</div>
+				</div>
+
+			</div>
+
+	
+			<!-- Buckets tab -->
+			<div class="wptextile_tab_content buckets hide">
+				<h2 class="tab_title">Buckets</h2>
+
+				<!-- Bucket settings -->
+				<h3 class="wptextile_archive_h3">Buckets explorer:</h3>
+				<p>
+					Buckets:
+					<input class="button button-primary" type="button" id="textile_buckets_btn_get_buckets" value="GET BUCKETS">
+				</p>
+				<div class="wptextile_col_6">
+					<h3 class="wptextile_text-center">Buckets</h3>
+					<div id="wptextile_tab_content_buckets_results_bucketsAuto">
+						<div class="wptextile_content_no_results_text">Results</div>
+					</div>
+				</div>
+				<div class="wptextile_col_6">
+					<h3 class="wptextile_text-center">Files</h3>
+					<div id="wptextile_tab_content_buckets_results_bucketsAuto_files">
+						<div class="wptextile_content_no_results_text">Results</div>
+					</div>
+				</div>
+				<div class="wptextile_clearfix"></div>
+				<hr>
+
+				<h3 class="wptextile_archive_h3">Get/Create bucket:</h3>
+				<label for="textile_txt_get_bucket_content_bname">Bucket Name:</label>
+				<input 
+					type="text" 
+					class="regular-text" 
+					id="textile_txt_get_bucket_content_bname"
+					name="textile_txt_get_bucket_content_bname">
+				<input type="button" class="button button-primary" id="textile_btn_get_bucket_content" value="GET/CREATE A BUCKET">
+				<br>
+				<h3>Results:</h3>
+				<div id="wptextile_tab_content_buckets_results_bcont"><div class="wptextile_content_no_results_text">Results</div></div>
+				<hr>
+
+				<h3 class="wptextile_archive_h3">Upload file to bucket:</h3>
+				<label for="textile_bucket_txt_upload_file_bucketname">Bucket name:</label>
+                <input 
+                    type="text" 
+                    class="regular-text" 
+                    id="textile_bucket_txt_upload_file_bucketname"
+                    name="textile_bucket_txt_upload_file_bucketname">
+				Upload file: <input type="file" id="textile_bucket_fup_single_file" >
+	    		<input class="button button-primary" id="textile_bucket_btn_upload" type="button" value="Upload to IPFS">
+	    		<h3>Results:</h3>
+				<div id="wptextile_tab_content_buckets_results_fileupload">
+					<div class="wptextile_content_no_results_text">Results</div>
+				</div>
+			</div>
+
+
+			<!-- Filecoin tab -->
+			<div class="wptextile_tab_content filecoin hide">
+				<h2 class="tab_title">Filecoin archive (BETA)</h2>
+				<div class="wptextile_tabs_content_filecoin_body">
+					<!-- Filecoin archive explorer -->
+					<h3 class="wptextile_archive_h3">Filecoin archive explorer (Experimental)</h3>
+					<p>
+						Get buckets:
+						<input class="button button-primary" type="button" id="textile_filecoin_btn_get_buckets" value="GET BUCKETS">
+					</p>
+					<div class="wptextile_col_6">
+						<h3 class="wptextile_text-center">Buckets</h3>
+						<div id="wptextile_tab_content_filecoin_results_bucketsAuto">
+							<div class="wptextile_content_no_results_text">Results</div>
+						</div>
+					</div>
+					<div class="wptextile_col_6">
+						<h3 class="wptextile_text-center">Filecoin archive</h3>
+						<div id="wptextile_tab_content_filecoin_results_bucketsAuto_archive">
+							<div class="wptextile_content_no_results_text">Results</div>
+						</div>
+					</div>
+					<div class="wptextile_clearfix"></div>
+					<hr>
+					
+				</div>
+			</div>
+			<!--/ Filecoin tab END -->
+			
+		</div>
+	</div>
+
+	<!-- LOAD DEMO CREDENTIALS FIRST :) -->
+	<script src="./js/demo_credentials.js"></script>
+	<script>
+		function loadValuesOnForm() {
+			const data = TEXTILE_AJAX_OBJ;
+			if (!data) {
+				alert('Error loading credentials');
+				return;
+			}
+			document.getElementById('wptextile_userdata_privateidentity').value = data.privateidentity;
+			document.getElementById('apikey').value = data.apikey;
+			document.getElementById('apisecret').value = data.apisecret;
+		}
+		// Load test data
+		window.onload = function() {
+			loadValuesOnForm();
+		}
+
+	</script>
+	<script src="./js/wptextileplugin_admin.js"></script>
+</body>
+</html>

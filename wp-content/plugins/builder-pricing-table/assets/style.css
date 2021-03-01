@@ -1,0 +1,222 @@
+.themify_builder_module_front.module-pricing-table {
+	border: 0;
+}
+
+.module-pricing-table {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	font-size: 1em;
+	line-height: 1.2em;
+	margin-bottom: 3em;
+	margin-top: 3em;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.module-pricing-table.transparent,
+.module-pricing-table.transparent .module-pricing-table-header.transparent {
+	background: transparent;
+	border-color: transparent;
+	color: inherit;
+}
+
+.module-pricing-table.transparent .module-pricing-table-header.transparent .module-pricing-table-title,
+.module-pricing-table.transparent .module-pricing-table-features {
+	color: inherit;
+}
+
+.module-pricing-table.white,
+.module-pricing-table.white .module-pricing-table-header.white {
+	background: #ffffff;
+	color: inherit;
+}
+
+.module-pricing-table.white .module-pricing-table-header.white .module-pricing-table-title,
+.module-pricing-table.white .module-pricing-table-features {
+	color: inherit;
+}
+
+.module-pricing-table p {
+	margin: 0px;
+}
+
+.module-pricing-table.pricing-pop {
+	margin-top: 3em;
+}
+.module-pricing-table.pricing-enlarge {
+	top: -1em;
+	margin-bottom: 1.5em;
+	font-size: 1.1em
+}
+
+.module-pricing-table.rounded .module-pricing-table-content {
+	border-radius: 5px;
+}
+
+.module-pricing-table .module-pricing-table-header {
+	padding: 1.5em .5em;
+	color: #fff;
+}
+
+.module-pricing-table .module-pricing-table-title {
+	font-size: 1.15em;
+	letter-spacing: .05em;
+	line-height: 1.3em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0px;
+	display: block;
+	width: 100%;
+}
+
+.module-pricing-table span.module-pricing-table-title span {
+	line-height: 1.026em;
+}
+
+.module-pricing-table .module-pricing-table-price {
+	font-size: 2.3em;
+	font-weight: normal;
+	width: 100%;
+	display: block;
+	height: auto;
+	text-transform: uppercase;
+	margin: .5em 0;
+}
+
+.module-pricing-table .module-pricing-table-reccuring-fee {
+	font-size: .875em;
+	line-height: 1.3;
+	padding-top: .5em;
+}
+
+.module-pricing-table .module-pricing-table-description {
+	line-height: normal;
+	padding-top: 1em;
+}
+
+.module-pricing-table .module-pricing-table-content {
+	padding-top: 14px;
+	padding-bottom: 28px;
+	background-color: #fff;
+	width: 100%;
+    box-sizing: border-box;
+	color: #444;
+}
+
+.module-pricing-table .module-pricing-table-features {
+	padding-top: .7em;
+	padding-bottom: .7em;
+	font-size: 1em;
+	line-height: 1.5em;
+	width: 85%;
+	margin: auto;
+	color: inherit;
+	border-bottom: 1px solid rgba(204,204,204,.4);
+}
+
+.module-pricing-table .module-pricing-table-content .module-pricing-table-features:last-of-type {
+	border-bottom: 0px;
+}
+
+.module-pricing-table .module-pricing-table-features.unavailable-features {
+	opacity: .35;
+	filter: alpha(opacity=35);
+}
+.module-pricing-table .module-pricing-table-features.unavailable-features:empty {
+	display:none;
+}
+
+.module-pricing-table .module-pricing-table-button {
+	width: 85%;
+	margin: 1em auto 0;
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: .03em;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: .8em .7em;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+.module-pricing-table .module-pricing-table-button.themify_lightbox {
+	cursor: pointer;
+}
+
+.module-pricing-table .module-pricing-table-pop {
+	position: absolute;
+	top: -65px;
+	color: #000;
+	font-size: 1.25em;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	left: 0;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	-webkit-animation: animate_popular_text 1s ease-out infinite;
+	-moz-animation: animate_popular_text 1s ease-out infinite;
+	animation: animate_popular_text 1s ease-out infinite;
+}
+
+.module-pricing-table .module-pricing-table-pop:before {
+	content: "";
+	position: absolute;
+	bottom: -25px;
+	font-size: 1em !important;
+	left: 50%;
+	width: 1em;
+	height: 1em;
+	margin-left: -0.5em;
+	border: 1px solid transparent;
+	border-left-color: inherit;
+	border-bottom-color: inherit;
+	-webkit-transform: rotateZ(-45deg);
+	-moz-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+}
+
+@-webkit-keyframes animate_popular_text {
+	0%, 100% {
+		top: -65px;
+	}
+	50% {
+		top: -45px;
+	}
+}
+@-moz-keyframes animate_popular_text {
+	0%, 100% {
+		top: -65px;
+	}
+	50% {
+		top: -45px;
+	}
+}
+@keyframes animate_popular_text {
+	0%, 100% {
+		top: -65px;
+	}
+	50% {
+		top: -45px;
+	}
+}
+
+/* Docked Panel Fields */
+.tb_module_panel_docked .themify_builder_field .multi_link_pricing_table,
+.tb_module_panel_docked .multi_link_pricing_table .themify_builder_field,
+.tb_module_panel_docked .mod_title_pricing_table input[type="text"],
+.tb_module_panel_docked .mod_title_icon_pricing_table input[type="text"],
+.tb_module_panel_docked .mod_price_pricing_table input[type="text"],
+.tb_module_panel_docked .mod_recurring_fee_pricing_table input[type="text"],
+.tb_module_panel_docked .mod_description_pricing_table input[type="text"],
+.tb_module_panel_docked .mod_feature_list_pricing_table .themify_builder_input textarea,
+.tb_module_panel_docked .mod_unavailable_feature_list_pricing_table .themify_builder_input textarea,
+.tb_module_panel_docked .mod_button_text_pricing_table input[type="text"],
+.tb_module_panel_docked .multi_link_pricing_table input[type="text"],
+.tb_module_panel_docked .mod_pop_text_pricing_table input[type="text"],
+.tb_module_panel_docked .css_pricing_table input[type="text"] {
+	width: 100%;
+	max-width: none;
+}

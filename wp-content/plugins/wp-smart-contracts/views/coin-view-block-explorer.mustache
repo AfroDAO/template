@@ -1,0 +1,98 @@
+{{#contract-exists}}
+
+	<input type="hidden" id="wpsc-block-explorer-contract" value="{{contract}}">
+	<input type="hidden" id="wpsc-block-explorer-network" value="{{network}}">
+
+	<div class="ui raised aligned segment" id="wpsc-block-explorer-txlist">
+
+		<h3 class="ui block header left aligned">
+			<i class="globe icon"></i> 
+			{{{block-explorer}}}
+		</h3>
+
+		{{#xdai}}
+			<div class="ui raised center aligned segment" id="wpsc-wallet" style="">
+				<a href="{{xdai_block_explorer}}" target="_blank" class="ui huge button">
+					<i class="external alternate icon"></i>
+					{{{xdai_block_explorer_label}}}
+				</a>
+			</div>
+		{{/xdai}}
+
+		{{^xdai}}
+
+		<div class="ui hidden divider"></div>
+		<div class="ui fluid search focus">
+			<div class="ui icon fluid input">
+			  <input type="text" placeholder="{{{search-placeholder}}}" id="wpsc-block-explorer-search" data-subdomain="{{subdomain}}" autocomplete="off">
+			  <i class="circular search link icon"></i>
+			</div>
+			<div id="wpsc-block-explorer-search-error"></div>
+		</div>
+
+		<h4 id="wpsc-filter-exp" class="ui header"></h4>
+
+		<div id="wpsc_account_balance"></div>
+
+		<div id="wpsc_account_roles"></div>
+
+		<div class="ui two item stackable tabs menu">
+			<a id="wpsc-txs-button" class="item" data-tab="txs">{{{transactions}}}</a>
+			<a id="wpsc-internal-txs-button" class="item" data-tab="internal">{{{internal-transactions}}}</a>
+		</div>
+
+		<div class="ui hidden divider"></div>
+
+		<div class="ui stackable grid large screen only">
+			<div class="sixteen wide computer five wide large screen column five wide widescreen column">
+				<h6 class="ui block header left aligned">
+				  <i class="user icon"></i>
+				  <div class="content">
+				    {{{from}}}
+				  </div>
+				</h6>
+			</div>
+			<div class="sixteen wide computer five wide large screen column five wide widescreen column">
+				<h6 class="ui block header left aligned">
+				  <i class="user icon"></i>
+				  <div class="content">
+				    {{{to}}}
+				  </div>
+				</h6>
+			</div>
+			<div class="sixteen wide computer six wide large screen column six wide widescreen column">
+				<h6 class="ui block header left aligned">
+				  <i class="database icon"></i>
+				  <div class="content">
+				    {{{amount_tx}}}
+				  </div>
+				</h6>
+			</div>
+		</div>
+
+		<div class="ui stackable grid" id="wpsc-block-explorer-rows"></div>
+		
+		<div id="wpsc-block-explorer-nav-buttons">
+			<div class="ui divider"></div>
+			<button class="ui left floated icon button" id="wpscBlockExplorerPrevious">
+				<i class="left chevron icon"></i>
+			</button>
+			<button class="ui right floated right icon button hidden" id="wpscBlockExplorerNext">
+				<i class="right chevron icon"></i>
+			</button>			
+		</div>
+
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+
+		<a class="ui bottom left attached label">
+			{{{page}}}
+			<span id="wpsc-from-to"></span>
+		</a>
+		<a class="ui bottom right attached label">{{{total_supply}}} <span id="wpsc_total_supply">-</span> {{symbol}}</a>
+
+		{{/xdai}}
+
+	</div>
+
+{{/contract-exists}}

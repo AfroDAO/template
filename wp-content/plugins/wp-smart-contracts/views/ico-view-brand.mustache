@@ -1,0 +1,241 @@
+<div class="ui raised center aligned segment" id="wpsc-ico-panel-div">
+    <h3 class="ui block header left aligned">
+        {{#wpsc_thumbnail}}
+        <img class="tiny ui circular image" src="{{wpsc_thumbnail}}">
+        {{/wpsc_thumbnail}}
+        {{{wpsc_title}}}
+        <div class="ui small {{color}} label">
+            <i class="{{icon}} icon"></i>{{{network_val}}}
+        </div>
+    </h3>
+    <p style="text-align: justify;">{{{wpsc_content}}}</p>
+    <div class="ui hidden divider"></div>
+
+    <div class="ui centered cards">
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">{{{wpsc_coin_name}}}</div>
+            </div>
+            <div class="extra content">
+                <i class="tag icon"></i>{{{token-name}}}
+            </div>                
+        </div>
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">{{{wpsc_coin_symbol}}}</div>
+            </div>
+            <div class="extra content">
+                <i class="key icon"></i>{{{token-symbol}}}
+            </div>            
+        </div>
+
+        <div class="ui raised card">
+            <div class="content" id="wpscTokenAddressDiv">
+
+                <div class="ui mini labeled button" tabindex="0">
+                    <div class="ui mini button">
+                        <span class="desktop-only">
+                        <img src="{{wpsc_blockie_token}}" class="ui image super-mini circular floated left"></span>
+                        <span class="no-desktop">
+                        <i class="icon ethereum"></i>
+                        </span>
+                    </div>
+                    <span class="ui basic left pointing label">
+                        <a href="javascript:void(0);" onclick="copyToClipboard('{{wpsc_token_contract_address}}', 'wpscTokenAddressDiv')"><i class="icon copy"></i></a>
+                        <a href="{{etherscan}}address/{{wpsc_token_contract_address}}" target="_blank">
+                        <span>{{wpsc_token_contract_address_short}}</span>
+                        </a>
+                    </span>
+                    <div class="ui mini icon button showfluid"><i class="qrcode icon"></i></div>
+                    <div class="ui flowing popup top left transition hidden">
+                        <img src="{{wpsc_token_qr_code}}" class="ui centered small image">
+                        <div class="ui divider"></div>
+                        <div class="ui label">
+                            {{wpsc_token_contract_address}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="extra content">
+                <i class="icon ethereum"></i>
+                {{{token-address}}}
+            </div>            
+        </div>
+
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">
+                    <img src="{{wpsc_blockie_token}}" class="ui image super-mini circular"></span>
+                    <a href="{{block-explorer-link}}">
+                        {{{block-explorer}}}
+                        <i class="right arrow icon"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="extra content">
+                <i class="globe icon"></i>{{{block-explorer}}}
+            </div>            
+        </div>
+    
+        {{^is_bubblegum}}
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">{{wpsc_total_supply}} {{{wpsc_coin_symbol}}}</div>
+            </div>
+            <div class="extra content">
+                <i class="database icon"></i>{{{initial-supply}}}
+            </div>            
+        </div>
+        {{/is_bubblegum}}
+        {{#is_bubblegum}}
+            <div class="ui raised card">
+                <input id="tokens_remaining_to_sell_tmp" type="hidden">
+                <input id="tokens_address" type="hidden" value="{{{token-address}}}">
+                <div class="content">
+                    <div class="description" id="tokens_remaining_to_sell"></div>
+                </div>
+                <div class="extra content">
+                    <i class="suitcase icon"></i>{{{tokens-to-sell}}}
+                </div>            
+            </div>
+        {{/is_bubblegum}}
+        {{#wpsc_adv_hard}}
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">{{{wpsc_adv_cap}}} {{{wpsc_native_coin}}}</div>
+            </div>
+            <div class="extra content">
+                <i class="suitcase icon"></i>{{{hard-cap}}}
+            </div>            
+        </div>
+        {{/wpsc_adv_hard}}
+        {{#wpsc_adv_timed}}
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">{{from}} {{{opening_human_short}}} {{to}} {{{closing_human_short}}}</div>
+            </div>
+            <div class="extra content">
+                <i class="clock outline icon"></i>{{{timed}}}
+            </div>                
+        </div>
+        {{/wpsc_adv_timed}}
+        <div class="ui raised card">
+            <div class="content">
+                <div class="description">1 {{{wpsc_native_coin}}} = {{{wpsc_rate}}} {{{wpsc_coin_symbol}}}</div>
+            </div>
+            <div class="extra content">
+                <i class="percent icon"></i>{{{rate}}}
+            </div>                    
+        </div>
+    </div>
+
+    <div class="ui hidden divider"></div>
+
+    <a id="wpsc-resume-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-resume-modal" style="display: none">
+        <i class="play circle outline icon"></i>{{{resume}}}
+    </a>
+    <a id="wpsc-pause-link" href="javascript:void(0);" class="ui mini button" data-modal="wpsc-pause-modal" style="display: none">
+        <i class="pause circle outline icon"></i>{{{pause}}}
+    </a>
+
+</div>
+
+<div id="wpsc-pause-modal" class="ui basic modal">
+
+    <div class="ui center aligned inverted segment">
+
+        <h3 class="ui header">
+            <i class="pause circle outline icon"></i>
+            {{{pause}}}
+        </h3>
+
+        <p>{{{pause-tooltip}}}</p>
+
+        <div id="wpsc-pause-form">
+
+            <div id="wpsc-wallet-pause-message"></div>
+
+            <div class="ui input">
+                <button class="ui teal right labeled icon button" id="wpsc-pause">
+                    <i class="pause circle outline icon"></i>{{{pause}}}
+                </button>
+            </div>
+
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="actions">
+            <div id="wpsc-wallet-pause-cancel-button" class="ui red basic cancel inverted button">
+                <i class="remove icon"></i>
+                {{{cancel}}}
+            </div>
+        </div>
+
+        <div id="wpsc-progress-pause" class="ui icon black message hidden">
+            <div class="content">
+                <div class="header">
+                    {{{tx-in-progress}}}
+                </div>
+                <p class="wpsc-small">
+                    <img class="ui mini left floated image" src="{{deploy-icon}}">
+                    {{{click-confirm}}} {{{please-patience}}}
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div id="wpsc-resume-modal" class="ui basic modal">
+
+    <div class="ui center aligned inverted segment">
+
+        <h3 class="ui header">
+            <i class="play circle outline icon"></i>
+            {{{resume}}}
+        </h3>
+
+        <p>{{{resume-tooltip}}}</p>
+
+        <div id="wpsc-resume-form">
+
+            <div id="wpsc-wallet-resume-message"></div>
+
+            <div class="ui input">
+                <button class="ui teal right labeled icon button" id="wpsc-resume">
+                    <i class="play circle outline icon"></i>{{{resume}}}
+                </button>
+            </div>
+
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="actions">
+            <div id="wpsc-wallet-resume-cancel-button" class="ui red basic cancel inverted button">
+                <i class="remove icon"></i>
+                {{{cancel}}}
+            </div>
+        </div>
+
+        <div id="wpsc-progress-resume" class="ui icon black message hidden">
+            <div class="content">
+                <div class="header">
+                    {{{tx-in-progress}}}
+                </div>
+                <p class="wpsc-small">
+                    <img class="ui mini left floated image" src="{{deploy-icon}}">
+                    {{{click-confirm}}} {{{please-patience}}}
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+

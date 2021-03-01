@@ -1,0 +1,59 @@
+#map-preview {
+    padding: 0 0 10px;
+    min-height: 250px;
+}
+#map-preview .add_new {
+    text-align: center;
+    display: block;
+}
+
+#map-preview {
+    max-width: 680px;
+    margin: auto;
+}
+
+#map-preview hr {
+    display: none;
+}
+#map-preview .maps-pro-content {
+    min-width: 100px;
+    padding-left: 20px;
+}
+#map-preview .module-maps-pro img {
+    max-width: inherit !important;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 24px;
+}
+#map-canvas img {
+    max-width: none;
+}
+
+#markers .tb_repeatable_field_content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#markers .thumb_preview {
+    top: -30px;
+}
+
+#markers .themify_builder_field {
+    width: 32%;
+}
+#markers .themify_builder_input {
+    width: auto;
+    float: none;
+}
+/* hide the lat/lng field */
+#markers .tb_repeatable_field_content .themify_builder_field:nth-child(2),
+#markers .themify_builder_duplicate_row {
+    display: none;
+}
+#markers textarea {
+    width: 185px;
+}

@@ -1,0 +1,84 @@
+{{#contract-exists}}
+	<div class="ui raised center aligned segment">
+
+		<h3 class="ui block header left aligned">
+			<i class="handshake outline icon"></i>
+			{{{dex}}}
+		</h3>
+
+		<div class="ui stackable three cards wpsc-dex">
+			{{#wpsc_uniswap}}
+			<div class="card">
+				<div class="image">
+					<a href="{{uniswap}}" target="_blank">
+						<img src="{{uniswap-logo}}">
+					</a>
+				</div>
+				<div class="content">
+					<div class="meta">
+						<div class="ui mini blue image label">
+							<i class="ethereum icon"></i>
+								ETH
+							<span class="detail">{{token-symbol}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="extra content">
+					<a href="{{uniswap}}" target="_blank">
+						<i class="external alternate icon"></i>
+						{{uniswap-domain}}
+					</a>
+				</div>
+			</div>
+			{{/wpsc_uniswap}}
+			{{#wpsc_forkdelta}}
+			<div class="card">
+				<div class="image">
+					<a href="{{forkdelta}}" target="_blank">
+						<img src="{{forkdelta-logo}}">
+					</a>
+				</div>
+				<div class="content">
+					<div class="meta">
+						<div class="ui mini blue image label">
+							<i class="ethereum icon"></i>
+								ETH
+							<span class="detail">{{token-symbol}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="extra content">
+					<a href="{{forkdelta}}" target="_blank">
+						<i class="external alternate icon"></i>
+						{{forkdelta-domain}}
+					</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<a href="{{mcafee}}" target="_blank">
+						<img src="{{mcafee-logo}}">
+					</a>
+				</div>
+				<div class="content">
+					<div class="meta">
+						<div class="ui mini blue image label">
+							<i class="ethereum icon"></i>
+								ETH
+							<span class="detail">{{token-symbol}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="extra content">
+					<a href="{{mcafee}}" target="_blank">
+						<i class="external alternate icon"></i>
+						{{mcafee-domain}}
+					</a>
+				</div>
+			</div>
+			{{/wpsc_forkdelta}}
+			</div>
+
+	</div>
+
+{{/contract-exists}}

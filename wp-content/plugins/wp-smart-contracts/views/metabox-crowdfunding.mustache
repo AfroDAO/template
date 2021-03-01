@@ -1,0 +1,138 @@
+          <div class="wpsc">
+            <input type="hidden" id="wpsc-change">
+            {{#readonly}}
+              <input type="hidden" name="wpsc-readonly" value="true">
+              {{{crowdfunding-info}}}
+            {{/readonly}}
+            {{^readonly}}
+            <div class="ui inverted segment">
+              <div class="ui inverted segment">
+                <h1 class="ui header">
+                  <i class="settings icon"></i>
+                  {{{crowdfunding-spec}}}
+                </h1>
+                <a class="ui grey button right floated" href="https://wpsmartcontracts.com/#tutorials" target="_blank">
+                  {{{learn-more}}}
+                </a>
+                <p>{{{crowdfunding-spec-desc}}}</p>
+              </div>
+            </div>
+            <div class="ui secondary segment">
+              <div class="grouped fields">
+                <h3 class="ui dividing header">{{{flavor}}}</h3>
+                <div class="ui stackable two column grid">
+                  <div class="column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-mango}}}">
+                      <h3 class="ui dividing header">{{{crowdfunding-donation}}}</h3>
+                      <p>{{{crowdfunding-donation-desc}}}</p>
+                      <h5 class="ui dividing header">{{{features}}}</h5>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{contributions-ether}}}
+                        <span class="ui icon" data-tooltip="{{{contributions-ether-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{safe-minimum}}}
+                        <span class="ui icon" data-tooltip="{{{safe-minimum-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+                      <p>
+                        <i class="check icon"></i>
+                        {{{safe-approval}}}
+                        <span class="ui icon" data-tooltip="{{{safe-approval-tooltip}}}"></i>
+                          <i class="small help icon circular"></i>
+                        </span>
+                      </p>
+
+                      <div class="ui fitted toggle checkbox">
+                        <input tabindex="0" type="radio" name="wpsc-flavor" id="wpsc-mango" class="wpsc-radio" value="mango"
+                          {{{wpsc-flavor}}} 
+                          checked="checked"
+                          {{#readonly}}readonly disabled="disabled"{{/readonly}}
+                        >
+                        <label></label>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="column" id="wpsc-flavor-last-column">
+                    <div class="ui raised segment">
+                      <img class="ui medium image" src="{{{img-custom}}}">
+                      <h3 class="ui dividing header">{{{erc-20-custom}}}</h3>
+                      <p>{{{custom-message}}}</p>
+                      <p><a href="https://wpsmartcontracts.com/contact-us.php" target="_blank" class="ui blue button">{{{contact-us}}}</a></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Advanced Crowdfunding options -->
+            <div id="wpsc-advanced-crowdfunding" class="ui secondary segment {{#is-chocolate}}hidden{{/is-chocolate}}">
+              <h3 class="ui dividing header">{{{safecrowd-options}}}</h3>
+              <div class="ui stackable two column grid">
+                <!-- Funds raising -->
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{minimum}}} 
+                    <div class="sub header">
+                      {{{minimum-desc}}} 
+                      {{{minimum-tooltip}}}
+                    </div>
+                  </h4>
+
+                  <div class="ui right labeled fluid input" id="wpsc-minimum">
+                    <input name="wpsc-minimum" type="text" placeholder="0.1" value="{{wpsc-minimum}}">
+                    <span class="ui tag label">
+                      ether
+                    </span>
+                  </div>
+                </div>
+                <div class="column">
+                  <h4 class="ui header">
+                    {{{approvers}}} 
+                    <div class="sub header">
+                      {{{approvers-desc}}} 
+                      {{{approvers-tooltip}}}
+                    </div>
+                  </h4>
+
+                  <div class="ui labeled icon top dropdown button approvers" tabindex="0" id="wpsc-approvers-dropdown">
+                    <input type="hidden" name="wpsc-approvers" value="{{percent}}">
+                    <i class="percent icon"></i>
+                    <span class="text">{{percent}}</span>
+                    <div class="menu transition hidden" tabindex="-1">
+                      <div class="item{{#percent-50}} active selected{{/percent-50}}" data-text="50%">
+                        <div class="ui red empty circular label"></div>
+                        50%
+                      </div>
+                      <div class="item{{#percent-33}} active selected{{/percent-33}}" data-text="33%">
+                        <div class="ui orange empty circular label"></div>
+                        33%
+                      </div>
+                      <div class="item{{#percent-25}} active selected{{/percent-25}}" data-text="25%">
+                        <div class="ui yellow empty circular label"></div>
+                        25%
+                      </div>
+                      <div class="item{{#percent-20}} active selected{{/percent-20}}" data-text="20%">
+                        <div class="ui olive empty circular label"></div>
+                        20%
+                      </div>
+                      <div class="item{{#percent-10}} active selected{{/percent-10}}" data-text="10%">
+                        <div class="ui green empty circular label"></div>
+                        10%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/readonly}}
+
+          </div>
+

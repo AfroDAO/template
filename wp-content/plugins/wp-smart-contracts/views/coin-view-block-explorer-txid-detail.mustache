@@ -1,0 +1,13 @@
+		<div class="ui divider"></div>
+		<div class="ui bottom attached 	{{#isError}}red{{/isError}} {{^isError}}{{color}}{{/isError}} label">
+			{{#isError}}
+				<p>
+					<i class="exclamation triangle icon"></i>
+					{{{errorMessage}}}: {{{status}}}
+				</p>
+			{{/isError}}
+			{{^isError}}
+				<i class="{{icon}} icon"></i>
+				{{{status}}}
+			{{/isError}}
+		</div>

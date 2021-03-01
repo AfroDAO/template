@@ -1,0 +1,330 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Cryptoniq\n"
+"POT-Creation-Date: 2018-08-03 22:54+0400\n"
+"PO-Revision-Date: 2018-08-04 18:19+0400\n"
+"Language-Team: DivEngine <admin@cryptoniq.io>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: DivEngine <admin@cryptoniq.io>\n"
+"Language: es_ES\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin.php:89
+msgid "Coin name"
+msgstr "Nombre de moneda"
+
+#: admin.php:94
+msgid "Amount of coins"
+msgstr "Cantidad de monedas"
+
+#: admin.php:99
+msgid "Step"
+msgstr "Paso"
+
+#: admin.php:104
+msgid "Start time"
+msgstr "Tiempo de inicio"
+
+#: admin.php:109
+msgid "Transaction ID"
+msgstr "ID de transacción"
+
+#: admin.php:114
+msgid "Address"
+msgstr "Dirección"
+
+#: coins/btc.php:73 coins/doge.php:81 coins/eth.php:133 coins/ltc.php:73
+msgid "The client completed payment"
+msgstr "El cliente ha completado el pago"
+
+#: functions.php:100
+msgid "Transaction is found"
+msgstr "Transacción ha sido encontrada"
+
+#: functions.php:101
+msgid "Transaction is not found"
+msgstr "Transacción no ha sido encontrada"
+
+#: functions.php:103
+msgid "That is an old transaction"
+msgstr "Es una transacción antigua"
+
+#: functions.php:104
+msgid "Transaction is expired. Payment failed"
+msgstr "Transacción ha expirado. Pago ha fallado"
+
+#: functions.php:106 payment.php:178
+msgid "Checking..."
+msgstr "Comprobando..."
+
+#: functions.php:107
+msgid "Processing..."
+msgstr "Procesando..."
+
+#: functions.php:108
+msgid "Completed"
+msgstr "Completado"
+
+#: functions.php:109
+msgid "Redirecting..."
+msgstr "Redirigiendo..."
+
+#: functions.php:110
+msgid "Error. Try to refresh the page"
+msgstr "Error. Pruebe actualizar la página"
+
+#: functions.php:111
+msgid "Time is expired"
+msgstr "Se ha agotado el tiempo"
+
+#: functions.php:174
+msgid "Total:"
+msgstr "Total:"
+
+#: functions.php:178
+msgid "Address:"
+msgstr "Dirección:"
+
+#: functions.php:182
+msgid "Transaction:"
+msgstr "Transacción:"
+
+#: gateway.php:10 gateway.php:23
+msgid "Pay with cryprocurrencies."
+msgstr "Pague con criptodivisa"
+
+#: gateway.php:37
+msgid "Online/Offline gateway"
+msgstr "Puerta de enlace Online/Offline"
+
+#: gateway.php:39
+msgid "Enable"
+msgstr "Encender"
+
+#: index.php:89
+msgid "Every 30 Minutes"
+msgstr "Cada 30 minutos"
+
+#: index.php:98
+msgid "Every 3 Hours"
+msgstr "Cada 3 horas"
+
+#: options.php:143
+msgid "Payment"
+msgstr "Pago"
+
+#: options.php:152
+msgid "Payment Coins"
+msgstr "Monedas de pago"
+
+#: options.php:164
+msgid "Order Status"
+msgstr "Estado de la orden"
+
+#: options.php:165
+msgid "Select status for order after completed payment"
+msgstr "Elija el estado para la orden después de completar el pago"
+
+#: options.php:178
+msgid "Wallets"
+msgstr "Monederos"
+
+#: options.php:179
+#, php-format
+msgid ""
+"Add your wallets addresses for each payment coin. Try to add as much as "
+"possible. Read more %1$s."
+msgstr ""
+"Agregue sus direcciones de monederos para cada moneda de pago. Intente "
+"agregar tantos como le sea posible. Más detalles %1$s."
+
+#: options.php:179 options.php:291 options.php:301 options.php:309
+msgid "here"
+msgstr "aquí"
+
+#: options.php:186 options.php:193 options.php:200 options.php:207
+msgid "Wallet"
+msgstr "Monedero"
+
+#: options.php:187 options.php:194 options.php:201 options.php:208
+msgid "Add your BTC addresses (at least 10-20)."
+msgstr "Agregue sus direcciones de BTC (al menos 10-20)."
+
+#: options.php:188
+msgid "Add address"
+msgstr "Agregar dirección"
+
+#: options.php:195 options.php:202 options.php:209
+msgid "Add wallet"
+msgstr "Agregar monedero"
+
+#: options.php:216
+msgid "Prices"
+msgstr "Precios"
+
+#: options.php:223
+msgid "Show coin prices"
+msgstr "Mostrar precio de monedas"
+
+#: options.php:224
+msgid "Add coin calculated prices near products prices."
+msgstr ""
+"Agregue los precios calculados de monedas al lado de precios de productos."
+
+#: options.php:230
+msgid "Coin"
+msgstr "Moneda"
+
+#: options.php:244
+msgid "Sign"
+msgstr "Signo"
+
+#: options.php:246
+msgid "Text"
+msgstr "Texto"
+
+#: options.php:247
+msgid "Icon"
+msgstr "Icono"
+
+#: options.php:248
+msgid "None"
+msgstr "Nadie"
+
+#: options.php:257
+msgid "Divider"
+msgstr "Divisor"
+
+#: options.php:266
+msgid "Titles"
+msgstr "Títulos"
+
+#: options.php:273
+msgid "Description"
+msgstr "Descripción"
+
+#: options.php:274
+msgid ""
+"Write some description for this payment type. It will be shown in 'Checkout' "
+"page."
+msgstr ""
+"Escriba alguna descripción para este tipo de pago. Se mostrará en la página "
+"de “Procesar el pago”."
+
+#. Description of the plugin/theme
+#: options.php:275
+msgid "Pay with cryptocurrencies."
+msgstr "Pague con criptodivisas."
+
+#: options.php:283
+msgid "Api Keys"
+msgstr "Claves de API"
+
+#: options.php:290
+msgid "ETH Api Key"
+msgstr "Clave de API de ETH"
+
+#: options.php:291
+#, php-format
+msgid "See how to get api-key %1$s."
+msgstr "Vea cómo obtener la clave de API %1$s."
+
+#: options.php:298
+msgid "Documentation"
+msgstr "Documentación"
+
+#: options.php:301
+#, php-format
+msgid "For documentation please visit %1$s."
+msgstr "Para documentación por favor visite %1$s."
+
+#: options.php:306
+msgid "Support"
+msgstr "Soporte"
+
+#: options.php:309
+#, php-format
+msgid "For support please open a ticket %1$s."
+msgstr "Para soporte por favor abra un ticket %1$s."
+
+#: options.php:314
+msgid "Import / Export"
+msgstr "Importar/Exportar"
+
+#: payment.php:69
+msgid "Payment via"
+msgstr "Vía de pago"
+
+#: payment.php:83
+msgid "My Cart"
+msgstr "Mi carro de compra"
+
+#: payment.php:118
+msgid "How to pay"
+msgstr "Cómo pagar"
+
+#: payment.php:124
+msgid "Please, send"
+msgstr "Por favor, envíe"
+
+#: payment.php:130
+msgid "To this address"
+msgstr "A esta dirección"
+
+#: payment.php:136
+msgid "Scan QR code"
+msgstr "Escanee código QR"
+
+#: payment.php:144
+msgid "Instruction"
+msgstr "Instrucción"
+
+#: payment.php:148
+msgid ""
+"To make a payment, send required amount of coins to mentioned address. It "
+"must be as one transaction (not included the fees)."
+msgstr ""
+"Para hacer un pago, envíe la cantidad requerida de monedas a la dirección "
+"mencionada. Esto hay que hacerlo como una transacción (sin incluir "
+"comisiones)."
+
+#: payment.php:149
+msgid ""
+"After, click on \"Yes, I've sent\" button and wait the system to check your "
+"payment."
+msgstr ""
+"Después, haga clic en el botón \"Sí, he enviado\" y espere que el sistema "
+"verifique su pago."
+
+#: payment.php:150
+msgid ""
+"System will give you 3 hours, in which time the transaction must be "
+"completed. So if you haven't sent the coins before clicking the check "
+"button, you still can. But note that if the coins are not received within a "
+"given time, order will be automatically cancelled and payment will be failed."
+msgstr ""
+"El sistema le dará 3 horas, durante las cuales se debe completar la "
+"transacción. Entonces, si no ha enviado las monedas antes de hacer clic en "
+"el botón de verificación, todavía puede hacerlo. Pero tenga en cuenta que si "
+"las monedas no se reciben dentro del tiempo determinado, la orden se "
+"cancelará automáticamente y el pago será suspendido."
+
+#: payment.php:170
+msgid "Yes, I've sent"
+msgstr "Sí, he enviado"
+
+#: payment.php:178
+msgid "Time:"
+msgstr "Hora:"

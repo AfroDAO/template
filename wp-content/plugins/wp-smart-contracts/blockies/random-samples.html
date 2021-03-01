@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<style>
+.wpscBlockies {
+    width: 256px;
+    height: 256px;
+    border-radius: 50% ;
+}
+</style>
+</head>
+<body onload="loaded()">
+    <script src="blockies.min.js"></script>
+
+    <script>
+
+        var loaded = function( img ) {
+
+          var address = '0xBe9dD23380601A0Df7B0a6777d9Ae56d04518cf8';
+
+          var seed = address.toLowerCase();
+
+          var source = blockies.create({ seed:seed ,size: 8,scale: 1});
+
+          var icon = document.createElement("div");
+          icon.className = "icon";
+
+          var image = document.createElement("img");
+          image.className = "wpscBlockies";
+          image.src = blockies.create({ seed:seed ,size: 8,scale: 16}).toDataURL();
+          icon.appendChild( image );
+
+          document.body.appendChild(icon)
+
+        };
+    </script>
+
+</body>

@@ -1,0 +1,38 @@
+{{^is_refresh}}
+<div id="request-card-{{index}}" class="card">
+{{/is_refresh}}
+	<div class="content">
+		<div class="header container ">
+			{{{desc}}}
+		</div>
+		{{#approvalCount}}
+		<div class="floating ui red mini label" data-tooltip="{{{approvers}}}">
+			{{approvalCount}}
+		</div>
+		{{/approvalCount}}
+		<div class="meta">
+			{{to}} <span>{{recipient_short}}</span>
+		</div>
+		<span class="ui blue basic label">
+		{{{value}}} {{native_coin}}
+		</span>
+	</div>
+	<div class="extra content">
+		{{#is_approver}}
+			{{^already_approve}}
+			<div class="mini ui basic green icon button wpsc-req-approve" data-index="{{index}}">
+				<i class="thumbs up outline icon"></i>
+				{{{approve}}}
+			</div>
+			{{/already_approve}}
+		{{/is_approver}}
+		{{#is_manager}}
+		<div class="mini ui green icon button wpsc-req-finalize" data-index="{{index}}">
+			<i class="paper plane outline icon"></i>
+			{{{finalize}}}
+		</div>
+		{{/is_manager}}
+	</div>
+{{^is_refresh}}
+</div>
+{{/is_refresh}}

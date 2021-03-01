@@ -1,0 +1,59 @@
+		<div class="sixteen wide computer five wide large screen column five wide widescreen column {{#grey}}wpsc-grey-row{{/grey}}">
+			<div class="ui mini labeled button" tabindex="0" id="wpscFromDiv{{i}}">
+				<div class="ui mini button wpscBlockExplorerAccounts" data-jumpto="0" data-jumpn="{{jumpN}}" data-account="{{from}}" data-subdomain="{{subdomain}}">
+					<span>
+						<img src="{{fromBlockie}}" class="ui avatar image">
+					</span>
+				</div>
+				<span class="ui basic left pointing label">
+					<a href="javascript:void(0);" onclick="copyToClipboard('{{from}}', 'wpscFromDiv{{i}}')">
+						<i class="icon copy"></i>
+					</a>
+					<span>
+						<a class="wpscBlockExplorerAccounts" data-jumpto="0" data-jumpn="{{jumpN}}" data-account="{{from}}" data-subdomain="{{subdomain}}" title="{{{clickToFilter}}}">
+							{{from_short}}
+						</a>
+						<a href="https://{{subdomain}}etherscan.io/address/{{from}}" target="_blank">
+							<i class="icon external alternate"></i>
+						</a>
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="sixteen wide computer five wide large screen column five wide widescreen column {{#grey}}wpsc-grey-row{{/grey}}">
+			{{#to}}
+			<div class="ui mini labeled button" tabindex="0" id="wpscToDiv{{i}}">
+				<div class="ui mini button wpscBlockExplorerAccounts" data-jumpto="0" data-jumpn="{{jumpN}}" data-account="{{to}}" data-subdomain="{{subdomain}}">
+					<span>
+						<img src="{{toBlockie}}" class="ui avatar image">
+					</span>
+				</div>
+				<span class="ui basic left pointing label">
+					<a href="javascript:void(0);" onclick="copyToClipboard('{{to}}', 'wpscToDiv{{i}}')">
+						<i class="icon copy"></i>
+					</a>
+					<span>
+						<a class="wpscBlockExplorerAccounts" data-jumpto="0" data-jumpn="{{jumpN}}" data-account="{{to}}" data-subdomain="{{subdomain}}" title="{{{clickToFilter}}}">
+							{{to_short}}
+						</a>
+						<a href="https://{{subdomain}}etherscan.io/address/{{to}}" target="_blank">
+							<i class="icon external alternate"></i>
+						</a>
+					</span>
+				</span>
+			</div>
+			{{/to}}
+		</div>
+		<div class="sixteen wide computer six wide large screen column six wide widescreen right aligned column {{#grey}}wpsc-grey-row{{/grey}}">
+			<span class="ui mini label" data-jumpto="0" data-jumpn="{{jumpN}}" data-account="{{txid}}" data-subdomain="{{subdomain}}"">
+				<i class="icon clock"></i>
+		    	{{timeStamp}}
+			</span>
+			<a class="ui mini label wpscBlockExplorerAccounts" data-jumpto="0" data-jumpn="{{jumpN}}" data-account="{{txid}}" data-subdomain="{{subdomain}}" title="{{{clickToFilter}}}" data-is-error="{{isError}}">
+		    	{{txid_short}}
+			</a>
+			<span class="ui mini {{color}} label" title="{{status}}">
+				<i class="{{icon}} icon"></i>
+				{{value}}
+			</span>
+		</div>
